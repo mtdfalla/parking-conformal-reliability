@@ -1,0 +1,21 @@
+{
+  "title": "Average coverage is not enough: per-facility reliable conformal prediction for urban parking-occupancy forecasting \u2014 replication package",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Abdelmagid, Mohamed",
+      "affiliation": "Khalifa University, Abu Dhabi, United Arab Emirates"
+    }
+  ],
+  "description": "Replication package: seven interval-forecasting methods on 50 parking facilities in two cities under a delay-aware protocol, with a two-level evaluation standard separating population-level from per-facility validity. Code MIT. Birmingham-derived data CC BY 4.0. Belgrade data are NOT redistributed for rights reasons; the acquisition route, schema and SHA-256 of every withheld file are provided. See DATA_AVAILABILITY.md.",
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "conformal prediction",
+    "uncertainty quantification",
+    "prediction intervals",
+    "parking occupancy",
+    "intelligent transportation systems",
+    "reproducibility"
+  ]
+}

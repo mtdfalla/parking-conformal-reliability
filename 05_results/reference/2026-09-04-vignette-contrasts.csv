@@ -1,0 +1,9 @@
+window,contrast,unit,n_seeds,mean,sd,median,iqr,min,max,ci_lo,ci_hi,n_seeds_positive,ci_excludes_zero
+weekday,overflow_reduction_pp,pp,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+weekday,additional_straight_line_m,m,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+weekday,margin_vs_interval_overflow_pp,pp,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+weekday,margin_vs_interval_addl_straight_line_m,m,20,0.0415,0.1857,0.0,0.0,0.0,0.8305,0.0,0.1246,1,0
+weekend,overflow_reduction_pp,pp,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+weekend,additional_straight_line_m,m,20,57.1397,16.2019,52.534,20.1839,25.4801,95.272,50.3935,64.2296,20,1
+weekend,margin_vs_interval_overflow_pp,pp,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0
+weekend,margin_vs_interval_addl_straight_line_m,m,20,268.3627,30.7755,268.4424,45.661,218.21,326.414,255.2906,281.9203,20,1

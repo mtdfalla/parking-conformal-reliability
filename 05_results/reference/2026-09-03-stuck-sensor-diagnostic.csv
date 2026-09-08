@@ -1,0 +1,73 @@
+facility_id,facility_name,split,n_rows,n_distinct,pct_modal_value,pct_in_stuck_run,pct_zero,max_run,flagged
+1,Garaža „Obilicev venac“,train,2072,1,100.0,100.0,100.0,3856,True
+1,Garaža „Obilicev venac“,calibration,766,1,100.0,100.0,100.0,3856,True
+1,Garaža „Obilicev venac“,test,1018,1,100.0,100.0,100.0,3856,True
+2,Garaža „Masarikova“,train,2072,799,2.22,9.89,0.0,35,False
+2,Garaža „Masarikova“,calibration,766,464,4.44,13.45,0.0,32,False
+2,Garaža „Masarikova“,test,1018,490,6.48,14.24,0.0,29,False
+3,Garaža „Zeleni venac“,train,2072,686,3.67,6.23,3.67,34,False
+3,Garaža „Zeleni venac“,calibration,766,354,8.22,11.75,8.22,24,False
+3,Garaža „Zeleni venac“,test,1018,434,4.22,11.69,4.22,33,False
+4,Garaža „Pionirski park“,train,2072,897,2.94,6.18,0.97,32,False
+4,Garaža „Pionirski park“,calibration,766,396,5.35,9.92,1.83,20,False
+4,Garaža „Pionirski park“,test,1018,515,3.73,7.07,0.98,25,False
+5,Parkiralište „Sava centar“,train,2072,675,8.2,21.43,0.05,84,False
+5,Parkiralište „Sava centar“,calibration,766,365,8.75,19.45,0.0,39,False
+5,Parkiralište „Sava centar“,test,1018,375,11.89,28.59,0.0,51,False
+6,Parkiralište „Simpo“,train,2072,275,2.8,7.29,0.19,37,False
+6,Parkiralište „Simpo“,calibration,766,117,6.01,10.44,0.0,28,False
+6,Parkiralište „Simpo“,test,1018,135,5.6,5.7,0.1,29,False
+7,Parkiralište „Aerodrom“,train,2072,699,4.73,7.58,0.0,90,False
+7,Parkiralište „Aerodrom“,calibration,766,424,3.0,4.18,0.0,20,False
+7,Parkiralište „Aerodrom“,test,1018,534,2.26,4.22,0.0,15,False
+8,Garaža „Vukov spomenik“,train,2072,215,4.68,14.48,4.68,31,False
+8,Garaža „Vukov spomenik“,calibration,766,80,66.32,71.41,66.32,921,False
+8,Garaža „Vukov spomenik“,test,1018,2,55.3,100.0,44.7,921,True
+9,Parkiralište „Ada Ciganlija“,train,2072,240,27.51,29.73,0.0,111,False
+9,Parkiralište „Ada Ciganlija“,calibration,766,156,28.07,22.32,0.0,73,False
+9,Parkiralište „Ada Ciganlija“,test,1018,295,34.48,33.4,0.0,98,False
+10,Garaža „Dr A. Kostica“,train,2072,65,16.65,50.05,0.0,74,False
+10,Garaža „Dr A. Kostica“,calibration,766,80,12.27,43.34,0.0,74,False
+10,Garaža „Dr A. Kostica“,test,1018,64,30.35,49.51,0.0,87,False
+11,Parkiralište „Slavija“,train,2072,223,9.94,19.31,9.94,55,False
+11,Parkiralište „Slavija“,calibration,766,176,13.71,18.8,13.71,51,False
+11,Parkiralište „Slavija“,test,1018,165,9.72,24.26,9.72,55,False
+12,Parkiralište „Milan Gale Muškatirovic“,train,2072,419,5.69,16.22,0.0,66,False
+12,Parkiralište „Milan Gale Muškatirovic“,calibration,766,278,11.23,22.32,0.0,69,False
+12,Parkiralište „Milan Gale Muškatirovic“,test,1018,348,9.82,25.25,0.0,61,False
+13,Parkiralište „VMA“,train,2072,656,13.13,29.49,0.0,99,False
+13,Parkiralište „VMA“,calibration,766,359,21.15,30.55,0.0,80,False
+13,Parkiralište „VMA“,test,1018,383,20.73,35.46,0.0,100,False
+14,Parkiralište „Donji grad“,train,2072,767,2.12,4.73,1.01,37,False
+14,Parkiralište „Donji grad“,calibration,766,430,4.83,7.96,0.0,26,False
+14,Parkiralište „Donji grad“,test,1018,563,2.65,3.93,0.0,14,False
+15,Parkiralište „Kalemegdan“,train,2072,297,4.78,17.13,0.68,46,False
+15,Parkiralište „Kalemegdan“,calibration,766,285,7.96,18.54,0.91,55,False
+15,Parkiralište „Kalemegdan“,test,1018,261,7.37,17.78,3.54,42,False
+16,Parkiralište „Politika“,train,2072,190,17.42,11.82,17.42,31,False
+16,Parkiralište „Politika“,calibration,766,134,21.41,26.5,21.41,54,False
+16,Parkiralište „Politika“,test,1018,165,11.2,17.68,11.2,44,False
+17,Parkiralište „Kapetanija“,train,2072,251,6.27,16.41,3.76,70,False
+17,Parkiralište „Kapetanija“,calibration,766,202,17.62,19.84,1.44,69,False
+17,Parkiralište „Kapetanija“,test,1018,198,14.64,28.0,4.62,65,False
+18,Parkiralište „Cvetkova pijaca“,train,2072,181,13.37,27.27,0.0,83,False
+18,Parkiralište „Cvetkova pijaca“,calibration,766,192,9.14,20.23,0.0,61,False
+18,Parkiralište „Cvetkova pijaca“,test,1018,176,13.46,27.8,0.0,71,False
+19,Parkiralište „Viška“,train,2072,324,3.81,12.89,2.85,57,False
+19,Parkiralište „Viška“,calibration,766,236,5.61,15.67,2.48,43,False
+19,Parkiralište „Viška“,test,1018,265,4.13,15.62,3.54,39,False
+20,Parkiralište „Šumadijski trg“,train,2072,244,7.92,19.31,1.45,60,False
+20,Parkiralište „Šumadijski trg“,calibration,766,197,10.57,21.41,2.87,62,False
+20,Parkiralište „Šumadijski trg“,test,1018,190,13.85,26.42,1.28,57,False
+21,Parkiralište „Kamenicka“,train,2072,233,3.67,8.49,0.43,44,False
+21,Parkiralište „Kamenicka“,calibration,766,176,5.61,17.62,0.0,30,False
+21,Parkiralište „Kamenicka“,test,1018,166,12.08,13.46,0.88,44,False
+22,Medunarodni terminal – parking za teretna vozila,train,2072,595,6.23,21.14,0.0,92,False
+22,Medunarodni terminal – parking za teretna vozila,calibration,766,361,3.26,3.66,0.0,15,False
+22,Medunarodni terminal – parking za teretna vozila,test,1018,404,7.17,23.38,0.39,42,False
+23,Medunarodni terminal – parking za putnicka vozila,train,2072,356,8.06,31.85,0.0,93,False
+23,Medunarodni terminal – parking za putnicka vozila,calibration,766,242,10.44,24.54,0.0,58,False
+23,Medunarodni terminal – parking za putnicka vozila,test,1018,246,17.19,31.43,0.0,58,False
+24,Garaža „Botanicka bašta“,train,2072,275,3.81,27.56,0.0,56,False
+24,Garaža „Botanicka bašta“,calibration,766,194,11.1,25.2,0.0,68,False
+24,Garaža „Botanicka bašta“,test,1018,183,8.35,34.87,0.0,70,False

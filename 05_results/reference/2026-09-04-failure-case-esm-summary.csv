@@ -1,0 +1,9 @@
+level_frac_of_cap,n_facilities,interval_withdraws,point_withdraws,interval_withdrawal_CAUSED_by_injection,point_withdrawal_CAUSED_by_injection,n_interval_only,median_step_interval,median_step_point,n_lead_gt_0,median_lead_steps,max_lead_steps,median_lead_minutes,mean_excess_abstention_interval,mean_excess_abstention_point,baseline_abstention_interval,baseline_abstention_point,baseline_arm,lead_sign_note
+0.8,20,1,0,1,0,1,215.0,,0,,,,-0.0976,-0.043,0.1009,0.043,"no injection, same facility, same code path",lead >= 0 by construction (U >= yhat); only the MAGNITUDE is empirical
+0.9,20,5,0,4,0,5,12.0,,0,,,,-0.0837,-0.043,0.1009,0.043,"no injection, same facility, same code path",lead >= 0 by construction (U >= yhat); only the MAGNITUDE is empirical
+0.95,20,9,7,7,5,6,0.0,70.0,1,0.0,157.0,0.0,-0.0362,-0.0403,0.1009,0.043,"no injection, same facility, same code path",lead >= 0 by construction (U >= yhat); only the MAGNITUDE is empirical
+0.98,20,19,13,17,11,6,0.0,7.0,8,7.0,248.0,35.0,0.2518,0.0197,0.1009,0.043,"no injection, same facility, same code path",lead >= 0 by construction (U >= yhat); only the MAGNITUDE is empirical
+1.0,20,20,20,18,20,0,0.0,0.0,3,0.0,19.0,0.0,0.8984,0.4126,0.1009,0.043,"no injection, same facility, same code path",lead >= 0 by construction (U >= yhat); only the MAGNITUDE is empirical
+1.05,20,20,20,18,20,0,0.0,0.0,1,0.0,6.0,0.0,0.8991,0.8558,0.1009,0.043,"no injection, same facility, same code path",lead >= 0 by construction (U >= yhat); only the MAGNITUDE is empirical
+1.2,20,20,20,18,20,0,0.0,0.0,0,0.0,0.0,0.0,0.8991,0.9178,0.1009,0.043,"no injection, same facility, same code path",lead >= 0 by construction (U >= yhat); only the MAGNITUDE is empirical
+1.6769,20,20,20,18,20,0,0.0,0.0,0,0.0,0.0,0.0,0.8991,0.957,0.1009,0.043,"no injection, same facility, same code path",lead >= 0 by construction (U >= yhat); only the MAGNITUDE is empirical

@@ -1,0 +1,29 @@
+window,population,threshold_frac_of_cap,n_facility_slots,n_at_or_above,pct_at_or_above,facilities
+weekday,healthy base (fac 8 excluded),0.9,3340,183,5.479,9;13;23
+weekday,healthy base (fac 8 excluded),0.95,3340,121,3.623,9
+weekday,healthy base (fac 8 excluded),0.97,3340,62,1.856,9
+weekday,healthy base (fac 8 excluded),0.98,3340,27,0.808,9
+weekday,healthy base (fac 8 excluded),0.99,3340,0,0.0,
+weekday,healthy base (fac 8 excluded),0.995,3340,0,0.0,
+weekday,healthy base (fac 8 excluded),1.0,3340,0,0.0,
+weekday,facility 8 only,0.9,167,140,83.832,8
+weekday,facility 8 only,0.95,167,140,83.832,8
+weekday,facility 8 only,0.97,167,140,83.832,8
+weekday,facility 8 only,0.98,167,140,83.832,8
+weekday,facility 8 only,0.99,167,140,83.832,8
+weekday,facility 8 only,0.995,167,140,83.832,8
+weekday,facility 8 only,1.0,167,140,83.832,8
+weekend,healthy base (fac 8 excluded),0.9,2940,610,20.748,2;5;7;9;11;13;15;18;20;21;22;23
+weekend,healthy base (fac 8 excluded),0.95,2940,304,10.34,2;9;11;13;18;23
+weekend,healthy base (fac 8 excluded),0.97,2940,212,7.211,9;13;23
+weekend,healthy base (fac 8 excluded),0.98,2940,138,4.694,9;13;23
+weekend,healthy base (fac 8 excluded),0.99,2940,20,0.68,9;13
+weekend,healthy base (fac 8 excluded),0.995,2940,8,0.272,9
+weekend,healthy base (fac 8 excluded),1.0,2940,0,0.0,
+weekend,facility 8 only,0.9,147,15,10.204,8
+weekend,facility 8 only,0.95,147,15,10.204,8
+weekend,facility 8 only,0.97,147,15,10.204,8
+weekend,facility 8 only,0.98,147,15,10.204,8
+weekend,facility 8 only,0.99,147,15,10.204,8
+weekend,facility 8 only,0.995,147,15,10.204,8
+weekend,facility 8 only,1.0,147,15,10.204,8

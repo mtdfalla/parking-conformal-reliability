@@ -1,0 +1,5 @@
+window,start,end,n_rows,n_dates,equivalent_full_days,min_day_pct,max_day_pct,cramers_v_weekday_vs_tod
+F1 fold test,2017-03-13,2017-03-16,11112,3,1.61,12.5,99.0,0.476
+F2 fold test,2017-03-16,2017-03-19,16536,3,2.39,53.5,99.0,0.292
+F3 fold test,2017-03-19,2017-03-22,18360,3,2.66,78.8,100.0,0.203
+main test split,2017-03-18,2017-03-22,24360,4,3.52,78.8,100.0,0.153

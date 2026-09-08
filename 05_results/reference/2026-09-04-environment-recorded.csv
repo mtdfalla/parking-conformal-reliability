@@ -1,0 +1,24 @@
+kind,name,import_name,version,origin,wheel,sha256,digest_source,installed_path
+package,numpy,numpy,2.2.6,base-image,numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl,fc7b73d02efb0e18c000e9ad8b83480dfcd5dfd11065997ed4c6747470ae8915,pypi-json,/usr/local/lib/python3.10/dist-packages/numpy/__init__.py
+package,pandas,pandas,2.3.3,base-image,pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl,dd7478f1463441ae4ca7308a70e90b33470fa593429f9d4c578dd00d1fa78838,pypi-json,/usr/local/lib/python3.10/dist-packages/pandas/__init__.py
+package,matplotlib,matplotlib,3.10.9,base-image,matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl,1aa972116abb4c9d201bf245620b433726cb6856f3bef6a78f776a00f5c92d37,pypi-json,/usr/local/lib/python3.10/dist-packages/matplotlib/__init__.py
+package,pyarrow,pyarrow,25.0.1,off-volume,pyarrow-25.0.1-cp310-cp310-manylinux_2_28_x86_64.whl,a4d6d5e9a3d1879a97c08ded0c797579b7965eafd0f0c26c30b45ccc06db939b,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/pyarrow/__init__.py
+package,scipy,scipy,1.15.3,off-volume,scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl,9e2abc762b0811e09a0d3258abee2d98e0c703eee49464ce0069590846f31d40,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/scipy/__init__.py
+package,scikit-learn,sklearn,1.7.2,off-volume,scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl,7a58814265dfc52b3295b1900cfb5701589d30a8bb026c7540f1e9d3499d5ec8,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/sklearn/__init__.py
+package,joblib,joblib,1.6.0,off-volume,joblib-1.6.0-py3-none-any.whl,3dbbf9f6e4b592a2357b854608e980fe6390d131d7a82f011a377ef2ebef7aba,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/joblib/__init__.py
+package,threadpoolctl,threadpoolctl,3.6.0,off-volume,threadpoolctl-3.6.0-py3-none-any.whl,43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/threadpoolctl.py
+package,cloudpickle,cloudpickle,3.1.2,off-volume,cloudpickle-3.1.2-py3-none-any.whl,9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/cloudpickle/__init__.py
+package,mapie,mapie,1.5.0,off-volume,mapie-1.5.0-py3-none-any.whl,dfc74fc62d5276ec8ab9aa2d9e53cfeb9901fe1df27f8785e724939b6a512483,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/mapie/__init__.py
+package,ngboost,ngboost,0.5.11,off-volume,ngboost-0.5.11-py3-none-any.whl,c3683334ab6ad58d79bc50aa11d8f090f4d452010c73dc2f2304affc448b08fa,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/ngboost/__init__.py
+package,tqdm,tqdm,4.70.0,off-volume,tqdm-4.70.0-py3-none-any.whl,7f585706bfddbdebf89daac705b2dfcc16890130727d3197ca62c732b4310953,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/tqdm/__init__.py
+package,holidays,holidays,0.103,off-volume,holidays-0.103-py3-none-any.whl,d507f7f64379ed5a782b8a4a83fb99705f8c538c7cf4c70079ceb0a3e0447cc9,"wheel-cache (sha256-verified at install, restore-env.sh)",/tmp/pylibs-1143/holidays/__init__.py
+environment,python_version,,3.10.12,,,,measured,
+environment,python_implementation,,CPython,,,,measured,
+environment,platform,,Linux-6.8.0-136-generic-x86_64-with-glibc2.35,,,,measured,
+environment,libc,,glibc-2.35,,,,measured,
+environment,machine,,x86_64,,,,measured,
+environment,cpu_count,,2,,,,measured,
+environment,numpy_blas,,scipy-openblas 0.3.29,,,,measured,
+environment,numpy_lapack,,scipy-openblas 0.3.29,,,,measured,
+environment,numpy_c_compiler,,10.2.1,,,,measured,
+environment,threadpool_info,,"[{""user_api"": ""blas"", ""internal_api"": ""openblas"", ""num_threads"": 2, ""prefix"": ""libscipy_openblas"", ""filepath"": ""/usr/local/lib/python3.10/dist-packages/numpy.libs/libscipy_openblas64_-56d6093b.so"", ""version"": ""0.3.29"", ""threading_layer"": ""pthreads"", ""architecture"": ""SkylakeX""}, {""user_api"": ""blas"", ""internal_api"": ""openblas"", ""num_threads"": 2, ""prefix"": ""libscipy_openblas"", ""filepath"": ""/tmp/pylibs-1143/scipy.libs/libscipy_openblas-68440149.so"", ""version"": ""0.3.28"", ""threading_layer"": ""pthreads"", ""architecture"": ""SkylakeX""}, {""user_api"": ""openmp"", ""internal_api"": ""openmp"", ""num_threads"": 2, ""prefix"": ""libgomp"", ""filepath"": ""/tmp/pylibs-1143/scikit_learn.libs/libgomp-a34b3233.so.1.0.0"", ""version"": null}]",,,,measured,

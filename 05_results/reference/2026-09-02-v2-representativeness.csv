@@ -1,0 +1,7 @@
+city,horizon,facilities,rows_v1,rows_v2_total,rows_v2_usable,pct_retained_vs_v1,anchor_interpolated_pct,target_interpolated_pct,train_rows,calib_rows,test_rows,days,cross_split_targets
+Belgrade,t+5min,24,92544,92544,92448,99.9,0.0,0.0,49704,18336,24408,18,0
+Belgrade,t+15min,24,92544,92544,92256,99.69,0.0,0.0,49656,18240,24360,18,0
+Belgrade,t+30min,24,92544,92544,91968,99.38,0.0,0.37,49584,18096,24288,18,0
+Birmingham,t+30min,28,19429,17487,17487,90.0,26.27,26.25,9758,4141,3588,73,0
+Birmingham,t+60min,28,19429,17487,17487,90.0,26.27,26.82,9758,4141,3588,73,0
+Birmingham,t+90min,28,19429,17487,17487,90.0,26.27,25.21,9758,4141,3588,73,0

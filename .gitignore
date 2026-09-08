@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+05_results/tables/*
+!05_results/tables/.gitkeep
+07_logs/*
+!07_logs/.gitkeep

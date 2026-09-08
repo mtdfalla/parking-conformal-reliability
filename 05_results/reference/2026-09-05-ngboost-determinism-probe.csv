@@ -1,0 +1,5 @@
+arm,facility_id,max_abs_loc,max_abs_scale,note
+A_unseeded_repeat,2,1.2896538966989581,0.6696266074653732,"two NGBRegressor(random_state=42) fits, one process, identical data"
+B_seeded_repeat,2,0.0,0.0,np.random.seed(42) immediately before each fit
+C_resume_boundary_unseeded,2,1.8949225799309346,0.7064302230600994,"vs arm A fit 1 -- a different resume boundary, no fix"
+C_resume_boundary_seeded,2,0.0,0.0,"vs arm B fit 1 -- a different resume boundary, WITH the fix"

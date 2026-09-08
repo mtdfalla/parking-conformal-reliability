@@ -1,0 +1,33 @@
+method,scope,bucket,PICP,MPIW,n_cells,n_obs,worst_facility,worst_bucket
+split-CP,bucket(pooled over facilities),night,0.9732,17.04,22,6270,,
+split-CP,bucket(pooled over facilities),am_rush,0.8965,17.15,22,4224,,
+split-CP,bucket(pooled over facilities),midday,0.8335,16.06,22,5500,,
+split-CP,bucket(pooled over facilities),pm_rush,0.8405,16.75,22,3762,,
+split-CP,bucket(pooled over facilities),evening,0.9499,17.06,22,2574,,
+split-CP,facility x bucket,(all),0.8987,16.81,110,22330,9.0,midday
+split-CP,facility x bucket WORST cell,midday,0.516,6.78,1,250,9.0,midday
+split-CP,facility x bucket SPREAD,(all),0.0993,0.484,110,22330,,
+Mondrian-split-CP,bucket(pooled over facilities),night,0.8915,9.02,22,6270,,
+Mondrian-split-CP,bucket(pooled over facilities),am_rush,0.9055,17.82,22,4224,,
+Mondrian-split-CP,bucket(pooled over facilities),midday,0.8738,17.54,22,5500,,
+Mondrian-split-CP,bucket(pooled over facilities),pm_rush,0.895,18.78,22,3762,,
+Mondrian-split-CP,bucket(pooled over facilities),evening,0.9165,12.5,22,2574,,
+Mondrian-split-CP,facility x bucket,(all),0.8965,15.13,110,22330,9.0,midday
+Mondrian-split-CP,facility x bucket WORST cell,midday,0.62,8.23,1,250,9.0,midday
+Mondrian-split-CP,facility x bucket SPREAD,(all),0.0772,0.38,110,22330,,
+ACI,bucket(pooled over facilities),night,0.9686,14.34,22,6270,,
+ACI,bucket(pooled over facilities),am_rush,0.8333,13.4,22,4224,,
+ACI,bucket(pooled over facilities),midday,0.8375,16.86,22,5500,,
+ACI,bucket(pooled over facilities),pm_rush,0.8756,19.81,22,3762,,
+ACI,bucket(pooled over facilities),evening,0.9503,16.61,22,2574,,
+ACI,facility x bucket,(all),0.893,16.21,110,22330,15.0,midday
+ACI,facility x bucket WORST cell,midday,0.672,9.35,1,250,15.0,midday
+ACI,facility x bucket SPREAD,(all),0.0753,0.328,110,22330,,
+ToD-ACI,bucket(pooled over facilities),night,0.9073,10.48,22,6270,,
+ToD-ACI,bucket(pooled over facilities),am_rush,0.8939,17.72,22,4224,,
+ToD-ACI,bucket(pooled over facilities),midday,0.8993,20.13,22,5500,,
+ToD-ACI,bucket(pooled over facilities),pm_rush,0.8812,20.33,22,3762,,
+ToD-ACI,bucket(pooled over facilities),evening,0.9091,12.43,22,2574,,
+ToD-ACI,facility x bucket,(all),0.8982,16.22,110,22330,9.0,pm_rush
+ToD-ACI,facility x bucket WORST cell,pm_rush,0.8421,16.22,1,171,9.0,pm_rush
+ToD-ACI,facility x bucket SPREAD,(all),0.028,0.1579,110,22330,,

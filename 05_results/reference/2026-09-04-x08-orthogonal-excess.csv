@@ -1,0 +1,13 @@
+partition,cramers_v_vs_tod_before,method,noise_floor_sd_before,excess_sd_before,structure_removed_vs_splitCP_before,cramers_v_vs_tod_after,noise_floor_sd_after,excess_sd_after,structure_removed_vs_splitCP_after
+time_of_day,1.0,split-CP,0.0442,0.0889,0.0,1.0,0.0439,0.0863,0.0
+time_of_day,1.0,Mondrian-split-CP,0.0572,0.0518,0.66,1.0,0.0542,0.0533,0.619
+time_of_day,1.0,ACI,0.0228,0.0718,0.349,1.0,0.0216,0.0724,0.295
+time_of_day,1.0,ToD-ACI,0.0266,0.0087,0.99,1.0,0.0218,0.0,1.0
+occupancy_tercile,0.558,split-CP,0.0442,0.0961,0.0,0.569,0.0439,0.0943,0.0
+occupancy_tercile,0.558,Mondrian-split-CP,0.0572,0.0524,0.702,0.569,0.0542,0.054,0.672
+occupancy_tercile,0.558,ACI,0.0228,0.0652,0.54,0.569,0.0216,0.066,0.511
+occupancy_tercile,0.558,ToD-ACI,0.0266,0.0423,0.806,0.569,0.0218,0.0438,0.784
+day_of_week,0.153,split-CP,0.0442,0.0522,0.0,0.153,0.0439,0.046,0.0
+day_of_week,0.153,Mondrian-split-CP,0.0572,0.0405,0.397,0.153,0.0542,0.0414,0.191
+day_of_week,0.153,ACI,0.0228,0.0304,0.661,0.153,0.0216,0.0283,0.622
+day_of_week,0.153,ToD-ACI,0.0266,0.0386,0.452,0.153,0.0218,0.0386,0.298

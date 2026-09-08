@@ -1,0 +1,44 @@
+{
+  "rows": 19429,
+  "facilities": 28,
+  "excluded": [
+    8,
+    21
+  ],
+  "grid": "30min",
+  "horizons_min": [
+    30,
+    60,
+    90
+  ],
+  "feature_cols": [
+    "lag_30min",
+    "lag_60min",
+    "lag_90min",
+    "lag_120min",
+    "lag_150min",
+    "lag_180min",
+    "roll_mean_90min",
+    "roll_std_90min",
+    "roll_mean_180min",
+    "roll_std_180min",
+    "tod_sin",
+    "tod_cos",
+    "dow",
+    "is_weekend",
+    "is_holiday"
+  ],
+  "target_cols": [
+    "y_t+30min",
+    "y_t+60min",
+    "y_t+90min"
+  ],
+  "rows_per_split": {
+    "calibration": 4612,
+    "test": 3959,
+    "train": 10858
+  },
+  "any_nan": false,
+  "time_min": "2016-10-04 10:30:00",
+  "time_max": "2016-12-19 15:00:00"
+}

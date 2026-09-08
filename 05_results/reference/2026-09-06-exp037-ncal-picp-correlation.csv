@@ -1,0 +1,13 @@
+city,horizon,level,method,n_facilities,n_cal_min,n_cal_max,n_cal_distinct,spearman_rho,spearman_p,note
+belgrade,y_t+5min,0.9,split-CP,21,764,764,1,,,undefined: n_cal constant (764) across all 21 facilities
+belgrade,y_t+5min,0.9,ACI,21,764,764,1,,,undefined: n_cal constant (764) across all 21 facilities
+belgrade,y_t+15min,0.9,split-CP,21,760,760,1,,,undefined: n_cal constant (760) across all 21 facilities
+belgrade,y_t+15min,0.9,ACI,21,760,760,1,,,undefined: n_cal constant (760) across all 21 facilities
+belgrade,y_t+30min,0.9,split-CP,21,754,754,1,,,undefined: n_cal constant (754) across all 21 facilities
+belgrade,y_t+30min,0.9,ACI,21,754,754,1,,,undefined: n_cal constant (754) across all 21 facilities
+birmingham,y_t+30min,0.9,split-CP,28,132,151,7,0.123332,0.531805,
+birmingham,y_t+30min,0.9,ACI,28,132,151,7,0.005221,0.978965,
+birmingham,y_t+60min,0.9,split-CP,28,132,151,7,-0.071496,0.717698,
+birmingham,y_t+60min,0.9,ACI,28,132,151,7,-0.096855,0.623924,
+birmingham,y_t+90min,0.9,split-CP,28,132,151,7,-0.054706,0.782175,
+birmingham,y_t+90min,0.9,ACI,28,132,151,7,-0.166629,0.396734,

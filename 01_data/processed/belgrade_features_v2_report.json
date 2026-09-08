@@ -1,0 +1,42 @@
+{
+  "version": "v2-causal",
+  "rows": 92544,
+  "facilities": 24,
+  "grid": "5min",
+  "horizons_min": [
+    5,
+    15,
+    30
+  ],
+  "embargo": true,
+  "rows_per_split": {
+    "calibration": 18384,
+    "test": 24432,
+    "train": 49728
+  },
+  "cross_split_targets_blocked": {
+    "5": 48,
+    "15": 144,
+    "30": 288
+  },
+  "embargoed_rows": {
+    "5": 48,
+    "15": 144,
+    "30": 288
+  },
+  "usable_rows": {
+    "5": 92448,
+    "15": 92256,
+    "30": 91968
+  },
+  "occ_interpolated_rows": 0,
+  "occ_interpolated_pct": 0.0,
+  "target_interpolated_pct": {
+    "5": 0.0,
+    "15": 0.0,
+    "30": 0.3631
+  },
+  "time_min": "2017-03-04 16:00:00",
+  "time_max": "2017-03-21 18:50:00",
+  "output": "belgrade_features_v2.parquet"
+}

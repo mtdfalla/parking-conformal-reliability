@@ -1,0 +1,3 @@
+policy,assigned_rate,overflow_rate,mean_dist_km,p90_dist_km,n_requests
+INTERVAL,1.0,0.0,1.1834,3.2228,600
+POINT,1.0,0.1483,1.1342,3.2228,600

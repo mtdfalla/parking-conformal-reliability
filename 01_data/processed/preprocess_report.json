@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "n_facilities": 24,
+    "n_timestamps": 9706,
+    "n_rows": 232944,
+    "missing_occupancy": 0,
+    "time_min": "2017-03-04 15:00:59",
+    "time_max": "2017-03-21 19:22:57",
+    "median_interval_min": 2.05,
+    "interval_gaps_gt_5min": 7,
+    "facilities_without_coords": [
+      24
+    ],
+    "coords_without_facility": []
+  },
+  "split_config": {
+    "train_end": "2017-03-13 23:59:59",
+    "calib_end": "2017-03-17 23:59:59"
+  },
+  "timestamps_per_split": {
+    "calibration": 1903,
+    "test": 2574,
+    "train": 5229
+  },
+  "outputs": [
+    "belgrade_long.parquet",
+    "belgrade_long.csv.gz",
+    "facility_coords.parquet",
+    "facility_index.csv"
+  ]
+}

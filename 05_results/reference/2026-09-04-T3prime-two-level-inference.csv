@@ -1,0 +1,11 @@
+scope,city,horizon,method,n_facilities,mean_PICP,ci90_lo,ci90_hi,boot_ci90_lo,boot_ci90_hi,EXACT,SAFE,tost_p_holm,mean_Winkler,across_facility_sd,worst_facility,worst_facility_PICP,frac_facilities_below_nominal,worst_facility_bucket_cell,cells_below_080,n_cells,facility_equivalence_claimed
+population + facility level (core method),belgrade,y_t+15min,split-CP,21,0.9008,0.8853,0.9163,0.8858,0.9144,True,True,0.0225869211203522,23.93,0.0411,9.0,0.7872,0.381,0.516,12.0,105.0,False
+population + facility level (core method),belgrade,y_t+15min,CQR,21,0.8995,0.8886,0.9103,0.889,0.909,True,True,0.0058319610203145,19.63,0.0289,9.0,0.8266,0.429,,,,False
+population + facility level (core method),belgrade,y_t+15min,ACI,21,0.8913,0.8883,0.8942,0.8883,0.8938,True,True,2.5677109285043423e-06,22.45,0.0077,13.0,0.869,0.952,0.672,12.0,105.0,False
+population + facility level (core method),belgrade,y_t+15min,ACQR,21,0.894,0.892,0.896,0.892,0.8958,True,True,2.2904340405883838e-10,19.34,0.0053,13.0,0.8788,0.952,,,,False
+population + facility level (core method),birmingham,y_t+60min,split-CP,28,0.9066,0.8901,0.9231,0.8907,0.9219,False,True,0.0889636144783299,175.36,0.0513,7.0,0.7868,0.464,,,,False
+population + facility level (core method),birmingham,y_t+60min,CQR,28,0.9021,0.8887,0.9155,0.889,0.9143,True,True,0.0313902843306018,172.66,0.0417,7.0,0.7794,0.393,,,,False
+population + facility level (core method),birmingham,y_t+60min,ACI,28,0.889,0.884,0.894,0.8844,0.8938,True,True,0.0095671449928839,175.31,0.0155,20.0,0.8659,0.857,,,,False
+population + facility level (core method),birmingham,y_t+60min,ACQR,28,0.8928,0.8853,0.9003,0.886,0.9002,True,True,0.0113130489534328,176.28,0.0234,22.0,0.8537,0.786,,,,False
+"cell level only — reference row, the method's population/facility statistics live in T4, not here",belgrade,y_t+15min,ToD-ACI,21,,,,,,,,,,,,,,0.8421,0.0,105.0,False
+"cell level only — reference row, the method's population/facility statistics live in T4, not here",belgrade,y_t+15min,Mondrian-split-CP,21,,,,,,,,,,,,,,0.62,15.0,105.0,False

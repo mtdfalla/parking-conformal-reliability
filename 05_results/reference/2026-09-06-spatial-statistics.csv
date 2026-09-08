@@ -1,0 +1,9 @@
+script,city,horizon,n_facilities,statistic,value,p_value,n_permutations,seed,note
+2026-09-05-spatial-analysis.py,belgrade,y_t+15min,21,mean_resid_corr_far_gt5km,-0.004525,,,,
+2026-09-05-spatial-analysis.py,belgrade,y_t+15min,21,mean_resid_corr_near_lt2km,0.025100,,,,
+2026-09-05-spatial-analysis.py,belgrade,y_t+15min,21,morans_I_mean_aci_halfwidth,-0.008668,0.905000,999,42,inverse-haversine weights; two-sided permutation p
+2026-09-05-spatial-analysis.py,belgrade,y_t+15min,21,spearman_rho_residcorr_vs_distance_naive,-0.121024,8.015625e-02,,,"pairwise, not independence-corrected"
+2026-09-05-spatial-mantel.py,belgrade,y_t+15min,21,mantel_r_distance_vs_residcorr,-0.128609,0.151300,9999,42,two-sided permutation p
+2026-09-05-spatial-mantel.py,belgrade,y_t+15min,21,mean_pairwise_raw_occupancy_corr,0.516474,,,,same facilities and timestamps; EXP-006 follow-up recorded 0.52
+2026-09-05-spatial-mantel.py,belgrade,y_t+15min,21,mean_pairwise_resid_corr,0.007124,,,,1018 common test timestamps
+2026-09-05-spatial-mantel.py,belgrade,y_t+15min,21,spearman_rho_residcorr_vs_distance_naive,-0.121024,8.015625e-02,,,"pairwise, not independence-corrected"

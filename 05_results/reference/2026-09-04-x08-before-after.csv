@@ -1,0 +1,689 @@
+experiment,unit,statistic,before,after,delta,changed
+EXP-017/019 core headline,belgrade | y_t+15min | ACI,PICP,0.8929243170622481,0.8912502932207366,-0.001674023841511496,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACI,std,0.0108880160865863,0.0077292897170328,-0.0031587263695534995,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACI,MPIW,15.967858052164535,14.561510273738133,-1.4063477784264027,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACI,Winkler,24.23333831648895,22.446972928436885,-1.7863653880520651,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACI,ci_contains,0.9090909090909092,0.9523809523809524,0.04329004329004327,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACI,safe,0.0454545454545454,0.0,-0.0454545454545454,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACI,n,22.0,21.0,-1.0,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACQR,PICP,0.8931482310792657,0.8940182969739622,0.0008700658946965145,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACQR,std,0.0065896476958556,0.005301659261169,-0.0012879884346866004,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACQR,MPIW,13.14680215819858,12.910131949185327,-0.23667020901325309,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACQR,Winkler,19.790467273355087,19.340870296876624,-0.44959697647846397,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACQR,ci_contains,0.9545454545454546,0.9523809523809524,-0.0021645021645021467,True
+EXP-017/019 core headline,belgrade | y_t+15min | ACQR,safe,0.0,0.0,0.0,False
+EXP-017/019 core headline,belgrade | y_t+15min | ACQR,n,22.0,21.0,-1.0,True
+EXP-017/019 core headline,belgrade | y_t+15min | CQR,PICP,0.8992834751455441,0.8994604738447103,0.0001769986991662087,True
+EXP-017/019 core headline,belgrade | y_t+15min | CQR,std,0.0282172582442106,0.028901568412439,0.000684310168228397,True
+EXP-017/019 core headline,belgrade | y_t+15min | CQR,MPIW,12.503308616769106,12.195498183785968,-0.30781043298313726,True
+EXP-017/019 core headline,belgrade | y_t+15min | CQR,Winkler,20.09686248984664,19.62627404422272,-0.4705884456239211,True
+EXP-017/019 core headline,belgrade | y_t+15min | CQR,ci_contains,0.7727272727272727,0.7619047619047619,-0.010822510822510845,True
+EXP-017/019 core headline,belgrade | y_t+15min | CQR,safe,0.3636363636363636,0.3809523809523809,0.017316017316017285,True
+EXP-017/019 core headline,belgrade | y_t+15min | CQR,n,22.0,21.0,-1.0,True
+EXP-017/019 core headline,belgrade | y_t+15min | split-CP,PICP,0.8992386923421404,0.9008210180623974,0.0015823257202570717,True
+EXP-017/019 core headline,belgrade | y_t+15min | split-CP,std,0.0408239734523081,0.0411350205498103,0.00031104709750220255,True
+EXP-017/019 core headline,belgrade | y_t+15min | split-CP,MPIW,16.77435100593954,14.869490181837088,-1.9048608241024514,True
+EXP-017/019 core headline,belgrade | y_t+15min | split-CP,Winkler,26.82656629355864,23.925942620107836,-2.900623673450802,True
+EXP-017/019 core headline,belgrade | y_t+15min | split-CP,ci_contains,0.6363636363636364,0.6190476190476191,-0.017316017316017285,True
+EXP-017/019 core headline,belgrade | y_t+15min | split-CP,safe,0.4090909090909091,0.4285714285714285,0.019480519480519376,True
+EXP-017/019 core headline,belgrade | y_t+15min | split-CP,n,22.0,21.0,-1.0,True
+EXP-017/019 core headline,birmingham | y_t+60min | ACI,PICP,0.8889896755270572,0.8889896755270572,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACI,std,0.0154724012653765,0.0154724012653765,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACI,MPIW,131.55425297545514,131.55425297545514,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACI,Winkler,175.3088318593743,175.3088318593743,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACI,ci_contains,1.0,1.0,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACI,safe,0.0357142857142857,0.0357142857142857,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACI,n,28.0,28.0,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACQR,PICP,0.8927995800852744,0.8927995800852744,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACQR,std,0.0234496404887133,0.0234496404887133,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACQR,MPIW,139.22077292937573,139.22077292937573,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACQR,Winkler,176.2771307337063,176.2771307337063,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACQR,ci_contains,0.8928571428571429,0.8928571428571429,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACQR,safe,0.1071428571428571,0.1071428571428571,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | ACQR,n,28.0,28.0,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | CQR,PICP,0.9021100120074138,0.9021100120074138,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | CQR,std,0.041698906734115,0.041698906734115,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | CQR,MPIW,135.28222430344965,135.28222430344965,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | CQR,Winkler,172.66008590461453,172.66008590461453,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | CQR,ci_contains,0.75,0.75,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | CQR,safe,0.25,0.25,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | CQR,n,28.0,28.0,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | split-CP,PICP,0.9065820611511572,0.9065820611511572,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | split-CP,std,0.0513299966694288,0.0513299966694288,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | split-CP,MPIW,134.4303212610802,134.4303212610802,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | split-CP,Winkler,175.36078089923163,175.36078089923163,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | split-CP,ci_contains,0.7142857142857143,0.7142857142857143,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | split-CP,safe,0.25,0.25,0.0,False
+EXP-017/019 core headline,birmingham | y_t+60min | split-CP,n,28.0,28.0,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | ACI-crosscheck,n_facilities,22.0,21.0,-1.0,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | ACI-crosscheck,mean_PICP,0.8929,0.8913,-0.0016000000000000458,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | ACI-crosscheck,sd_PICP,0.0109,0.0077,-0.0031999999999999997,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | ACI-crosscheck,mean_MPIW,15.9679,14.5615,-1.4063999999999997,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | ACI-crosscheck,mean_Winkler,24.2333,22.447,-1.7863000000000007,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | ACI-crosscheck,frac_below_0p90,0.9091,0.9524,0.043300000000000005,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | ACI-crosscheck,worst_facility_PICP,0.869,0.869,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,n_facilities,22.0,21.0,-1.0,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,mean_PICP,0.9129,0.9113,-0.0016000000000000458,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,sd_PICP,0.0103,0.0069,-0.0034000000000000002,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,mean_MPIW,15.2068,14.4593,-0.7474999999999987,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,mean_Winkler,22.0079,20.9828,-1.0250999999999983,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,frac_below_0p90,0.0455,0.0476,0.0021000000000000046,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,worst_facility_PICP,0.8985,0.8985,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,archived_mean_PICP,0.933,0.933,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | AgACI-style,archived_sd_PICP,0.009,0.009,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,n_facilities,22.0,21.0,-1.0,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,mean_PICP,0.8916,0.9024,0.010800000000000032,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,sd_PICP,0.0607,0.034,-0.026699999999999995,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,mean_MPIW,16.1659,15.3825,-0.7834000000000003,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,mean_Winkler,28.2023,23.7471,-4.455200000000001,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,frac_below_0p90,0.4091,0.381,-0.028100000000000014,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,worst_facility_PICP,0.664,0.801,0.137,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,archived_mean_PICP,0.8874,0.8874,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | EnbPI,archived_sd_PICP,0.068,0.068,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,n_facilities,22.0,21.0,-1.0,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,mean_PICP,0.7597,0.7736,0.013899999999999912,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,sd_PICP,0.0859,0.0573,-0.028600000000000007,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,mean_MPIW,8.4957,8.4099,-0.08579999999999899,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,mean_Winkler,28.0317,22.0401,-5.991600000000002,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,frac_below_0p90,1.0,1.0,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,worst_facility_PICP,0.468,0.6591,0.1911,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,archived_mean_PICP,0.76,0.76,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost,archived_sd_PICP,0.0867,0.0867,0.0,False
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost-conformal,n_facilities,22.0,21.0,-1.0,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost-conformal,mean_PICP,0.887,0.8917,0.0047000000000000375,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost-conformal,sd_PICP,0.0434,0.0382,-0.005200000000000003,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost-conformal,mean_MPIW,12.0805,11.8777,-0.20279999999999987,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost-conformal,mean_Winkler,25.1949,19.8879,-5.307000000000002,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost-conformal,frac_below_0p90,0.5455,0.5238,-0.02169999999999994,True
+EXP-025 E3 baselines,belgrade | y_t+15min | 0.9 | NGBoost-conformal,worst_facility_PICP,0.7872,0.8089,0.02169999999999994,True
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | ACI-crosscheck,n_facilities,28.0,28.0,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | ACI-crosscheck,mean_PICP,0.889,0.889,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | ACI-crosscheck,sd_PICP,0.0155,0.0155,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | ACI-crosscheck,mean_MPIW,131.5543,131.5543,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | ACI-crosscheck,mean_Winkler,175.3088,175.3088,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | ACI-crosscheck,frac_below_0p90,0.8571,0.8571,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | ACI-crosscheck,worst_facility_PICP,0.8659,0.8659,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,n_facilities,28.0,28.0,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,mean_PICP,0.8977,0.8977,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,sd_PICP,0.0144,0.0144,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,mean_MPIW,130.8588,130.8588,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,mean_Winkler,171.0261,171.0261,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,frac_below_0p90,0.6429,0.6429,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,worst_facility_PICP,0.8707,0.8707,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,archived_mean_PICP,0.9066,0.9066,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | AgACI-style,archived_sd_PICP,0.0199,0.0199,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,n_facilities,28.0,28.0,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,mean_PICP,0.8413,0.8413,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,sd_PICP,0.0802,0.0802,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,mean_MPIW,104.0054,104.0054,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,mean_Winkler,178.5533,178.5533,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,frac_below_0p90,0.7143,0.7143,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,worst_facility_PICP,0.7121,0.7121,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,archived_mean_PICP,0.8448,0.8448,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | EnbPI,archived_sd_PICP,0.0782,0.0782,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,n_facilities,28.0,28.0,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,mean_PICP,0.3722,0.3722,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,sd_PICP,0.1474,0.1474,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,mean_MPIW,28.9842,28.9842,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,mean_Winkler,408.702,408.702,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,frac_below_0p90,1.0,1.0,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,worst_facility_PICP,0.1185,0.1185,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,archived_mean_PICP,0.3837,0.3837,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost,archived_sd_PICP,0.1575,0.1575,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost-conformal,n_facilities,28.0,28.0,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost-conformal,mean_PICP,0.9014,0.9014,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost-conformal,sd_PICP,0.0488,0.0488,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost-conformal,mean_MPIW,134.5161,134.5161,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost-conformal,mean_Winkler,175.7273,175.7273,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost-conformal,frac_below_0p90,0.4643,0.4643,0.0,False
+EXP-025 E3 baselines,birmingham | y_t+60min | 0.9 | NGBoost-conformal,worst_facility_PICP,0.8175,0.8175,0.0,False
+EXP-020 base learners,GradBoost | 0.9 | ACI,MAE,3.58,3.3,-0.28000000000000025,True
+EXP-020 base learners,GradBoost | 0.9 | ACI,meanPICP,0.8924,0.8923,-9.999999999998899e-05,True
+EXP-020 base learners,GradBoost | 0.9 | ACI,stdPICP,0.0049,0.005,0.00010000000000000026,True
+EXP-020 base learners,GradBoost | 0.9 | ACI,MPIW,15.71,15.34,-0.370000000000001,True
+EXP-020 base learners,GradBoost | 0.9 | ACI,Winkler,24.06,23.33,-0.7300000000000004,True
+EXP-020 base learners,GradBoost | 0.9 | ACI,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,GradBoost | 0.9 | ACI,median_gamma,0.02,0.02,0.0,False
+EXP-020 base learners,GradBoost | 0.9 | split-CP,MAE,3.58,3.3,-0.28000000000000025,True
+EXP-020 base learners,GradBoost | 0.9 | split-CP,meanPICP,0.8992,0.9013,0.0020999999999999908,True
+EXP-020 base learners,GradBoost | 0.9 | split-CP,stdPICP,0.041,0.0408,-0.0001999999999999988,True
+EXP-020 base learners,GradBoost | 0.9 | split-CP,MPIW,16.96,15.77,-1.1900000000000013,True
+EXP-020 base learners,GradBoost | 0.9 | split-CP,Winkler,27.6,25.14,-2.460000000000001,True
+EXP-020 base learners,GradBoost | 0.9 | split-CP,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,GradBoost | 0.95 | ACI,MAE,3.58,3.3,-0.28000000000000025,True
+EXP-020 base learners,GradBoost | 0.95 | ACI,meanPICP,0.9451,0.9441,-0.0010000000000000009,True
+EXP-020 base learners,GradBoost | 0.95 | ACI,stdPICP,0.0067,0.0049,-0.0018000000000000004,True
+EXP-020 base learners,GradBoost | 0.95 | ACI,MPIW,21.87,20.35,-1.5199999999999996,True
+EXP-020 base learners,GradBoost | 0.95 | ACI,Winkler,31.9,29.69,-2.2099999999999973,True
+EXP-020 base learners,GradBoost | 0.95 | ACI,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,GradBoost | 0.95 | ACI,median_gamma,0.01,0.01,0.0,False
+EXP-020 base learners,GradBoost | 0.95 | split-CP,MAE,3.58,3.3,-0.28000000000000025,True
+EXP-020 base learners,GradBoost | 0.95 | split-CP,meanPICP,0.9455,0.9461,0.0006000000000000449,True
+EXP-020 base learners,GradBoost | 0.95 | split-CP,stdPICP,0.0308,0.0313,0.0005000000000000004,True
+EXP-020 base learners,GradBoost | 0.95 | split-CP,MPIW,22.46,20.83,-1.6300000000000026,True
+EXP-020 base learners,GradBoost | 0.95 | split-CP,Winkler,34.03,31.61,-2.4200000000000017,True
+EXP-020 base learners,GradBoost | 0.95 | split-CP,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,RandomForest | 0.9 | ACI,MAE,3.4,3.06,-0.33999999999999986,True
+EXP-020 base learners,RandomForest | 0.9 | ACI,meanPICP,0.8929,0.8913,-0.0016000000000000458,True
+EXP-020 base learners,RandomForest | 0.9 | ACI,stdPICP,0.0106,0.0075,-0.0031000000000000003,True
+EXP-020 base learners,RandomForest | 0.9 | ACI,MPIW,15.97,14.56,-1.4100000000000001,True
+EXP-020 base learners,RandomForest | 0.9 | ACI,Winkler,24.23,22.45,-1.7800000000000011,True
+EXP-020 base learners,RandomForest | 0.9 | ACI,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,RandomForest | 0.9 | ACI,median_gamma,0.02,0.02,0.0,False
+EXP-020 base learners,RandomForest | 0.9 | split-CP,MAE,3.4,3.06,-0.33999999999999986,True
+EXP-020 base learners,RandomForest | 0.9 | split-CP,meanPICP,0.8992,0.9008,0.0016000000000000458,True
+EXP-020 base learners,RandomForest | 0.9 | split-CP,stdPICP,0.0399,0.0401,0.0001999999999999988,True
+EXP-020 base learners,RandomForest | 0.9 | split-CP,MPIW,16.77,14.87,-1.9000000000000004,True
+EXP-020 base learners,RandomForest | 0.9 | split-CP,Winkler,26.83,23.93,-2.8999999999999986,True
+EXP-020 base learners,RandomForest | 0.9 | split-CP,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,RandomForest | 0.95 | ACI,MAE,3.4,3.06,-0.33999999999999986,True
+EXP-020 base learners,RandomForest | 0.95 | ACI,meanPICP,0.9447,0.9437,-0.0010000000000000009,True
+EXP-020 base learners,RandomForest | 0.95 | ACI,stdPICP,0.0079,0.0066,-0.0013000000000000008,True
+EXP-020 base learners,RandomForest | 0.95 | ACI,MPIW,21.19,19.47,-1.7200000000000024,True
+EXP-020 base learners,RandomForest | 0.95 | ACI,Winkler,30.64,28.27,-2.370000000000001,True
+EXP-020 base learners,RandomForest | 0.95 | ACI,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,RandomForest | 0.95 | ACI,median_gamma,0.02,0.02,0.0,False
+EXP-020 base learners,RandomForest | 0.95 | split-CP,MAE,3.4,3.06,-0.33999999999999986,True
+EXP-020 base learners,RandomForest | 0.95 | split-CP,meanPICP,0.9463,0.944,-0.0023000000000000798,True
+EXP-020 base learners,RandomForest | 0.95 | split-CP,stdPICP,0.0358,0.035,-0.0007999999999999952,True
+EXP-020 base learners,RandomForest | 0.95 | split-CP,MPIW,22.24,19.52,-2.719999999999999,True
+EXP-020 base learners,RandomForest | 0.95 | split-CP,Winkler,33.42,30.59,-2.830000000000002,True
+EXP-020 base learners,RandomForest | 0.95 | split-CP,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,Ridge(linear) | 0.9 | ACI,MAE,3.42,3.33,-0.08999999999999986,True
+EXP-020 base learners,Ridge(linear) | 0.9 | ACI,meanPICP,0.888,0.8902,0.0021999999999999797,True
+EXP-020 base learners,Ridge(linear) | 0.9 | ACI,stdPICP,0.0126,0.0079,-0.004699999999999999,True
+EXP-020 base learners,Ridge(linear) | 0.9 | ACI,MPIW,15.53,15.01,-0.5199999999999996,True
+EXP-020 base learners,Ridge(linear) | 0.9 | ACI,Winkler,23.95,23.08,-0.870000000000001,True
+EXP-020 base learners,Ridge(linear) | 0.9 | ACI,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,Ridge(linear) | 0.9 | ACI,median_gamma,0.02,0.02,0.0,False
+EXP-020 base learners,Ridge(linear) | 0.9 | split-CP,MAE,3.42,3.33,-0.08999999999999986,True
+EXP-020 base learners,Ridge(linear) | 0.9 | split-CP,meanPICP,0.8835,0.9048,0.021300000000000097,True
+EXP-020 base learners,Ridge(linear) | 0.9 | split-CP,stdPICP,0.103,0.0338,-0.0692,True
+EXP-020 base learners,Ridge(linear) | 0.9 | split-CP,MPIW,15.59,15.96,0.370000000000001,True
+EXP-020 base learners,Ridge(linear) | 0.9 | split-CP,Winkler,25.7,24.54,-1.1600000000000001,True
+EXP-020 base learners,Ridge(linear) | 0.9 | split-CP,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,Ridge(linear) | 0.95 | ACI,MAE,3.42,3.33,-0.08999999999999986,True
+EXP-020 base learners,Ridge(linear) | 0.95 | ACI,meanPICP,0.9401,0.9419,0.0017999999999999128,True
+EXP-020 base learners,Ridge(linear) | 0.95 | ACI,stdPICP,0.0111,0.0077,-0.0034000000000000002,True
+EXP-020 base learners,Ridge(linear) | 0.95 | ACI,MPIW,19.82,19.66,-0.16000000000000014,True
+EXP-020 base learners,Ridge(linear) | 0.95 | ACI,Winkler,30.28,29.22,-1.0600000000000023,True
+EXP-020 base learners,Ridge(linear) | 0.95 | ACI,n_facilities,22.0,21.0,-1.0,True
+EXP-020 base learners,Ridge(linear) | 0.95 | ACI,median_gamma,0.02,0.02,0.0,False
+EXP-020 base learners,Ridge(linear) | 0.95 | split-CP,MAE,3.42,3.33,-0.08999999999999986,True
+EXP-020 base learners,Ridge(linear) | 0.95 | split-CP,meanPICP,0.9386,0.9464,0.007800000000000029,True
+EXP-020 base learners,Ridge(linear) | 0.95 | split-CP,stdPICP,0.0446,0.0272,-0.017400000000000002,True
+EXP-020 base learners,Ridge(linear) | 0.95 | split-CP,MPIW,20.49,20.86,0.370000000000001,True
+EXP-020 base learners,Ridge(linear) | 0.95 | split-CP,Winkler,31.61,30.99,-0.620000000000001,True
+EXP-020 base learners,Ridge(linear) | 0.95 | split-CP,n_facilities,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | am_rush,PICP,0.8333,0.8276,-0.005700000000000038,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | am_rush,MPIW,13.4,11.58,-1.8200000000000003,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | am_rush,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | am_rush,n_obs,4224.0,4032.0,-192.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | evening,PICP,0.9503,0.9479,-0.0024000000000000687,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | evening,MPIW,16.61,15.05,-1.5599999999999987,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | evening,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | evening,n_obs,2574.0,2457.0,-117.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | midday,PICP,0.8375,0.8326,-0.0049000000000000155,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | midday,MPIW,16.86,16.01,-0.8499999999999979,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | midday,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | midday,n_obs,5500.0,5250.0,-250.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | night,PICP,0.9686,0.9704,0.0018000000000000238,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | night,MPIW,14.34,12.5,-1.8399999999999999,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | night,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | night,n_obs,6270.0,5985.0,-285.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | pm_rush,PICP,0.8756,0.8777,0.0020999999999999908,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | pm_rush,MPIW,19.81,18.89,-0.9199999999999982,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | pm_rush,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ACI | bucket(pooled over facilities) | pm_rush,n_obs,3762.0,3591.0,-171.0,True
+EXP-021 time-of-day,ACI | facility x bucket | (all),PICP,0.893,0.8913,-0.0017000000000000348,True
+EXP-021 time-of-day,ACI | facility x bucket | (all),MPIW,16.21,14.81,-1.4000000000000004,True
+EXP-021 time-of-day,ACI | facility x bucket | (all),n_cells,110.0,105.0,-5.0,True
+EXP-021 time-of-day,ACI | facility x bucket | (all),n_obs,22330.0,21315.0,-1015.0,True
+EXP-021 time-of-day,ACI | facility x bucket | (all),worst_facility,15.0,15.0,0.0,False
+EXP-021 time-of-day,ACI | facility x bucket SPREAD | (all),PICP,0.0753,0.0756,0.0002999999999999947,True
+EXP-021 time-of-day,ACI | facility x bucket SPREAD | (all),MPIW,0.328,0.328,0.0,False
+EXP-021 time-of-day,ACI | facility x bucket SPREAD | (all),n_cells,110.0,105.0,-5.0,True
+EXP-021 time-of-day,ACI | facility x bucket SPREAD | (all),n_obs,22330.0,21315.0,-1015.0,True
+EXP-021 time-of-day,ACI | facility x bucket WORST cell | midday,PICP,0.672,0.672,0.0,False
+EXP-021 time-of-day,ACI | facility x bucket WORST cell | midday,MPIW,9.35,9.35,0.0,False
+EXP-021 time-of-day,ACI | facility x bucket WORST cell | midday,n_cells,1.0,1.0,0.0,False
+EXP-021 time-of-day,ACI | facility x bucket WORST cell | midday,n_obs,250.0,250.0,0.0,False
+EXP-021 time-of-day,ACI | facility x bucket WORST cell | midday,worst_facility,15.0,15.0,0.0,False
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | am_rush,PICP,0.9055,0.901,-0.0044999999999999485,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | am_rush,MPIW,17.82,14.56,-3.26,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | am_rush,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | am_rush,n_obs,4224.0,4032.0,-192.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | evening,PICP,0.9165,0.9125,-0.0040000000000000036,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | evening,MPIW,12.5,11.62,-0.8800000000000008,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | evening,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | evening,n_obs,2574.0,2457.0,-117.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | midday,PICP,0.8738,0.8678,-0.006000000000000005,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | midday,MPIW,17.54,16.87,-0.6699999999999982,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | midday,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | midday,n_obs,5500.0,5250.0,-250.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | night,PICP,0.8915,0.8864,-0.005099999999999993,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | night,MPIW,9.02,5.63,-3.3899999999999997,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | night,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | night,n_obs,6270.0,5985.0,-285.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | pm_rush,PICP,0.895,0.892,-0.0030000000000000027,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | pm_rush,MPIW,18.78,18.21,-0.5700000000000003,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | pm_rush,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,Mondrian-split-CP | bucket(pooled over facilities) | pm_rush,n_obs,3762.0,3591.0,-171.0,True
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket | (all),PICP,0.8965,0.8919,-0.0045999999999999375,True
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket | (all),MPIW,15.13,13.38,-1.75,True
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket | (all),n_cells,110.0,105.0,-5.0,True
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket | (all),n_obs,22330.0,21315.0,-1015.0,True
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket | (all),worst_facility,9.0,9.0,0.0,False
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket SPREAD | (all),PICP,0.0772,0.076,-0.0012000000000000066,True
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket SPREAD | (all),MPIW,0.38,0.38,0.0,False
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket SPREAD | (all),n_cells,110.0,105.0,-5.0,True
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket SPREAD | (all),n_obs,22330.0,21315.0,-1015.0,True
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket WORST cell | midday,PICP,0.62,0.62,0.0,False
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket WORST cell | midday,MPIW,8.23,8.23,0.0,False
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket WORST cell | midday,n_cells,1.0,1.0,0.0,False
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket WORST cell | midday,n_obs,250.0,250.0,0.0,False
+EXP-021 time-of-day,Mondrian-split-CP | facility x bucket WORST cell | midday,worst_facility,9.0,9.0,0.0,False
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | am_rush,PICP,0.8939,0.8904,-0.0035000000000000586,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | am_rush,MPIW,17.72,15.16,-2.5599999999999987,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | am_rush,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | am_rush,n_obs,4224.0,4032.0,-192.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | evening,PICP,0.9091,0.9048,-0.0042999999999999705,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | evening,MPIW,12.43,11.79,-0.6400000000000006,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | evening,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | evening,n_obs,2574.0,2457.0,-117.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | midday,PICP,0.8993,0.8945,-0.0048000000000000265,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | midday,MPIW,20.13,19.8,-0.3299999999999983,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | midday,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | midday,n_obs,5500.0,5250.0,-250.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | night,PICP,0.9073,0.9029,-0.0043999999999999595,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | night,MPIW,10.48,7.7,-2.7800000000000002,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | night,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | night,n_obs,6270.0,5985.0,-285.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | pm_rush,PICP,0.8812,0.8819,0.0007000000000000339,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | pm_rush,MPIW,20.33,19.95,-0.379999999999999,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | pm_rush,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,ToD-ACI | bucket(pooled over facilities) | pm_rush,n_obs,3762.0,3591.0,-171.0,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket | (all),PICP,0.8982,0.8949,-0.0032999999999999696,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket | (all),MPIW,16.22,14.88,-1.339999999999998,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket | (all),n_cells,110.0,105.0,-5.0,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket | (all),n_obs,22330.0,21315.0,-1015.0,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket | (all),worst_facility,9.0,9.0,0.0,False
+EXP-021 time-of-day,ToD-ACI | facility x bucket SPREAD | (all),PICP,0.028,0.0214,-0.006600000000000002,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket SPREAD | (all),MPIW,0.1579,0.1237,-0.03420000000000001,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket SPREAD | (all),n_cells,110.0,105.0,-5.0,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket SPREAD | (all),n_obs,22330.0,21315.0,-1015.0,True
+EXP-021 time-of-day,ToD-ACI | facility x bucket WORST cell | pm_rush,PICP,0.8421,0.8421,0.0,False
+EXP-021 time-of-day,ToD-ACI | facility x bucket WORST cell | pm_rush,MPIW,16.22,16.22,0.0,False
+EXP-021 time-of-day,ToD-ACI | facility x bucket WORST cell | pm_rush,n_cells,1.0,1.0,0.0,False
+EXP-021 time-of-day,ToD-ACI | facility x bucket WORST cell | pm_rush,n_obs,171.0,171.0,0.0,False
+EXP-021 time-of-day,ToD-ACI | facility x bucket WORST cell | pm_rush,worst_facility,9.0,9.0,0.0,False
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | am_rush,PICP,0.8965,0.908,0.011500000000000066,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | am_rush,MPIW,17.15,15.01,-2.139999999999999,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | am_rush,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | am_rush,n_obs,4224.0,4032.0,-192.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | evening,PICP,0.9499,0.9475,-0.0023999999999999577,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | evening,MPIW,17.06,15.1,-1.959999999999999,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | evening,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | evening,n_obs,2574.0,2457.0,-117.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | midday,PICP,0.8335,0.8255,-0.008000000000000007,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | midday,MPIW,16.06,14.24,-1.8199999999999985,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | midday,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | midday,n_obs,5500.0,5250.0,-250.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | night,PICP,0.9732,0.9826,0.009400000000000075,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | night,MPIW,17.04,15.13,-1.9099999999999984,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | night,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | night,n_obs,6270.0,5985.0,-285.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | pm_rush,PICP,0.8405,0.8346,-0.005900000000000016,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | pm_rush,MPIW,16.75,15.04,-1.7100000000000009,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | pm_rush,n_cells,22.0,21.0,-1.0,True
+EXP-021 time-of-day,split-CP | bucket(pooled over facilities) | pm_rush,n_obs,3762.0,3591.0,-171.0,True
+EXP-021 time-of-day,split-CP | facility x bucket | (all),PICP,0.8987,0.8996,0.0008999999999999009,True
+EXP-021 time-of-day,split-CP | facility x bucket | (all),MPIW,16.81,14.9,-1.9099999999999984,True
+EXP-021 time-of-day,split-CP | facility x bucket | (all),n_cells,110.0,105.0,-5.0,True
+EXP-021 time-of-day,split-CP | facility x bucket | (all),n_obs,22330.0,21315.0,-1015.0,True
+EXP-021 time-of-day,split-CP | facility x bucket | (all),worst_facility,9.0,9.0,0.0,False
+EXP-021 time-of-day,split-CP | facility x bucket SPREAD | (all),PICP,0.0993,0.0968,-0.0025000000000000022,True
+EXP-021 time-of-day,split-CP | facility x bucket SPREAD | (all),MPIW,0.484,0.484,0.0,False
+EXP-021 time-of-day,split-CP | facility x bucket SPREAD | (all),n_cells,110.0,105.0,-5.0,True
+EXP-021 time-of-day,split-CP | facility x bucket SPREAD | (all),n_obs,22330.0,21315.0,-1015.0,True
+EXP-021 time-of-day,split-CP | facility x bucket WORST cell | midday,PICP,0.516,0.516,0.0,False
+EXP-021 time-of-day,split-CP | facility x bucket WORST cell | midday,MPIW,6.78,6.78,0.0,False
+EXP-021 time-of-day,split-CP | facility x bucket WORST cell | midday,n_cells,1.0,1.0,0.0,False
+EXP-021 time-of-day,split-CP | facility x bucket WORST cell | midday,n_obs,250.0,250.0,0.0,False
+EXP-021 time-of-day,split-CP | facility x bucket WORST cell | midday,worst_facility,9.0,9.0,0.0,False
+EXP-022 orthogonal partition,day_of_week | ACI,cramers_v_vs_tod,0.153,0.153,0.0,False
+EXP-022 orthogonal partition,day_of_week | ACI,n_cells,88.0,84.0,-4.0,True
+EXP-022 orthogonal partition,day_of_week | ACI,mean_PICP,0.8933,0.8919,-0.0013999999999999568,True
+EXP-022 orthogonal partition,day_of_week | ACI,sd_PICP,0.038,0.0356,-0.0023999999999999994,True
+EXP-022 orthogonal partition,day_of_week | ACI,min_PICP,0.7743,0.7743,0.0,False
+EXP-022 orthogonal partition,day_of_week | ACI,range_PICP,0.2257,0.2057,-0.020000000000000018,True
+EXP-022 orthogonal partition,day_of_week | ACI,cells_below_080,2.0,2.0,0.0,False
+EXP-022 orthogonal partition,day_of_week | ACI,cells_below_085,9.0,8.0,-1.0,True
+EXP-022 orthogonal partition,day_of_week | ACI,MPIW,15.96,14.58,-1.3800000000000008,True
+EXP-022 orthogonal partition,day_of_week | ACI,dispersion_ratio_vs_splitCP,1.8,1.79,-0.010000000000000009,True
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,cramers_v_vs_tod,0.153,0.153,0.0,False
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,n_cells,88.0,84.0,-4.0,True
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,mean_PICP,0.8935,0.8887,-0.0047999999999999154,True
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,sd_PICP,0.0701,0.0682,-0.001899999999999999,True
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,min_PICP,0.7,0.7,0.0,False
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,range_PICP,0.3,0.292,-0.008000000000000007,True
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,cells_below_080,9.0,9.0,0.0,False
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,cells_below_085,21.0,21.0,0.0,False
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,MPIW,14.83,12.9,-1.9299999999999997,True
+EXP-022 orthogonal partition,day_of_week | Mondrian-split-CP,dispersion_ratio_vs_splitCP,0.98,0.93,-0.04999999999999993,True
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,cramers_v_vs_tod,0.153,0.153,0.0,False
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,n_cells,88.0,84.0,-4.0,True
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,mean_PICP,0.8998,0.8966,-0.0032000000000000917,True
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,sd_PICP,0.0469,0.0443,-0.002599999999999998,True
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,min_PICP,0.7708,0.7708,0.0,False
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,range_PICP,0.2292,0.2092,-0.01999999999999999,True
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,cells_below_080,2.0,2.0,0.0,False
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,cells_below_085,15.0,15.0,0.0,False
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,MPIW,16.13,14.67,-1.459999999999999,True
+EXP-022 orthogonal partition,day_of_week | ToD-ACI,dispersion_ratio_vs_splitCP,1.46,1.44,-0.020000000000000018,True
+EXP-022 orthogonal partition,day_of_week | split-CP,cramers_v_vs_tod,0.153,0.153,0.0,False
+EXP-022 orthogonal partition,day_of_week | split-CP,n_cells,88.0,84.0,-4.0,True
+EXP-022 orthogonal partition,day_of_week | split-CP,mean_PICP,0.8992,0.9009,0.0017000000000000348,True
+EXP-022 orthogonal partition,day_of_week | split-CP,sd_PICP,0.0684,0.0636,-0.004799999999999999,True
+EXP-022 orthogonal partition,day_of_week | split-CP,min_PICP,0.688,0.688,0.0,False
+EXP-022 orthogonal partition,day_of_week | split-CP,range_PICP,0.312,0.312,0.0,False
+EXP-022 orthogonal partition,day_of_week | split-CP,cells_below_080,6.0,4.0,-2.0,True
+EXP-022 orthogonal partition,day_of_week | split-CP,cells_below_085,17.0,15.0,-2.0,True
+EXP-022 orthogonal partition,day_of_week | split-CP,MPIW,16.77,14.87,-1.9000000000000004,True
+EXP-022 orthogonal partition,day_of_week | split-CP,dispersion_ratio_vs_splitCP,1.0,1.0,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ACI,cramers_v_vs_tod,0.558,0.569,0.010999999999999899,True
+EXP-022 orthogonal partition,occupancy_tercile | ACI,n_cells,64.0,62.0,-2.0,True
+EXP-022 orthogonal partition,occupancy_tercile | ACI,mean_PICP,0.8857,0.8845,-0.0012000000000000899,True
+EXP-022 orthogonal partition,occupancy_tercile | ACI,sd_PICP,0.0691,0.0694,0.0003000000000000086,True
+EXP-022 orthogonal partition,occupancy_tercile | ACI,min_PICP,0.7442,0.7442,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ACI,range_PICP,0.2558,0.2558,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ACI,cells_below_080,8.0,8.0,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ACI,cells_below_085,20.0,20.0,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ACI,MPIW,15.84,14.85,-0.9900000000000002,True
+EXP-022 orthogonal partition,occupancy_tercile | ACI,dispersion_ratio_vs_splitCP,1.53,1.5,-0.030000000000000027,True
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,cramers_v_vs_tod,0.558,0.569,0.010999999999999899,True
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,n_cells,64.0,62.0,-2.0,True
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,mean_PICP,0.8884,0.8851,-0.0032999999999999696,True
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,sd_PICP,0.0776,0.0765,-0.0011000000000000038,True
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,min_PICP,0.6523,0.6523,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,range_PICP,0.3423,0.3416,-0.0006999999999999784,True
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,cells_below_080,9.0,9.0,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,cells_below_085,18.0,18.0,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,MPIW,14.54,13.24,-1.299999999999999,True
+EXP-022 orthogonal partition,occupancy_tercile | Mondrian-split-CP,dispersion_ratio_vs_splitCP,1.36,1.36,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,cramers_v_vs_tod,0.558,0.569,0.010999999999999899,True
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,n_cells,64.0,62.0,-2.0,True
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,mean_PICP,0.8942,0.8918,-0.0023999999999999577,True
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,sd_PICP,0.05,0.0489,-0.0011000000000000038,True
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,min_PICP,0.7668,0.7668,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,range_PICP,0.2251,0.2251,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,cells_below_080,1.0,1.0,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,cells_below_085,14.0,14.0,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,MPIW,16.09,15.07,-1.0199999999999996,True
+EXP-022 orthogonal partition,occupancy_tercile | ToD-ACI,dispersion_ratio_vs_splitCP,2.11,2.13,0.020000000000000018,True
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,cramers_v_vs_tod,0.558,0.569,0.010999999999999899,True
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,n_cells,64.0,62.0,-2.0,True
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,mean_PICP,0.8956,0.8971,0.0015000000000000568,True
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,sd_PICP,0.1058,0.104,-0.00180000000000001,True
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,min_PICP,0.582,0.582,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,range_PICP,0.418,0.418,0.0,False
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,cells_below_080,12.0,11.0,-1.0,True
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,cells_below_085,22.0,21.0,-1.0,True
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,MPIW,16.25,14.96,-1.2899999999999991,True
+EXP-022 orthogonal partition,occupancy_tercile | split-CP,dispersion_ratio_vs_splitCP,1.0,1.0,0.0,False
+EXP-022 orthogonal partition,random_5 | ACI,cramers_v_vs_tod,0.061,0.061,0.0,False
+EXP-022 orthogonal partition,random_5 | ACI,n_cells,110.0,105.0,-5.0,True
+EXP-022 orthogonal partition,random_5 | ACI,mean_PICP,0.8924,0.8908,-0.0015999999999999348,True
+EXP-022 orthogonal partition,random_5 | ACI,sd_PICP,0.0228,0.0216,-0.0011999999999999997,True
+EXP-022 orthogonal partition,random_5 | ACI,min_PICP,0.8253,0.8253,0.0,False
+EXP-022 orthogonal partition,random_5 | ACI,range_PICP,0.1273,0.1093,-0.018000000000000002,True
+EXP-022 orthogonal partition,random_5 | ACI,cells_below_080,0.0,0.0,0.0,False
+EXP-022 orthogonal partition,random_5 | ACI,cells_below_085,5.0,5.0,0.0,False
+EXP-022 orthogonal partition,random_5 | ACI,MPIW,15.96,14.55,-1.4100000000000001,True
+EXP-022 orthogonal partition,random_5 | ACI,dispersion_ratio_vs_splitCP,1.94,2.03,0.08999999999999986,True
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,cramers_v_vs_tod,0.061,0.061,0.0,False
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,n_cells,110.0,105.0,-5.0,True
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,mean_PICP,0.8932,0.8884,-0.0048000000000000265,True
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,sd_PICP,0.0572,0.0542,-0.0030000000000000027,True
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,min_PICP,0.7289,0.7289,0.0,False
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,range_PICP,0.2711,0.253,-0.018100000000000005,True
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,cells_below_080,9.0,9.0,0.0,False
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,cells_below_085,25.0,25.0,0.0,False
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,MPIW,14.84,12.9,-1.9399999999999995,True
+EXP-022 orthogonal partition,random_5 | Mondrian-split-CP,dispersion_ratio_vs_splitCP,0.77,0.81,0.040000000000000036,True
+EXP-022 orthogonal partition,random_5 | ToD-ACI,cramers_v_vs_tod,0.061,0.061,0.0,False
+EXP-022 orthogonal partition,random_5 | ToD-ACI,n_cells,110.0,105.0,-5.0,True
+EXP-022 orthogonal partition,random_5 | ToD-ACI,mean_PICP,0.8983,0.8949,-0.0033999999999999586,True
+EXP-022 orthogonal partition,random_5 | ToD-ACI,sd_PICP,0.0266,0.0218,-0.004799999999999999,True
+EXP-022 orthogonal partition,random_5 | ToD-ACI,min_PICP,0.8313,0.8313,0.0,False
+EXP-022 orthogonal partition,random_5 | ToD-ACI,range_PICP,0.1547,0.1106,-0.0441,True
+EXP-022 orthogonal partition,random_5 | ToD-ACI,cells_below_080,0.0,0.0,0.0,False
+EXP-022 orthogonal partition,random_5 | ToD-ACI,cells_below_085,3.0,3.0,0.0,False
+EXP-022 orthogonal partition,random_5 | ToD-ACI,MPIW,16.11,14.62,-1.4900000000000002,True
+EXP-022 orthogonal partition,random_5 | ToD-ACI,dispersion_ratio_vs_splitCP,1.66,2.02,0.3600000000000001,True
+EXP-022 orthogonal partition,random_5 | split-CP,cramers_v_vs_tod,0.061,0.061,0.0,False
+EXP-022 orthogonal partition,random_5 | split-CP,n_cells,110.0,105.0,-5.0,True
+EXP-022 orthogonal partition,random_5 | split-CP,mean_PICP,0.899,0.9008,0.0018000000000000238,True
+EXP-022 orthogonal partition,random_5 | split-CP,sd_PICP,0.0442,0.0439,-0.00030000000000000165,True
+EXP-022 orthogonal partition,random_5 | split-CP,min_PICP,0.7321,0.7321,0.0,False
+EXP-022 orthogonal partition,random_5 | split-CP,range_PICP,0.2529,0.2529,0.0,False
+EXP-022 orthogonal partition,random_5 | split-CP,cells_below_080,3.0,3.0,0.0,False
+EXP-022 orthogonal partition,random_5 | split-CP,cells_below_085,16.0,14.0,-2.0,True
+EXP-022 orthogonal partition,random_5 | split-CP,MPIW,16.78,14.87,-1.910000000000002,True
+EXP-022 orthogonal partition,random_5 | split-CP,dispersion_ratio_vs_splitCP,1.0,1.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | ACI,cramers_v_vs_tod,1.0,1.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | ACI,n_cells,110.0,105.0,-5.0,True
+EXP-022 orthogonal partition,time_of_day | ACI,mean_PICP,0.893,0.8913,-0.0017000000000000348,True
+EXP-022 orthogonal partition,time_of_day | ACI,sd_PICP,0.0753,0.0756,0.0002999999999999947,True
+EXP-022 orthogonal partition,time_of_day | ACI,min_PICP,0.672,0.672,0.0,False
+EXP-022 orthogonal partition,time_of_day | ACI,range_PICP,0.328,0.328,0.0,False
+EXP-022 orthogonal partition,time_of_day | ACI,cells_below_080,12.0,12.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | ACI,cells_below_085,33.0,32.0,-1.0,True
+EXP-022 orthogonal partition,time_of_day | ACI,MPIW,16.21,14.81,-1.4000000000000004,True
+EXP-022 orthogonal partition,time_of_day | ACI,dispersion_ratio_vs_splitCP,1.32,1.28,-0.040000000000000036,True
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,cramers_v_vs_tod,1.0,1.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,n_cells,110.0,105.0,-5.0,True
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,mean_PICP,0.8965,0.8919,-0.0045999999999999375,True
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,sd_PICP,0.0772,0.076,-0.0012000000000000066,True
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,min_PICP,0.62,0.62,0.0,False
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,range_PICP,0.38,0.38,0.0,False
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,cells_below_080,15.0,15.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,cells_below_085,23.0,23.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,MPIW,15.13,13.38,-1.75,True
+EXP-022 orthogonal partition,time_of_day | Mondrian-split-CP,dispersion_ratio_vs_splitCP,1.29,1.27,-0.020000000000000018,True
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,cramers_v_vs_tod,1.0,1.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,n_cells,110.0,105.0,-5.0,True
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,mean_PICP,0.8982,0.8949,-0.0032999999999999696,True
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,sd_PICP,0.028,0.0214,-0.006600000000000002,True
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,min_PICP,0.8421,0.8421,0.0,False
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,range_PICP,0.1579,0.1237,-0.03420000000000001,True
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,cells_below_080,0.0,0.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,cells_below_085,3.0,3.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,MPIW,16.22,14.88,-1.339999999999998,True
+EXP-022 orthogonal partition,time_of_day | ToD-ACI,dispersion_ratio_vs_splitCP,3.55,4.54,0.9900000000000002,True
+EXP-022 orthogonal partition,time_of_day | split-CP,cramers_v_vs_tod,1.0,1.0,0.0,False
+EXP-022 orthogonal partition,time_of_day | split-CP,n_cells,110.0,105.0,-5.0,True
+EXP-022 orthogonal partition,time_of_day | split-CP,mean_PICP,0.8987,0.8996,0.0008999999999999009,True
+EXP-022 orthogonal partition,time_of_day | split-CP,sd_PICP,0.0993,0.0968,-0.0025000000000000022,True
+EXP-022 orthogonal partition,time_of_day | split-CP,min_PICP,0.516,0.516,0.0,False
+EXP-022 orthogonal partition,time_of_day | split-CP,range_PICP,0.484,0.484,0.0,False
+EXP-022 orthogonal partition,time_of_day | split-CP,cells_below_080,14.0,12.0,-2.0,True
+EXP-022 orthogonal partition,time_of_day | split-CP,cells_below_085,23.0,21.0,-2.0,True
+EXP-022 orthogonal partition,time_of_day | split-CP,MPIW,16.81,14.9,-1.9099999999999984,True
+EXP-022 orthogonal partition,time_of_day | split-CP,dispersion_ratio_vs_splitCP,1.0,1.0,0.0,False
+EXP-024 trust/abstain,commit-all | 1.0,commit_rate,1.0,1.0,0.0,False
+EXP-024 trust/abstain,commit-all | 1.0,MAE_cars,3.405,3.129,-0.2759999999999998,True
+EXP-024 trust/abstain,commit-all | 1.0,MAE_pct,3.217,2.645,-0.5720000000000001,True
+EXP-024 trust/abstain,commit-all | 1.0,committed_PICP,0.8931,0.894,0.0009000000000000119,True
+EXP-024 trust/abstain,commit-all | 1.0,committed_MPIW,13.15,12.91,-0.2400000000000002,True
+EXP-024 trust/abstain,commit-all | 1.0,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.1,commit_rate,0.196,0.173,-0.02300000000000002,True
+EXP-024 trust/abstain,random | 0.1,MAE_cars,3.405,3.128,-0.2769999999999997,True
+EXP-024 trust/abstain,random | 0.1,MAE_pct,3.233,2.66,-0.573,True
+EXP-024 trust/abstain,random | 0.1,committed_PICP,0.8948,0.8957,0.0009000000000000119,True
+EXP-024 trust/abstain,random | 0.1,committed_MPIW,13.22,12.99,-0.23000000000000043,True
+EXP-024 trust/abstain,random | 0.1,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.2,commit_rate,0.314,0.296,-0.018000000000000016,True
+EXP-024 trust/abstain,random | 0.2,MAE_cars,3.404,3.131,-0.27300000000000013,True
+EXP-024 trust/abstain,random | 0.2,MAE_pct,3.203,2.635,-0.5680000000000001,True
+EXP-024 trust/abstain,random | 0.2,committed_PICP,0.8923,0.8932,0.0009000000000000119,True
+EXP-024 trust/abstain,random | 0.2,committed_MPIW,13.13,12.9,-0.23000000000000043,True
+EXP-024 trust/abstain,random | 0.2,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.3,commit_rate,0.442,0.427,-0.015000000000000013,True
+EXP-024 trust/abstain,random | 0.3,MAE_cars,3.406,3.13,-0.27600000000000025,True
+EXP-024 trust/abstain,random | 0.3,MAE_pct,3.221,2.65,-0.5710000000000002,True
+EXP-024 trust/abstain,random | 0.3,committed_PICP,0.8934,0.8943,0.0009000000000000119,True
+EXP-024 trust/abstain,random | 0.3,committed_MPIW,13.13,12.89,-0.2400000000000002,True
+EXP-024 trust/abstain,random | 0.3,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.4,commit_rate,0.545,0.533,-0.01200000000000001,True
+EXP-024 trust/abstain,random | 0.4,MAE_cars,3.4,3.122,-0.278,True
+EXP-024 trust/abstain,random | 0.4,MAE_pct,3.214,2.64,-0.5739999999999998,True
+EXP-024 trust/abstain,random | 0.4,committed_PICP,0.8937,0.8946,0.0008999999999999009,True
+EXP-024 trust/abstain,random | 0.4,committed_MPIW,13.15,12.92,-0.23000000000000043,True
+EXP-024 trust/abstain,random | 0.4,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.5,commit_rate,0.615,0.605,-0.010000000000000009,True
+EXP-024 trust/abstain,random | 0.5,MAE_cars,3.399,3.122,-0.27700000000000014,True
+EXP-024 trust/abstain,random | 0.5,MAE_pct,3.216,2.643,-0.5730000000000004,True
+EXP-024 trust/abstain,random | 0.5,committed_PICP,0.8928,0.8937,0.0009000000000000119,True
+EXP-024 trust/abstain,random | 0.5,committed_MPIW,13.13,12.9,-0.23000000000000043,True
+EXP-024 trust/abstain,random | 0.5,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.6,commit_rate,0.677,0.667,-0.010000000000000009,True
+EXP-024 trust/abstain,random | 0.6,MAE_cars,3.419,3.145,-0.274,True
+EXP-024 trust/abstain,random | 0.6,MAE_pct,3.217,2.648,-0.569,True
+EXP-024 trust/abstain,random | 0.6,committed_PICP,0.8929,0.8937,0.0008000000000000229,True
+EXP-024 trust/abstain,random | 0.6,committed_MPIW,13.15,12.92,-0.23000000000000043,True
+EXP-024 trust/abstain,random | 0.6,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.7,commit_rate,0.742,0.733,-0.009000000000000008,True
+EXP-024 trust/abstain,random | 0.7,MAE_cars,3.399,3.124,-0.2749999999999999,True
+EXP-024 trust/abstain,random | 0.7,MAE_pct,3.212,2.641,-0.5710000000000002,True
+EXP-024 trust/abstain,random | 0.7,committed_PICP,0.8935,0.8944,0.0009000000000000119,True
+EXP-024 trust/abstain,random | 0.7,committed_MPIW,13.15,12.91,-0.2400000000000002,True
+EXP-024 trust/abstain,random | 0.7,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.8,commit_rate,0.819,0.812,-0.006999999999999895,True
+EXP-024 trust/abstain,random | 0.8,MAE_cars,3.408,3.132,-0.2759999999999998,True
+EXP-024 trust/abstain,random | 0.8,MAE_pct,3.218,2.648,-0.5699999999999998,True
+EXP-024 trust/abstain,random | 0.8,committed_PICP,0.8929,0.8938,0.0009000000000000119,True
+EXP-024 trust/abstain,random | 0.8,committed_MPIW,13.16,12.93,-0.23000000000000043,True
+EXP-024 trust/abstain,random | 0.8,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 0.9,commit_rate,0.896,0.893,-0.0030000000000000027,True
+EXP-024 trust/abstain,random | 0.9,MAE_cars,3.411,3.134,-0.27700000000000014,True
+EXP-024 trust/abstain,random | 0.9,MAE_pct,3.224,2.65,-0.5740000000000003,True
+EXP-024 trust/abstain,random | 0.9,committed_PICP,0.8928,0.8936,0.0007999999999999119,True
+EXP-024 trust/abstain,random | 0.9,committed_MPIW,13.15,12.91,-0.2400000000000002,True
+EXP-024 trust/abstain,random | 0.9,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,random | 1.0,commit_rate,0.982,0.981,-0.0010000000000000009,True
+EXP-024 trust/abstain,random | 1.0,MAE_cars,3.408,3.131,-0.27700000000000014,True
+EXP-024 trust/abstain,random | 1.0,MAE_pct,3.219,2.647,-0.5720000000000001,True
+EXP-024 trust/abstain,random | 1.0,committed_PICP,0.893,0.8938,0.0008000000000000229,True
+EXP-024 trust/abstain,random | 1.0,committed_MPIW,13.15,12.91,-0.2400000000000002,True
+EXP-024 trust/abstain,random | 1.0,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.1,commit_rate,0.196,0.173,-0.02300000000000002,True
+EXP-024 trust/abstain,width-ACQR | 0.1,MAE_cars,0.99,0.79,-0.19999999999999996,True
+EXP-024 trust/abstain,width-ACQR | 0.1,MAE_pct,1.136,0.781,-0.35499999999999987,True
+EXP-024 trust/abstain,width-ACQR | 0.1,committed_PICP,0.9045,0.9038,-0.0006999999999999229,True
+EXP-024 trust/abstain,width-ACQR | 0.1,committed_MPIW,3.8,3.52,-0.2799999999999998,True
+EXP-024 trust/abstain,width-ACQR | 0.1,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.1,abst_lift_night,0.743,0.701,-0.04200000000000004,True
+EXP-024 trust/abstain,width-ACQR | 0.1,abst_lift_am_rush,1.049,1.021,-0.028000000000000025,True
+EXP-024 trust/abstain,width-ACQR | 0.1,abst_lift_midday,1.142,1.167,0.025000000000000133,True
+EXP-024 trust/abstain,width-ACQR | 0.1,abst_lift_pm_rush,1.147,1.197,0.050000000000000044,True
+EXP-024 trust/abstain,width-ACQR | 0.1,abst_lift_evening,1.029,1.05,0.02100000000000013,True
+EXP-024 trust/abstain,width-ACQR | 0.2,commit_rate,0.314,0.296,-0.018000000000000016,True
+EXP-024 trust/abstain,width-ACQR | 0.2,MAE_cars,1.256,1.066,-0.18999999999999995,True
+EXP-024 trust/abstain,width-ACQR | 0.2,MAE_pct,1.375,1.027,-0.3480000000000001,True
+EXP-024 trust/abstain,width-ACQR | 0.2,committed_PICP,0.9076,0.907,-0.0005999999999999339,True
+EXP-024 trust/abstain,width-ACQR | 0.2,committed_MPIW,4.71,4.47,-0.2400000000000002,True
+EXP-024 trust/abstain,width-ACQR | 0.2,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.2,abst_lift_night,0.522,0.469,-0.05300000000000005,True
+EXP-024 trust/abstain,width-ACQR | 0.2,abst_lift_am_rush,1.069,1.041,-0.028000000000000025,True
+EXP-024 trust/abstain,width-ACQR | 0.2,abst_lift_midday,1.287,1.32,0.03300000000000014,True
+EXP-024 trust/abstain,width-ACQR | 0.2,abst_lift_pm_rush,1.283,1.343,0.06000000000000005,True
+EXP-024 trust/abstain,width-ACQR | 0.2,abst_lift_evening,1.022,1.042,0.020000000000000018,True
+EXP-024 trust/abstain,width-ACQR | 0.3,commit_rate,0.442,0.427,-0.015000000000000013,True
+EXP-024 trust/abstain,width-ACQR | 0.3,MAE_cars,1.553,1.333,-0.21999999999999997,True
+EXP-024 trust/abstain,width-ACQR | 0.3,MAE_pct,1.673,1.267,-0.40600000000000014,True
+EXP-024 trust/abstain,width-ACQR | 0.3,committed_PICP,0.9057,0.9054,-0.00029999999999996696,True
+EXP-024 trust/abstain,width-ACQR | 0.3,committed_MPIW,5.82,5.54,-0.28000000000000025,True
+EXP-024 trust/abstain,width-ACQR | 0.3,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.3,abst_lift_night,0.391,0.314,-0.07700000000000001,True
+EXP-024 trust/abstain,width-ACQR | 0.3,abst_lift_am_rush,1.032,0.99,-0.04200000000000004,True
+EXP-024 trust/abstain,width-ACQR | 0.3,abst_lift_midday,1.409,1.471,0.062000000000000055,True
+EXP-024 trust/abstain,width-ACQR | 0.3,abst_lift_pm_rush,1.419,1.486,0.06699999999999995,True
+EXP-024 trust/abstain,width-ACQR | 0.3,abst_lift_evening,0.946,0.969,0.02300000000000002,True
+EXP-024 trust/abstain,width-ACQR | 0.4,commit_rate,0.545,0.533,-0.01200000000000001,True
+EXP-024 trust/abstain,width-ACQR | 0.4,MAE_cars,1.779,1.548,-0.23099999999999987,True
+EXP-024 trust/abstain,width-ACQR | 0.4,MAE_pct,1.895,1.464,-0.43100000000000005,True
+EXP-024 trust/abstain,width-ACQR | 0.4,committed_PICP,0.9021,0.902,-9.999999999998899e-05,True
+EXP-024 trust/abstain,width-ACQR | 0.4,committed_MPIW,6.69,6.4,-0.29000000000000004,True
+EXP-024 trust/abstain,width-ACQR | 0.4,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.4,abst_lift_night,0.312,0.224,-0.088,True
+EXP-024 trust/abstain,width-ACQR | 0.4,abst_lift_am_rush,0.953,0.922,-0.030999999999999917,True
+EXP-024 trust/abstain,width-ACQR | 0.4,abst_lift_midday,1.517,1.585,0.06800000000000006,True
+EXP-024 trust/abstain,width-ACQR | 0.4,abst_lift_pm_rush,1.566,1.641,0.07499999999999996,True
+EXP-024 trust/abstain,width-ACQR | 0.4,abst_lift_evening,0.82,0.834,0.014000000000000012,True
+EXP-024 trust/abstain,width-ACQR | 0.5,commit_rate,0.615,0.605,-0.010000000000000009,True
+EXP-024 trust/abstain,width-ACQR | 0.5,MAE_cars,1.985,1.733,-0.252,True
+EXP-024 trust/abstain,width-ACQR | 0.5,MAE_pct,2.117,1.645,-0.472,True
+EXP-024 trust/abstain,width-ACQR | 0.5,committed_PICP,0.8976,0.8974,-0.00019999999999997797,True
+EXP-024 trust/abstain,width-ACQR | 0.5,committed_MPIW,7.35,7.03,-0.3199999999999994,True
+EXP-024 trust/abstain,width-ACQR | 0.5,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.5,abst_lift_night,0.284,0.176,-0.10799999999999998,True
+EXP-024 trust/abstain,width-ACQR | 0.5,abst_lift_am_rush,0.887,0.886,-0.0010000000000000009,True
+EXP-024 trust/abstain,width-ACQR | 0.5,abst_lift_midday,1.596,1.666,0.06999999999999984,True
+EXP-024 trust/abstain,width-ACQR | 0.5,abst_lift_pm_rush,1.608,1.685,0.07699999999999996,True
+EXP-024 trust/abstain,width-ACQR | 0.5,abst_lift_evening,0.768,0.771,0.0030000000000000027,True
+EXP-024 trust/abstain,width-ACQR | 0.6,commit_rate,0.677,0.667,-0.010000000000000009,True
+EXP-024 trust/abstain,width-ACQR | 0.6,MAE_cars,2.179,1.902,-0.2769999999999999,True
+EXP-024 trust/abstain,width-ACQR | 0.6,MAE_pct,2.323,1.804,-0.5189999999999999,True
+EXP-024 trust/abstain,width-ACQR | 0.6,committed_PICP,0.8939,0.894,9.999999999998899e-05,True
+EXP-024 trust/abstain,width-ACQR | 0.6,committed_MPIW,8.0,7.64,-0.3600000000000003,True
+EXP-024 trust/abstain,width-ACQR | 0.6,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.6,abst_lift_night,0.281,0.153,-0.12800000000000003,True
+EXP-024 trust/abstain,width-ACQR | 0.6,abst_lift_am_rush,0.83,0.833,0.0030000000000000027,True
+EXP-024 trust/abstain,width-ACQR | 0.6,abst_lift_midday,1.637,1.712,0.07499999999999996,True
+EXP-024 trust/abstain,width-ACQR | 0.6,abst_lift_pm_rush,1.671,1.75,0.07899999999999996,True
+EXP-024 trust/abstain,width-ACQR | 0.6,abst_lift_evening,0.688,0.721,0.03300000000000003,True
+EXP-024 trust/abstain,width-ACQR | 0.7,commit_rate,0.742,0.733,-0.009000000000000008,True
+EXP-024 trust/abstain,width-ACQR | 0.7,MAE_cars,2.381,2.101,-0.2799999999999998,True
+EXP-024 trust/abstain,width-ACQR | 0.7,MAE_pct,2.493,1.962,-0.5309999999999999,True
+EXP-024 trust/abstain,width-ACQR | 0.7,committed_PICP,0.8923,0.8925,0.00019999999999997797,True
+EXP-024 trust/abstain,width-ACQR | 0.7,committed_MPIW,8.76,8.41,-0.34999999999999964,True
+EXP-024 trust/abstain,width-ACQR | 0.7,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.7,abst_lift_night,0.249,0.119,-0.13,True
+EXP-024 trust/abstain,width-ACQR | 0.7,abst_lift_am_rush,0.79,0.789,-0.0010000000000000009,True
+EXP-024 trust/abstain,width-ACQR | 0.7,abst_lift_midday,1.689,1.767,0.07799999999999985,True
+EXP-024 trust/abstain,width-ACQR | 0.7,abst_lift_pm_rush,1.742,1.825,0.08299999999999996,True
+EXP-024 trust/abstain,width-ACQR | 0.7,abst_lift_evening,0.617,0.646,0.029000000000000026,True
+EXP-024 trust/abstain,width-ACQR | 0.8,commit_rate,0.819,0.812,-0.006999999999999895,True
+EXP-024 trust/abstain,width-ACQR | 0.8,MAE_cars,2.616,2.335,-0.28100000000000014,True
+EXP-024 trust/abstain,width-ACQR | 0.8,MAE_pct,2.695,2.153,-0.5419999999999998,True
+EXP-024 trust/abstain,width-ACQR | 0.8,committed_PICP,0.8922,0.8924,0.00019999999999997797,True
+EXP-024 trust/abstain,width-ACQR | 0.8,committed_MPIW,9.74,9.41,-0.33000000000000007,True
+EXP-024 trust/abstain,width-ACQR | 0.8,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.8,abst_lift_night,0.257,0.109,-0.14800000000000002,True
+EXP-024 trust/abstain,width-ACQR | 0.8,abst_lift_am_rush,0.739,0.765,0.026000000000000023,True
+EXP-024 trust/abstain,width-ACQR | 0.8,abst_lift_midday,1.696,1.774,0.07800000000000007,True
+EXP-024 trust/abstain,width-ACQR | 0.8,abst_lift_pm_rush,1.807,1.893,0.08600000000000008,True
+EXP-024 trust/abstain,width-ACQR | 0.8,abst_lift_evening,0.571,0.598,0.027000000000000024,True
+EXP-024 trust/abstain,width-ACQR | 0.9,commit_rate,0.896,0.893,-0.0030000000000000027,True
+EXP-024 trust/abstain,width-ACQR | 0.9,MAE_cars,2.923,2.65,-0.27300000000000013,True
+EXP-024 trust/abstain,width-ACQR | 0.9,MAE_pct,2.919,2.375,-0.544,True
+EXP-024 trust/abstain,width-ACQR | 0.9,committed_PICP,0.8902,0.8907,0.000500000000000056,True
+EXP-024 trust/abstain,width-ACQR | 0.9,committed_MPIW,10.86,10.58,-0.27999999999999936,True
+EXP-024 trust/abstain,width-ACQR | 0.9,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 0.9,abst_lift_night,0.253,0.108,-0.14500000000000002,True
+EXP-024 trust/abstain,width-ACQR | 0.9,abst_lift_am_rush,0.757,0.782,0.025000000000000022,True
+EXP-024 trust/abstain,width-ACQR | 0.9,abst_lift_midday,1.646,1.72,0.07400000000000007,True
+EXP-024 trust/abstain,width-ACQR | 0.9,abst_lift_pm_rush,1.89,1.98,0.09000000000000008,True
+EXP-024 trust/abstain,width-ACQR | 0.9,abst_lift_evening,0.536,0.562,0.026000000000000023,True
+EXP-024 trust/abstain,width-ACQR | 1.0,commit_rate,0.982,0.981,-0.0010000000000000009,True
+EXP-024 trust/abstain,width-ACQR | 1.0,MAE_cars,3.32,3.039,-0.2809999999999997,True
+EXP-024 trust/abstain,width-ACQR | 1.0,MAE_pct,3.176,2.602,-0.5740000000000003,True
+EXP-024 trust/abstain,width-ACQR | 1.0,committed_PICP,0.8925,0.8933,0.0008000000000000229,True
+EXP-024 trust/abstain,width-ACQR | 1.0,committed_MPIW,12.57,12.3,-0.2699999999999996,True
+EXP-024 trust/abstain,width-ACQR | 1.0,n_facilities,22.0,21.0,-1.0,True
+EXP-024 trust/abstain,width-ACQR | 1.0,abst_lift_night,0.005,0.005,0.0,False
+EXP-024 trust/abstain,width-ACQR | 1.0,abst_lift_am_rush,0.24,0.24,0.0,False
+EXP-024 trust/abstain,width-ACQR | 1.0,abst_lift_midday,2.085,2.085,0.0,False
+EXP-024 trust/abstain,width-ACQR | 1.0,abst_lift_pm_rush,2.493,2.493,0.0,False
+EXP-024 trust/abstain,width-ACQR | 1.0,abst_lift_evening,0.169,0.169,0.0,False

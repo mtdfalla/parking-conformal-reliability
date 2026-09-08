@@ -1,0 +1,6 @@
+,max_occupancy (proxy capacity),mean_occupancy,occupancy_CV
+min,53.0,21.2,0.03
+25%,84.5,45.39,0.25
+50%,149.5,100.31,0.36
+75%,368.25,252.94,0.63
+max,1549.0,1531.6,1.37

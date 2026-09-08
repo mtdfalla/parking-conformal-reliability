@@ -1,0 +1,9 @@
+city,horizon,method,n_fac,PICP_min,PICP_median,PICP_max,median_point_to_lower_gap,implied_PICP_needed_to_pass_SAFE,n_passing_SAFE,n_passing_SAFE_that_overcover_ge_0p92,min_PICP_among_passers
+belgrade,y_t+15min,split-CP,21,0.7872,0.9044,0.9586,0.0382,0.9182,9,7,0.9143
+belgrade,y_t+15min,CQR,21,0.8266,0.9084,0.9399,0.0334,0.9134,8,4,0.9084
+belgrade,y_t+15min,ACI,21,0.869,0.8936,0.9015,0.0365,0.9165,0,0,
+belgrade,y_t+15min,ACQR,21,0.8788,0.8956,0.9005,0.0295,0.9095,0,0,
+birmingham,y_t+60min,split-CP,28,0.7868,0.904,1.0,0.0582,0.9382,7,7,0.9402
+birmingham,y_t+60min,CQR,28,0.7794,0.9081,0.9556,0.0545,0.9345,7,7,0.9407
+birmingham,y_t+60min,ACI,28,0.8659,0.8893,0.9259,0.0631,0.9431,1,1,0.9259
+birmingham,y_t+60min,ACQR,28,0.8537,0.8889,0.9481,0.0617,0.9417,3,3,0.9412

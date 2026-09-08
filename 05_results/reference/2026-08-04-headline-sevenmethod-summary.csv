@@ -1,0 +1,15 @@
+city,horizon,method,mean_PICP,std_PICP,mean_MPIW,mean_Winkler,frac_CI_target
+belgrade,y_t+15min,split-CP,0.8998,0.0412,16.7736,26.8769,0.6364
+belgrade,y_t+15min,CQR,0.9042,0.0303,12.9891,20.3622,0.6364
+belgrade,y_t+15min,EnbPI,0.8874,0.068,16.0178,28.4247,0.6818
+belgrade,y_t+15min,NGBoost,0.76,0.0867,8.5592,27.7155,0.0909
+belgrade,y_t+15min,AgACI-style,0.933,0.009,17.2798,22.6269,0.1818
+belgrade,y_t+15min,ACI,0.8987,0.0014,17.6229,24.1606,1.0
+belgrade,y_t+15min,ACQR,0.899,0.0018,16.7308,22.0903,1.0
+birmingham,y_t+60min,split-CP,0.9031,0.0502,136.776,181.5556,0.7857
+birmingham,y_t+60min,CQR,0.9036,0.0392,141.5966,174.0046,0.7143
+birmingham,y_t+60min,EnbPI,0.8448,0.0782,104.9789,182.1826,0.6071
+birmingham,y_t+60min,NGBoost,0.3837,0.1575,31.8647,393.5882,0.0
+birmingham,y_t+60min,AgACI-style,0.9066,0.0199,140.6402,177.5707,0.9286
+birmingham,y_t+60min,ACI,0.8922,0.0094,143.9829,187.9472,1.0
+birmingham,y_t+60min,ACQR,0.8932,0.01,143.9215,181.0937,1.0

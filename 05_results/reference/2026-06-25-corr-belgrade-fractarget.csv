@@ -1,0 +1,10 @@
+horizon,method,frac_CI_target
+y_t+15min,ACI,1.0
+y_t+15min,CQR,0.636
+y_t+15min,split-CP,0.636
+y_t+30min,ACI,1.0
+y_t+30min,CQR,0.636
+y_t+30min,split-CP,0.591
+y_t+5min,ACI,1.0
+y_t+5min,CQR,0.773
+y_t+5min,split-CP,0.682

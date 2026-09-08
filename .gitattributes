@@ -1,0 +1,9 @@
+# Every file is checked out byte-for-byte as committed.  Git must NOT normalise line endings
+# here: this package's own 03_code/verify.py hash-checks code and data against
+# 00_admin/2026-09-04-shipped-outputs/MANIFEST-outputs.csv, so a single CRLF->LF rewrite changes
+# a sha256 and the package fails its own verifier on a fresh clone.  That is not hypothetical:
+# 00_admin/2026-09-05-unstable-cells.csv is class exact_hash and contains CRLF.
+#
+# The shell scripts are stored with LF, so a Windows clone still gets scripts bash can run --
+# checking out exactly what was committed is what achieves that, not converting it.
+* -text

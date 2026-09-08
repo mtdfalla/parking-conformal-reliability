@@ -1,0 +1,2 @@
+facility_id,n_post_onset,n_slots_masks_agree,masks_identical_post_onset,n_withdrawn_interval,n_withdrawn_point,n_slots_interval_only,n_slots_point_only,consequence
+8,587,587,1,563,563,0,0,request counts identical for EVERY demand seed by construction; the >=20-seed simulation is not run (prespecification 9.3)

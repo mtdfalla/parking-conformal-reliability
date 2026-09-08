@@ -1,0 +1,54 @@
+{
+  "rows": 92544,
+  "facilities": 24,
+  "grid": "5min",
+  "horizons_min": [
+    5,
+    15,
+    30
+  ],
+  "lags_steps": [
+    1,
+    2,
+    3,
+    6,
+    9,
+    12
+  ],
+  "roll_windows_steps": [
+    6,
+    12
+  ],
+  "n_feature_cols": 15,
+  "feature_cols": [
+    "lag_5min",
+    "lag_10min",
+    "lag_15min",
+    "lag_30min",
+    "lag_45min",
+    "lag_60min",
+    "roll_mean_30min",
+    "roll_std_30min",
+    "roll_mean_60min",
+    "roll_std_60min",
+    "tod_sin",
+    "tod_cos",
+    "dow",
+    "is_weekend",
+    "is_holiday"
+  ],
+  "target_cols": [
+    "y_t+5min",
+    "y_t+15min",
+    "y_t+30min"
+  ],
+  "rows_per_split": {
+    "calibration": 18384,
+    "test": 24432,
+    "train": 49728
+  },
+  "time_min": "2017-03-04 16:00:00",
+  "time_max": "2017-03-21 18:50:00",
+  "any_nan": false,
+  "output": "belgrade_features.parquet"
+}

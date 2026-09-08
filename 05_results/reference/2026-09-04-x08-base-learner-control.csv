@@ -1,0 +1,13 @@
+base,MAE,level,method,meanPICP,stdPICP,MPIW,Winkler,n_facilities,median_gamma
+RandomForest,3.4,0.9,split-CP,0.8992,0.0399,16.77,26.83,22,
+RandomForest,3.4,0.9,ACI,0.8929,0.0106,15.97,24.23,22,0.02
+RandomForest,3.4,0.95,split-CP,0.9463,0.0358,22.24,33.42,22,
+RandomForest,3.4,0.95,ACI,0.9447,0.0079,21.19,30.64,22,0.02
+GradBoost,3.58,0.9,split-CP,0.8992,0.041,16.96,27.6,22,
+GradBoost,3.58,0.9,ACI,0.8924,0.0049,15.71,24.06,22,0.02
+GradBoost,3.58,0.95,split-CP,0.9455,0.0308,22.46,34.03,22,
+GradBoost,3.58,0.95,ACI,0.9451,0.0067,21.87,31.9,22,0.01
+Ridge(linear),3.42,0.9,split-CP,0.8835,0.103,15.59,25.7,22,
+Ridge(linear),3.42,0.9,ACI,0.888,0.0126,15.53,23.95,22,0.02
+Ridge(linear),3.42,0.95,split-CP,0.9386,0.0446,20.49,31.61,22,
+Ridge(linear),3.42,0.95,ACI,0.9401,0.0111,19.82,30.28,22,0.02

@@ -1,0 +1,17 @@
+{
+  "rows": 35717,
+  "facilities": 30,
+  "time_min": "2016-10-04 07:46:28",
+  "time_max": "2016-12-19 16:30:35",
+  "median_interval_min": 32.916666666666664,
+  "rows_per_split": {
+    "calibration": 8532,
+    "test": 7223,
+    "train": 19962
+  },
+  "missing_occupancy": 0,
+  "outputs": [
+    "birmingham_long.parquet",
+    "birmingham_long.csv.gz"
+  ]
+}

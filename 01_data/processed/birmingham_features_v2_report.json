@@ -1,0 +1,34 @@
+{
+  "version": "v2-session-safe",
+  "rows": 17487,
+  "facilities": 28,
+  "sessions": 1973,
+  "excluded": [
+    8,
+    21
+  ],
+  "embargo": true,
+  "rows_per_split": {
+    "calibration": 4141,
+    "test": 3588,
+    "train": 9758
+  },
+  "cross_split_targets_blocked": {
+    "30": 0,
+    "60": 0,
+    "90": 0
+  },
+  "usable_rows": {
+    "30": 17487,
+    "60": 17487,
+    "90": 17487
+  },
+  "occ_interpolated_pct": 26.2709,
+  "target_interpolated_pct": {
+    "30": 26.2538,
+    "60": 26.8199,
+    "90": 25.213
+  },
+  "time_min": "2016-10-04 10:30:00",
+  "time_max": "2016-12-19 15:00:00"
+}

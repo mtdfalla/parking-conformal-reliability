@@ -1,0 +1,13 @@
+base,MAE,level,method,meanPICP,stdPICP,MPIW,Winkler
+RandomForest,3.41,0.9,split-CP,0.8998,0.0403,17.32,27.42
+RandomForest,3.41,0.9,ACI,0.8991,0.0012,15.2,20.73
+RandomForest,3.41,0.95,split-CP,0.947,0.0362,23.26,34.21
+RandomForest,3.41,0.95,ACI,0.9495,0.0013,20.72,27.06
+GradBoost,3.57,0.9,split-CP,0.8997,0.042,17.49,27.93
+GradBoost,3.57,0.9,ACI,0.8993,0.0011,15.49,21.54
+GradBoost,3.57,0.95,split-CP,0.9487,0.0283,23.29,34.38
+GradBoost,3.57,0.95,ACI,0.9496,0.0011,21.0,27.57
+Ridge(linear),3.42,0.9,split-CP,0.8837,0.1027,15.9,25.98
+Ridge(linear),3.42,0.9,ACI,0.8991,0.001,15.23,20.51
+Ridge(linear),3.42,0.95,split-CP,0.9387,0.0444,20.97,32.03
+Ridge(linear),3.42,0.95,ACI,0.9497,0.0011,20.33,26.24
