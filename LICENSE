@@ -20,9 +20,9 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 ---
 DATA LICENCES — FILE LEVEL, NOT BLANKET. These differ per file and may not be merged.
 
-Belgrade-derived files under 01_data/ (belgrade_*.parquet, facility_coords.parquet,
-facility_index.csv): dedicated to the public domain under CC0 1.0
-(https://creativecommons.org/publicdomain/zero/1.0/).
+Belgrade-derived files (belgrade_*.parquet, facility_coords.parquet, facility_index.csv) are not
+included in this repository and are not redistributed. No licence is granted over them here.
+See DATA_AVAILABILITY.md.
 
 Birmingham-derived files under 01_data/ (birmingham_*.parquet): distributed under CC BY 4.0
 (https://creativecommons.org/licenses/by/4.0/) with the attribution REQUIRED by the source licence:
