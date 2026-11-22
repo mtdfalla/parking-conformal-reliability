@@ -249,3 +249,4 @@ BUILD-INFO.txt,doc,66be5b5e3be719b2c00a8949318e8e44e731a093ae5ad4b32abd670fdfe53
 01_data/DATA_DICTIONARY.md,doc,101c410ca06985b98299d8aecde55e02c9a3c4a32d5bdf9469b970ae78ab3677,5336,exact_hash,R6,,,
 01_data/DATA_DICTIONARY-raw-provenance.md,doc,fe3543f1f7a4096d9254885ff09a8d0684f1982aa442a588507171afd0f3e3e2,4918,exact_hash,R6,,,
 04_experiments/EXPERIMENTS_LOG.md,doc,198bfc004c358b15158e5bba4c8cb0098223598a4b9bea0d51e80550b88c3642,237756,exact_hash,R6,,,
+01_data/processed/BELGRADE-DATA.md,input,1b200b608ea09bdeb16b2147f86b1783842b4a6a203f687813a28ccf27c14ac4,3386,exact_hash,public,03_code/2026-11-22-build-public-repo.py,,"generated documentation: the withheld Belgrade files, their hashes and the reason"
