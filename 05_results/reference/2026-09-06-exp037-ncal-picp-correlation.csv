@@ -5,9 +5,9 @@ belgrade,y_t+15min,0.9,split-CP,21,760,760,1,,,undefined: n_cal constant (760) a
 belgrade,y_t+15min,0.9,ACI,21,760,760,1,,,undefined: n_cal constant (760) across all 21 facilities
 belgrade,y_t+30min,0.9,split-CP,21,754,754,1,,,undefined: n_cal constant (754) across all 21 facilities
 belgrade,y_t+30min,0.9,ACI,21,754,754,1,,,undefined: n_cal constant (754) across all 21 facilities
-birmingham,y_t+30min,0.9,split-CP,28,132,151,7,0.123332,0.531805,
-birmingham,y_t+30min,0.9,ACI,28,132,151,7,0.005221,0.978965,
-birmingham,y_t+60min,0.9,split-CP,28,132,151,7,-0.071496,0.717698,
-birmingham,y_t+60min,0.9,ACI,28,132,151,7,-0.096855,0.623924,
-birmingham,y_t+90min,0.9,split-CP,28,132,151,7,-0.054706,0.782175,
-birmingham,y_t+90min,0.9,ACI,28,132,151,7,-0.166629,0.396734,
+birmingham,y_t+30min,0.9,split-CP,28,120,138,7,-0.023367,0.906046,
+birmingham,y_t+30min,0.9,ACI,28,120,138,7,-0.149611,0.447334,
+birmingham,y_t+60min,0.9,split-CP,28,110,128,7,0.036471,0.853817,
+birmingham,y_t+60min,0.9,ACI,28,110,128,7,-0.041128,0.835391,
+birmingham,y_t+90min,0.9,split-CP,28,95,114,7,-0.216256,0.269034,
+birmingham,y_t+90min,0.9,ACI,28,95,114,7,-0.089341,0.651195,

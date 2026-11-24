@@ -24,4 +24,4 @@ identity, but not third-party reproduction, until redistribution permission is g
 anywhere under a single blanket licence: doing so would relicense the Birmingham-derived files, whose
 source licence requires attribution and which we cannot waive.
 
-**Contact.** Mohamed Abdelmagid, Khalifa University, Abu Dhabi, United Arab Emirates — 100059835@ku.ac.ae
+**Contact.** Mohamed Abdelmagid, Khalifa University, Abu Dhabi, United Arab Emirates, 100059835@ku.ac.ae

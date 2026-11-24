@@ -20,7 +20,7 @@ end to end by a third party on that city without any request to anyone.
 
 ## What you can still verify without the Belgrade files
 
-* Every **result** we obtained is here, in `05_results/reference/` — including all Belgrade
+* Every **result** we obtained is here, in `05_results/reference/`, including all Belgrade
   per-facility outputs. You can inspect, re-aggregate and check every number in the article against
   them.
 * Every **script** is here. Nothing about the method is withheld.

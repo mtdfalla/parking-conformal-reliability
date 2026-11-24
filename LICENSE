@@ -18,7 +18,7 @@ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
-DATA LICENCES — FILE LEVEL, NOT BLANKET. These differ per file and may not be merged.
+DATA LICENCES: FILE LEVEL, NOT BLANKET. These differ per file and may not be merged.
 
 Belgrade-derived files (belgrade_*.parquet, facility_coords.parquet, facility_index.csv) are not
 included in this repository and are not redistributed. No licence is granted over them here.

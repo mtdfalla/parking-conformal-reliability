@@ -58,6 +58,7 @@ __all__ = [
     "block_length_for_cadence", "repair_quantile_crossing",
     "calendar_day_chunks", "fixed_row_chunks", "matured_release_end",
     "MIN_DISTINCT_READINGS", "is_low_information", "low_information_facilities",
+    "finalize_band", "count_inverted", "count_alpha_clipped", "count_q_saturated",
 ]
 
 # --------------------------------------------------------------------------------------
@@ -267,10 +268,50 @@ def winkler_score(y, lo, hi, alpha) -> float:
     return float(np.mean(s))
 
 
+def finalize_band(lo, hi):
+    """The final-band rule. Returns (lo, hi, inverted).
+
+    A band whose lower end exceeds its upper end, after any clip, is an EMPTY interval: it covers
+    nothing and its width is zero. Both ends are set to their midpoint so that width and the interval
+    score are well defined, and the boolean mask ``inverted`` marks the rows so that coverage can be
+    forced to a miss (a realised value equal to the midpoint is not covered by an empty set).
+    A band with lo <= hi is returned unchanged.
+    """
+    lo = np.array(lo, dtype=float, copy=True); hi = np.array(hi, dtype=float, copy=True)
+    inverted = lo > hi
+    if inverted.any():
+        mid = 0.5 * (lo[inverted] + hi[inverted])
+        lo[inverted] = mid; hi[inverted] = mid
+    return lo, hi, inverted
+
+
+def count_inverted(lo, hi) -> int:
+    """Number of final bands that are empty under the final-band rule."""
+    return int(np.sum(np.asarray(lo, float) > np.asarray(hi, float)))
+
+
+def count_alpha_clipped(alpha_used, bounds=(1e-3, 1.0 - 1e-3)) -> int:
+    """Number of steps at which the adaptive level sat on a projection bound."""
+    a = np.asarray(alpha_used, float)
+    return int(np.sum((a <= bounds[0]) | (a >= bounds[1])))
+
+
+def count_q_saturated(alpha_used, pool_size) -> int:
+    """Number of steps at which the conformal quantile sat at the pool maximum because the level asked
+    for more than the pool can give: ceil((n + 1)(1 - alpha)) > n, i.e. alpha < 1 / (n + 1).
+
+    This binds well before the projection bound does (about alpha < 0.008 for a pool of 120 against a
+    bound of 0.001), so ``count_alpha_clipped`` alone understates how often the adaptive band is
+    capped (review finding 6). Both are reported."""
+    a = np.asarray(alpha_used, float); n = np.asarray(pool_size, float)
+    return int(np.sum(np.ceil((n + 1.0) * (1.0 - a)) > n))
+
+
 def interval_metrics(y, lo, hi, alpha) -> tuple[float, float, float]:
-    """(PICP, MPIW, Winkler)."""
-    y = np.asarray(y, float); lo = np.asarray(lo, float); hi = np.asarray(hi, float)
-    return (float(np.mean((y >= lo) & (y <= hi))),
+    """(PICP, MPIW, Winkler), under the final-band rule (see ``finalize_band``)."""
+    y = np.asarray(y, float)
+    lo, hi, inverted = finalize_band(lo, hi)
+    return (float(np.mean((y >= lo) & (y <= hi) & ~inverted)),
             float(np.mean(hi - lo)),
             winkler_score(y, lo, hi, alpha))
 
@@ -375,7 +416,11 @@ def select_gamma_on_calibration(cal_scores, center_lo_cal, center_hi_cal, y_cal,
         return grid[len(grid) // 2], {"reason": "calibration too short for nested selection",
                                       "n_cal": n, "gamma_grid": list(grid)}
 
-    pool_a = cal_scores[:cut]
+    # Register item 2.7 (review finding 5). A cal-A score at row i belongs to a target that resolves at
+    # row i + horizon, so at cal-B's first step (row ``cut``) only rows i <= cut - horizon are observable.
+    # The last ``horizon - 1`` cal-A scores are therefore left out of the seed pool. cal-B is unchanged.
+    gap = horizon - 1
+    pool_a = cal_scores[:cut - gap]
     target = 1.0 - alpha
     rows = []
     for g in grid:
@@ -387,7 +432,7 @@ def select_gamma_on_calibration(cal_scores, center_lo_cal, center_hi_cal, y_cal,
         rows.append((abs(picp - target), wink, g, picp, mpiw))
     rows.sort()
     best = rows[0]
-    return best[2], {"n_cal": n, "n_cal_a": cut, "n_cal_b": n - cut,
+    return best[2], {"n_cal": n, "n_cal_a": cut, "n_cal_b": n - cut, "n_pool_a": len(pool_a), "gap": gap,
                      "chosen_gamma": best[2], "calB_picp": best[3], "calB_mpiw": best[4],
                      "grid_calB_picp": {g: p for _, _, g, p, _ in rows}}
 

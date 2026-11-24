@@ -1,0 +1,4 @@
+city,horizon,facilities,rows_usable,anchor_interpolated_pct,anchor_carried_pct,target_interpolated_pct,train_rows,calib_rows,test_rows,days
+Birmingham,t+30min,28,15961,0.0,36.01,0.0,8870,3763,3328,73
+Birmingham,t+60min,28,14770,0.0,16.29,0.0,8298,3487,2985,73
+Birmingham,t+90min,28,13082,0.0,33.69,0.0,7313,3105,2664,73

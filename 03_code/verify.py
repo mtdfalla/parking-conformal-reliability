@@ -75,12 +75,17 @@ SCAN_FILES = [
     ("06_manuscript/CTR/replication/2026-09-04-README.md", "doc"),
     ("06_manuscript/CTR/replication/2026-09-04-REPLICATION.md", "doc"),
     ("06_manuscript/CTR/replication/2026-09-04-USER_ACTIONS.md", "doc"),
+    # Revision 57c: the table typesetter and the display-item mapping ship in the package (Fixed decisions),
+    # so they are hash-locked in both layouts. The mapping carries a different name inside the package.
+    ("06_manuscript/CTR/2026-09-06-typeset-tables.py", "code"),
+    ("06_manuscript/CTR/replication/2026-11-24-display-item-sources.md", "doc"),
     # The same documents under the names they carry INSIDE the shipped package. Whichever layout this
     # file finds itself in, one spelling resolves and the other is reported as skipped, so a document
     # is never silently unhashed.
     ("README.md", "doc"),
     ("REPLICATION.md", "doc"),
     ("USER_ACTIONS.md", "doc"),
+    ("DISPLAY-ITEM-SOURCES.md", "doc"),
     ("LICENSE", "doc"),
     ("BUILD-INFO.txt", "doc"),
     ("01_data/DATA_DICTIONARY.md", "doc"),

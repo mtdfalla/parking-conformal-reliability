@@ -1,0 +1,52 @@
+{
+  "version": "v3-availability-safe",
+  "rows": 21438,
+  "facilities": 28,
+  "sessions": 1974,
+  "excluded": [
+    8,
+    21
+  ],
+  "embargo": true,
+  "max_carry_steps": 1,
+  "rows_per_split": {
+    "calibration": 5087,
+    "test": 4387,
+    "train": 11964
+  },
+  "usable_rows": {
+    "30": 15961,
+    "60": 14770,
+    "90": 13082
+  },
+  "usable_rows_per_split": {
+    "30": {
+      "calibration": 3763,
+      "test": 3328,
+      "train": 8870
+    },
+    "60": {
+      "calibration": 3487,
+      "test": 2985,
+      "train": 8298
+    },
+    "90": {
+      "calibration": 3105,
+      "test": 2664,
+      "train": 7313
+    }
+  },
+  "anchor_carried_pct_of_usable": {
+    "30": 36.0128,
+    "60": 16.2898,
+    "90": 33.6875
+  },
+  "occ_interpolated_pct": 0.0,
+  "target_interpolated_pct": {
+    "30": 0.0,
+    "60": 0.0,
+    "90": 0.0
+  },
+  "time_min": "2016-10-04 10:30:00",
+  "time_max": "2016-12-19 16:00:00"
+}

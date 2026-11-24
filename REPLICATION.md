@@ -1,7 +1,7 @@
 <!-- Generated file. Do not hand-edit. -->
 # Replication explanatory file
 
-**Article:** Average coverage is not enough: per-facility reliable conformal prediction for urban parking-occupancy forecasting
+**Article:** Average Coverage Is Not Enough: A Facility-Level Audit of Conformal Prediction for Urban Parking-Occupancy Forecasting
 **Author:** Mohamed Abdelmagid, Khalifa University, Abu Dhabi, United Arab Emirates (100059835@ku.ac.ae)
 
 ## 1. Data and code
@@ -45,7 +45,7 @@ BLAS scipy-openblas 0.3.29, 2 CPU(s).
 exit and its log in `07_logs/`, and no step can loop indefinitely. `bash run_all.sh --list` prints the
 step names; `--from STEP` resumes; `--only STEP` runs one.
 
-## 4. Verification targets — GENERATED FROM THE RESULT CSVs AT BUILD TIME
+## 4. Verification targets, generated from the result CSVs at build time
 
 Every number below was read out of a CSV in this package when the package was built. None was typed.
 This is deliberate: the previous version of this file shipped hand-copied targets that the analysis
@@ -53,29 +53,34 @@ had since superseded, so a replicator following it would have failed every one o
 
 | city | horizon | method | n | mean PICP | across-facility sd | worst facility | worst PICP | mean Winkler | source |
 |---|---|---|---|---|---|---|---|---|---|
-| belgrade | y_t+15min | split-CP | 21 | 0.9008 | 0.0411 | 9 | 0.7872 | 23.93 | `2026-09-04-T3prime-two-level-inference.csv` |
+| belgrade | y_t+15min | split-CP | 21 | 0.9008 | 0.0411 | 9 | 0.7872 | 23.92 | `2026-09-04-T3prime-two-level-inference.csv` |
 | belgrade | y_t+15min | CQR | 21 | 0.8995 | 0.0289 | 9 | 0.8266 | 19.63 | `2026-09-04-T3prime-two-level-inference.csv` |
-| belgrade | y_t+15min | ACI | 21 | 0.8913 | 0.0077 | 13 | 0.8690 | 22.45 | `2026-09-04-T3prime-two-level-inference.csv` |
-| belgrade | y_t+15min | ACQR | 21 | 0.8940 | 0.0053 | 13 | 0.8788 | 19.34 | `2026-09-04-T3prime-two-level-inference.csv` |
-| birmingham | y_t+60min | split-CP | 28 | 0.9066 | 0.0513 | 7 | 0.7868 | 175.36 | `2026-09-04-T3prime-two-level-inference.csv` |
-| birmingham | y_t+60min | CQR | 28 | 0.9021 | 0.0417 | 7 | 0.7794 | 172.66 | `2026-09-04-T3prime-two-level-inference.csv` |
-| birmingham | y_t+60min | ACI | 28 | 0.8890 | 0.0155 | 20 | 0.8659 | 175.31 | `2026-09-04-T3prime-two-level-inference.csv` |
-| birmingham | y_t+60min | ACQR | 28 | 0.8928 | 0.0234 | 22 | 0.8537 | 176.28 | `2026-09-04-T3prime-two-level-inference.csv` |
+| belgrade | y_t+15min | ACI | 21 | 0.8912 | 0.0077 | 13 | 0.8690 | 22.53 | `2026-09-04-T3prime-two-level-inference.csv` |
+| belgrade | y_t+15min | ACQR | 21 | 0.8940 | 0.0053 | 13 | 0.8788 | 19.30 | `2026-09-04-T3prime-two-level-inference.csv` |
+| birmingham | y_t+60min | split-CP | 28 | 0.8916 | 0.0550 | 7 | 0.7168 | 215.95 | `2026-09-04-T3prime-two-level-inference.csv` |
+| birmingham | y_t+60min | CQR | 28 | 0.8976 | 0.0492 | 7 | 0.7522 | 219.38 | `2026-09-04-T3prime-two-level-inference.csv` |
+| birmingham | y_t+60min | ACI | 28 | 0.8793 | 0.0227 | 24 | 0.8214 | 221.14 | `2026-09-04-T3prime-two-level-inference.csv` |
+| birmingham | y_t+60min | ACQR | 28 | 0.8919 | 0.0278 | 22 | 0.8333 | 227.11 | `2026-09-04-T3prime-two-level-inference.csv` |
 
 **Derived checks** (each computed from the row above it, so a replicator can recompute them):
 
-* Belgrade across-facility dispersion, split-CP / ACQR: **7.76x** (0.041135 / 0.005302, unrounded, from `2026-09-04-x08-core-headline-excl.csv`).
-* Birmingham across-facility dispersion, split-CP / ACI: **3.32x** (0.051330 / 0.015472).
+* Belgrade across-facility dispersion, split-CP / ACQR: **7.73x** (0.041135 / 0.005319, unrounded, from `2026-09-04-x08-core-headline-excl.csv`).
+* Birmingham across-facility dispersion, split-CP / ACI: **2.42x** (0.054968 / 0.022750).
 * Worst facility x time-of-day cell, split-CP **0.5160** against ToD-ACI **0.8421**, with **12 of 105** split-CP cells below 0.80 and **0** for ToD-ACI (`2026-09-04-T3prime-two-level-inference.csv`, cell-level reference rows).
-* Belgrade conformalizing the SAME fitted NGBoost (M02): PICP **0.7736 -> 0.8917**, mean Winkler **22.04 -> 19.89** (-9.76%), n = 21 (`2026-09-04-x08-e3-summary-excl.csv`). This is the post-exclusion base; the pre-exclusion pair is superseded and is not quoted.
-* Birmingham conformalizing the SAME fitted NGBoost (M02): PICP **0.3722 -> 0.9014**, mean Winkler **408.70 -> 175.73** (-57.00%), n = 28 (`2026-09-04-x08-e3-summary-excl.csv`). This is the post-exclusion base; the pre-exclusion pair is superseded and is not quoted.
-* C01 order-statistic attribution, ACI: taking the (k+1)-th instead of the k-th order statistic widens intervals by **0.34%** and lifts PICP by **0.0004**, at **21 of 21** facilities (`2026-09-04-c01-attribution.csv`).
-* C01 order-statistic attribution, ACQR: taking the (k+1)-th instead of the k-th order statistic widens intervals by **0.42%** and lifts PICP by **0.0003**, at **21 of 21** facilities (`2026-09-04-c01-attribution.csv`).
+* Belgrade conformalizing the SAME fitted NGBoost (M02): PICP **0.7736 -> 0.8917**, mean Winkler **22.00 -> 19.87** (-9.68%), n = 21 (`2026-09-04-x08-e3-summary-excl.csv`). This is the post-exclusion base; the pre-exclusion pair is superseded and is not quoted.
+* Birmingham conformalizing the SAME fitted NGBoost (M02): PICP **0.3299 -> 0.8993**, mean Winkler **510.44 -> 214.14** (-58.05%), n = 28 (`2026-09-04-x08-e3-summary-excl.csv`). This is the post-exclusion base; the pre-exclusion pair is superseded and is not quoted.
+* C01 order-statistic attribution, ACI: taking the (k+1)-th instead of the k-th order statistic widens intervals by **0.27%** and lifts PICP by **0.0004**, at **21 of 21** facilities (`2026-09-04-c01-attribution.csv`).
+* C01 order-statistic attribution, ACQR: taking the (k+1)-th instead of the k-th order statistic widens intervals by **0.50%** and lifts PICP by **0.0002**, at **20 of 21** facilities (`2026-09-04-c01-attribution.csv`).
 * Built-in negative control for the above: split-CP and CQR are unaffected by C01, and differ across the two arms by exactly **0.0**.
 * Reproducibility floor of this pipeline, measured: PICP max |difference| **0.0** across a repeat and across thread counts; width statistics **2.2e-16** relative (`2026-09-04-determinism-probe.csv`). This is why `verify.py` requires PICP to match exactly and allows 1e-12 on widths.
 
 `python 03_code/verify.py` performs these comparisons for you, over every shipped table, and exits
 nonzero on any mismatch.
+
+`DISPLAY-ITEM-SOURCES.md` names the table behind every table, figure and quoted number of the article,
+and `python 06_manuscript/CTR/2026-09-06-typeset-tables.py` turns the tables of a run into the article's
+table bodies (`06_manuscript/CTR/_build/typeset.json`), so a run can be compared with the printed
+tables directly.
 
 ## 5. Tolerances, and why they are what they are
 
@@ -89,7 +94,7 @@ nonzero on any mismatch.
 These were fixed **before** any clean-room run, against a measured floor: on this pipeline PICP is
 bit-identical across a repeat and across thread counts, and width statistics agree to ~2e-16 relative
 (`05_results/reference/2026-09-04-determinism-probe.csv`). The tolerance covers thread-scheduling
-differences only. It cannot absorb a library-version difference — that is what the lock file is for.
+differences only. It cannot absorb a library-version difference, which is what the lock file is for.
 
 ## 6. Randomness and seeds
 

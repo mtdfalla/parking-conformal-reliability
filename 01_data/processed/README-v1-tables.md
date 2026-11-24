@@ -7,7 +7,7 @@ carry the defects the revision fixed:
 * **S02 / X01** — Birmingham lags, anchors and targets that cross a night boundary, which
   contaminated about 10% of the t+90 targets.
 
-**Every reported number in the article is computed on the `*_features_v2.parquet` tables.**
+**Every reported number in the article is computed on `belgrade_features_v2.parquet` and `birmingham_features_v3.parquet`.** `archived-v2/birmingham_features_v2.parquet` is read by one sensitivity only (S1), for its row set.
 The v1 tables are shipped for one reason: the `A12_v1_paired` arm of
 `03_code/src/conformal/2026-09-03-e3-baselines.py` runs both EnbPI chunking schemes on ONE
 fitted model per facility to attribute the C07 protocol delta (row 1 of the

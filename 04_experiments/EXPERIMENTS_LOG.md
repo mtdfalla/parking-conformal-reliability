@@ -3044,3 +3044,149 @@ calibration-selected γ; it is named as such in the text rather than regenerated
   curve on the exclusion base *with* the matched random control the figure lacked.
   Main text and ESM reference no ESM figure and the ESM has no internal figure cross-reference (checked by grep),
   and figures and tables are separate S-sequences, so the cut and renumber have **no cross-reference consequence**.
+
+---
+
+### EXP-041 — 2026-09-07 (revision 49) — The clean-room run from the revision-49 package. **PASS on both C16 passes, zero failures, 67 of 124 reference tables regenerated, 326 checks — every prediction held, including the two counts that missed in EXP-039.**
+
+- **Prespecification (written after the build, before the unzip):**
+  `04_experiments/2026-09-07-revision49-cleanroom-PRESPECIFICATION.md`. Seventeenth prespecification.
+- **Artifact exercised:** `06_manuscript/CTR/replication/2026-09-07-parking-conformal-reliability.zip`, sha256
+  `4e1dc24ff25a16be…`, **291 files, 259 manifest entries, 124 reference tables**. Its predecessor (revision-48
+  build, `885581665211c17e…`, the artifact EXP-039 exercised) is retired byte-intact as
+  `replication/_superseded/2026-09-07-parking-conformal-reliability-S48.zip`.
+- **What changed since EXP-039:** one new table (D-030), two new read-only makers, four new figure files, two new
+  `run_all.sh` steps and the manuscript generators. **No step that fits a model changed.**
+- **What was run:** `~/cleanroom`, fresh unzip, every step of `run_all.sh` from an empty `05_results/tables/`,
+  **~40 `device_bash` calls**. As in EXP-039 the `e3` arms were advanced by calling the step's own script with
+  the runner's exact arguments and the runner was then re-entered at `--from e3`, so the runner's own loop is
+  what certified the step.
+
+**Predictions vs. measured:**
+
+| # | prediction | measured | verdict |
+|---|---|---|---|
+| P1 | exit 0, ~45–60 calls | **exit 0**, ~40 calls | holds |
+| P2 | zero failures; regenerated **67**; archived **58**; checks **326** | **zero failures**; **326 checks** against **259** entries, so regenerated **67**; archived **58** | **holds exactly** — the first clean-room prespecification in this project whose counts did not miss (C20's rule applied: 67 = EXP-039's 66 + the one new table; 326 = 259 + 67) |
+| P3 | C16 second pass identical | fresh unzip carrying only the run's outputs: **PASS, 326 checks, zero failures** | holds |
+| P4 | Belgrade delay 147 rows, facility 8 absent; Birmingham 210; e3 164 / 196 | **147 / absent / 210 / 164 / 196** | holds |
+| P5 | no unstable cell drawn, or one named by the registry | none drawn | holds |
+| P6 | the spatial re-aggregation needs no `--budget` and completes in one call | one call, inside the runner | holds |
+
+**Per-change gates (section 2 of the prespecification):** `2026-09-07-spatial-statistics-exclusion-base.csv`
+regenerated **byte-identical** to the shipped reference (`56101c9b…` on both sides); the ESM figure step printed
+`ALL DONE` and its two PNGs are **byte-identical** to the repository's (`628720e9…`, `8a824e60…` — recorded, not
+a gate, since figures are `not_gated`); `04_experiments/EXPERIMENTS_LOG.md` sha256 `5cbbb88a325443da…`
+**before and after** the run (defect 7 stays fixed, third consecutive run).
+
+**One operational note, not a defect.** The machine was slower again than in EXP-039 — Belgrade `e3` ran at
+roughly **45–50 s per facility**, so a `--budget` of 140 advanced only 3–4 units inside a 180-second call and the
+`e3` step alone took ~20 calls. `BUDGET` exists for this (A1); the run used 60–140 and no code changed for it.
+The next prespecification should budget **~40–50 calls on this machine** rather than EXP-039's ~45 as a floor.
+
+- **Limits restated:** `docker`/`podman` absent; the **Dockerfile remains UNTESTED**; the manuscript build chain
+  is outside the package — and as of **D-029** that chain is LaTeX for the current target venue, not the docx chain, so **A20
+  is no longer on the critical path**.
+- **Status:** CLOSED — **the revision-49 package is confirmed end to end.** Closed out in C13's order: the package
+  was built first, this entry written, the repository manifest re-cut LAST.
+
+### EXP-042 — 2026-11-22 (revision 55) — The Birmingham causal rebuild, decisive check at t+60. **Branch R: the facility-level conclusion replicates on availability-safe inputs. Intervals widen by about a quarter, and two population-level verdicts are likely to change.**
+
+- **Prespecification:** `04_experiments/2026-11-22-birmingham-causal-rebuild-PRESPECIFICATION.md`, written before any code.
+- **Code (staged, not yet promoted):** `03_code/_staging/2026-11-22-v3/` — v3 builder, causality test, `core.py` with the final-band rule and counters, successor runner. No manifest-listed file was edited.
+- **Run:** Birmingham, t+60, split-CP / CQR / ACI / ACQR, calibrated gamma, seed 42, pinned environment, one call (24 s). Outputs in `04_experiments/2026-11-22-exp042-decisive-check/`, outside `05_results/`. v3 parquet built in scratch, sha256 in that folder, not placed in `01_data/processed/`.
+- **Causality test:** positive control on the v2 builder FAILS as required (478 violations in 1,612 perturbation checks, the auditor's synthetic case first). v3: 0 violations in 1,612.
+
+**Measured, level 0.90, 28 facilities (v2 shipped value in brackets):**
+
+| method | mean PICP | across-facility sd | worst facility | mean Winkler | inverted bands | clip-binding steps |
+|---|---|---|---|---|---|---|
+| split-CP | 0.8916 (0.9066) | 0.0550 (0.0513) | 0.7168, facility 7 (0.7868, 7) | 215.9 (175.4) | 0 | n/a |
+| CQR | 0.8976 (0.9021) | 0.0492 (0.0417) | 0.7522, facility 7 (0.7794, 7) | 219.4 (172.7) | 0 | n/a |
+| ACI | 0.8793 (0.8890) | 0.0203 (0.0155) | 0.8214, facility 24 (0.8659, 20) | 222.2 (175.3) | 0 | 43 of 2,985 (1.44%) |
+| ACQR | 0.8925 (0.8928) | 0.0295 (0.0234) | 0.8333, facility 22 (0.8537, 22) | 227.5 (176.3) | 0 | 18 of 2,985 (0.60%) |
+
+sd(split-CP) / sd(ACI) = **2.71** (3.32). ACI worst minus split-CP worst = **0.105** (0.079). Base model MAE: RF-delta 37.08 (30.86), persistence 68.24 (59.32). Usable rows at t+60: 14,770 (train 8,298, calibration 3,487, test 2,985). Mean test n per facility 106.6, minimum 66. Binomial benchmark sd at these n: 0.0293.
+
+**Branch:** R. All four conditions hold: ratio 2.71 >= 2.0, split-CP worst 0.717 <= 0.85, gap 0.105 >= 0.03, ACI mean 0.8793 in [0.875, 0.925] (by 0.004).
+
+**Predictions against measured:**
+
+| # | prediction | measured | verdict |
+|---|---|---|---|
+| P1 | 12,797 to 13,100 usable rows | 14,770 | **MISS.** The baseline was wrong: v2 kept a row only when all three targets were present, v3 judges each horizon alone. Nothing is wrong with the table |
+| P2 | 28 of 28 evaluated | 28, none skipped | holds |
+| P3 | 14 to 19% carried anchors | 16.29% (test 16.11%) | holds |
+| P4 | RF-delta error up 0 to 25%, below persistence | MAE up 20.1%, 37.08 against 68.24 | holds. The prespecification called 30.86 an RMSE. It is the MAE |
+| P5 | mean PICP bands | 0.8916, 0.8976, 0.8793, 0.8925 | holds, ACI by 0.004 |
+| P6 | ratio in [2.0, 4.5] | 2.71 | holds |
+| P7 | split-CP worst below 0.85, ACI worst at or above 0.84 | 0.717 and **0.821** | split-CP holds, **ACI MISS** |
+| P8 | Winkler up 0 to 25% | up 23.1, 27.1, 26.7, 29.1% | **MISS for three of four**, by up to 4 points |
+| P9 | 0 violations on v3, FAIL on v2 | as predicted | holds |
+| P10 | no inverted bands for split-CP and ACI, under 0.5% for the others | 0 for all four | holds |
+| P11 | clip-binding under 2% | 1.44% and 0.60% | holds |
+
+**What the branch rule did not cover, stated because it will matter in revision 57.** The branch conditions test dispersion and worst facility. They do not test the population-level verdicts. A t-based 90% interval on the mean facility coverage, computed here as a preview and not as the test of record, gives split-CP [0.874, 0.909] and ACI [0.873, 0.886] against a 0.88 safety margin that both passed on v2. CQR [0.882, 0.913] and ACQR [0.883, 0.902] stay inside. If the phase-4 inference rerun in revision 56 confirms this, the Birmingham population-level sentences for split-CP and ACI change, and "no claim sentence changes" in Branch R is too strong. The revision 57 edit table must carry it. This is a gap in the prespecification, not a reason to revisit the branch.
+
+- **Not run:** the other horizons, the other levels' interpretation, every downstream arm, the block-bootstrap row (section 8 of the prespecification, revision 56).
+- **Status:** CLOSED for the decisive check. The full regeneration is revision 56.
+
+### EXP-043 — 2026-11-23 (revision 56b) — Promotion of the v3 batch and the clean-room run. **Stages P and R complete, every in-run gate green, no stop rule fired. The block-bootstrap rule fires: the keystone sentence gains "under facility-clustered inference". Stage F (reference refresh, manifest re-cut, package rebuild, the two C16 passes) is revision 56c.**
+
+- **Prespecification:** `04_experiments/2026-11-23-revision56b-cleanroom-PRESPECIFICATION.md`, written before the promotion. Section 9, the count note, written after stage P and before step `core`.
+- **Stage P (repository):** `03_code/2026-11-23-promote-v3.py` (sha256 `b816d27c…`), rehearsed in full on a scratch copy first. 21 moves, all byte-identical, 24 writes (13 same-path successors, 2 new-path successors, 9 staged files), register `00_admin/2026-11-23-promotion-register.csv`. v3 table rebuilt in place, `3adad011…` as in both scratch builds. Gates: split integrity 50, core 48, core v3 PASS, feature causality 0 of 1,612 (control on the retired v2 builder 478), pipeline 0 of 6,770 and 0 of 6 cuts at 21,438 rows, freeze 117 of 130, `run_all.sh --list` 25, bridge control of the new summaries writer PASS (208 values; fails on two perturbed cells), manifest re-cut twice (C13), **266 entries**, `verify.py` PASS, zero-mismatch PASS, bundle `7bc380b8…` unchanged. Package `2026-11-23-parking-conformal-reliability.zip`, sha256 `3ef3b410febafd4b…`.
+- **Stage R (fresh unzip in the session scratch, persisted byte-identically to `_cleanroom/2026-11-23-exp043-run/`):** every one of the 25 steps, about 45 calls, each step certified by `run_all.sh --only <step>` exit 0. `EXPERIMENTS_LOG.md` sha `4c2aeed2…` before and after the run (defect 7 stays fixed).
+
+**Predictions against measured:**
+
+| # | prediction | measured | verdict |
+|---|---|---|---|
+| N1 | 21,438 rows, 28 facilities, 1,974 sessions | rebuilt in the clean room byte-identical (`3adad011…`) | holds |
+| N2 | usable rows by horizon and split | t+30 3,328 test / 3,763 calibration; t+60 2,985 / 3,487; t+90 2,664 / 3,105 (per-facility n sums) | holds |
+| N4 | S1 rows at t+60 | 2,586 test / 3,015 calibration, 28 facilities | holds |
+| N5 | facilities | Belgrade 24 at every horizon, Birmingham 28, 0 `SKIPPED-thin` | holds |
+| N7 | 25 steps | 25 | holds (the first draft said 23, corrected before promotion: my count) |
+| N9 | 85 regenerated | 85 tables written; 64 have a reference, 21 are new | holds |
+| N10 | 4 old core names become archived | phase B: exactly those 4 `NOTRUN` | holds |
+| N11 | entries after F 287, checks 372 | stage F | open |
+
+**Gates of stage R:**
+1. Every step exit 0.
+2. `verify.py` in the run tree: 268 entries (package layout), 332 checks = 268 + 64. Phase A and C: 0 failures. Phase B: 302 failure lines (the printed list is capped at 60, so an uncapped copy was run, C42) over 55 tables: the 4 `NOTRUN` above and 51 `DIFFERS`, every one downstream of the v3 table or of `core.py` (gamma gap, band rule). `07_logs/2026-11-23-phaseB-classification.txt` lists each table's differing columns. One looks wrong and is not: `2026-09-03-e3-belgrade-per-facility.csv` differs in row ORDER (the reference holds the EXP-033 reseed order, 8, 2, 3, 4 last; the run writes 1 to 24). Matched on keys, 1 PICP cell and 21 width cells differ, all explained.
+3. Counters in every core row, summed in `2026-11-23-core-counters.csv`.
+4. N1 to N5 above.
+5. **Belgrade identity holds.** Split-CP and CQR PICP identical in every cell at every horizon; ACI and ACQR identical at t+5; at t+15 and t+30, ACI moves in 7 and 13 cells and ACQR in 3 and 2, each one a cell whose calibrated gamma changed.
+6. c01 gate: 84 of 84 PASS.
+7. In-run controls: x08 negative control 688 checks, 0 failed (now compared inside the run); phase4 gate 56 checks, 0 failures; per-row coverage reproduces all 336 Birmingham per-facility cells exactly; block-bootstrap axis union 1,015 = intersection 1,015.
+
+**Birmingham t+60, level 0.90, 28 facilities (canonical run; EXP-042 decisive check in brackets):** split-CP mean 0.8916 (0.8916), sd 0.0550, worst 0.7168; CQR 0.8976, 0.0492, 0.7522; ACI 0.8793 (0.8793), sd **0.0227** (0.0203), worst 0.8214; ACQR 0.8919 (0.8925), 0.0278, 0.8333. sd ratio **2.42** (2.71), ACI worst minus split-CP worst 0.105. All four Branch R conditions hold, no Branch N condition. The only difference from the decisive check is the gamma gap fix (item 2.7), and it moves the adaptive methods only.
+
+**Block bootstrap (EXP-042 section 8, rule fixed before the run):** Belgrade t+15, 21 facilities, 90% percentile intervals: split-CP 0.9008 [**0.8785**, 0.9247], CQR 0.8995 [0.8798, 0.9194], ACI 0.8912 [0.8665, 0.9126], ACQR 0.8940 [0.8769, 0.9082]. **The split-CP lower bound is below 0.88, so the keystone sentence gains "under facility-clustered inference".** The auditor's [0.8786, 0.9237] is confirmed to within 0.001. The test of record does not change.
+
+**Counters, calibrated gamma, all horizons and levels:** Birmingham: 0 inverted bands for every method; clip-binding ACI 423 of 35,908 steps (1.18%), ACQR 160 of 17,954 (0.89%); quantile saturation ACI 663, ACQR 321. **Belgrade: inverted bands are not zero**: split-CP 94 and ACI 88 of 292,224 steps, ACQR 31 and CQR 1 of 146,112. No prediction was made for Belgrade (EXP-042's P10 covered Birmingham only). The band rule leaves every Belgrade split-CP and CQR PICP unchanged (gate 5) and moves widths, which is why most Belgrade width columns differ in phase B. Clip-binding Belgrade ACI 3,097 (1.06%), ACQR 915 (0.63%).
+
+- **Stage F (revision 56c, repository):** `03_code/2026-11-23-stageF-refresh.py` took every list from an uncapped copy of the run's own verifier (302 failure lines, all phase B, listing proven complete, C42): 51 `DIFFERS`, equal to the classified set, and 4 `NOTRUN`. 54 repository tables and 6 figures superseded by moving to `_superseded/2026-11-23-pre-v3/` with the run's copies in their place, 21 new tables copied in, 10 byte-identical tables left in place. References (C13): 51 refreshed (old copies moved aside) and 21 new, sha256 on both sides in `00_admin/2026-11-23-exp043-reference-refresh.csv`. Three tables differ from their references only at 1e-16 to 4e-14 relative and keep them: they still certify the run. Archived list 62 (N10 holds), generated from the `NOTRUN` lines. Successors by counted replacement: `verify-state.sh` (artifact list on the v3 core tables and the 2026-11-23 summaries) and `build-package.py` (new zip name `2026-11-23-parking-conformal-reliability-v3-results.zip`). Register `00_admin/2026-11-23-stageF-register.csv`, 271 rows, every move byte-identical.
+- **N11, the package sha and the second C16 pass:** this file ships inside the package, so they are recorded in `PROJECT_STATUS.md` and the revision 56c record, not here. The population-level verdicts and S1 and S2 go to the revision 57 edit table.
+- **Status:** CLOSED here at the reference refresh; the package result is in `PROJECT_STATUS.md`.
+
+### EXP-044 — 2026-11-23 (revision 57) — Facility sample-size guidance (D-041, A2). **First prespecified direction: the Birmingham dispersion reductions are below what 28 facilities can detect, so their non-significance reflects the facility count. A second finding: a method's own cross-facility dispersion sets how many facilities a population equivalence test needs.**
+
+- **Prespecification:** `04_experiments/2026-11-23-facility-sample-size-PRESPECIFICATION.md` (sha256 `241fcbad59223369...`), written before any number. Script, staged outside the hash-locked trees: `03_code/_staging/2026-11-23-exp044/src/conformal/2026-11-23-exp044-facility-sample-size.py` (`3d2349be09bc213d...` after the fix below). Output `04_experiments/2026-11-23-exp044/2026-11-23-exp044-facility-sample-size.csv` (`2ea3f7db00a35fa5...`), 472 rows. Seed 20261123, B 4,000. No model fitted. Promotion to `src/conformal` and `05_results/tables/` goes with the revision 57b reference refresh and manifest re-cut.
+- **Gate:** 40 of 40 checks reproduce `phase4-population` (n, mean, sd) and the D-dispersion rows of `phase4-contrasts` (mean diff, Wilcoxon p) to 1e-9.
+- **E1 (dispersion contrast, Holm first step 0.0125, 80% power):** MDE at 21 Belgrade facilities 0.0140 to 0.0205, observed 0.0128 to 0.0235, power at the observed effect 0.79 to 0.93. At 28 Birmingham facilities MDE 0.0210 to 0.0225, observed 0.0120 to 0.0162, power 0.17 to 0.33, and 80 to 150 facilities needed. At the 0.05 threshold: MDE 0.0175 to 0.0200, 60 to 80 facilities.
+- **E2 (SAFE, true mean above 0.88 needed for 80% power):** at the paper's counts Belgrade ACQR 0.0035, ACI 0.0050, CQR 0.0170, split-CP 0.0240. Birmingham ACI 0.0110, ACQR 0.0130, CQR 0.0245, split-CP 0.0275.
+- **E3 (EXACT, Holm first step, true mean exactly 0.90):** power at the paper's counts Belgrade ACI and ACQR 1.00, CQR 0.60, split-CP 0.09. Birmingham ACI 0.97, ACQR 0.85, CQR 0.08, split-CP 0.03. Facilities for 80%: split-CP 60 (Belgrade) and 100 (Birmingham), CQR 28 and 80, ACI 10 and 21, ACQR 10 and 28.
+- **Departure stated in the prespecification:** the resampled Wilcoxon uses the normal approximation because resamples contain ties.
+- **Defect found after run 1, fixed, rerun (prespecification section 6):** the paper's counts 21 and 28 are also on the n grid, so run 1 wrote each E2 paper-count row twice (480 rows). The loop now visits each n once. Run 2: 472 rows, every value identical to run 1 with duplicates dropped (max abs difference 0). A first draft of this entry also misread two E2 figures from a truncated display; they are corrected above from the CSV.
+- **Status:** CLOSED. Feeds an ESM sentence and the A4 checklist through typeset.json after promotion.
+- **Promoted (revision 57b, 2026-11-23):** script `03_code/src/conformal/2026-11-23-exp044-facility-sample-size.py` (moved byte-identically from staging), table `05_results/tables/2026-11-23-exp044-facility-sample-size.csv` (copied, the staged copy stays beside the experiment as its run record). `run_all.sh` regenerates it in step `samplesize`, after `inference`. A rerun before promotion reproduced the table byte for byte (10 s). Register `00_admin/2026-11-23-revision57b-promotion-register.csv`.
+
+### EXP-034 RULING, 2026-11-24 (revision 58): allocation branch T. **T fires for INTERVAL against MARGIN, so that advantage is not claimed. It does not fire for POINT against INTERVAL, which stays the one claimed contrast.**
+
+- **Why this entry exists:** audit register rows 5.6 and 2-3. EXP-034 applied branch W at the primary cell and never ruled on branch T of `04_experiments/2026-09-05-rphase-C-PRESPECIFICATION.md`, which reads (register row 5.6): "the qualitative ordering flips inside the band [0.90, 0.95]. Then the demonstration is not claimed." No new run. Every figure below is read from `05_results/tables/2026-09-05-rel-alloc-summary.csv` (weekend window, 20 facilities, 20 paired seeds), bad assignments per request.
+- **POINT against INTERVAL, no flip.** POINT 0.0455, 0.0275, 0.0131 and INTERVAL 0.00175, 0.0060, 0.0036 at theta 0.90, 0.925, 0.95. The reduction holds in 20 of 20 seeds at each threshold (96.2%, 78.2%, 72.6%), and also at the outside endpoint 0.85 (92.4%, 20 of 20). Branch W holds across the band for this contrast.
+- **INTERVAL against MARGIN, the ordering flips.** INTERVAL 0.00175 against MARGIN 0.0065 at 0.90 (INTERVAL fewer, 18 of 20 seeds), 0.0060 against 0.00225 at 0.925 (3 of 20) and 0.0036 against 0.0001 at 0.95 (0 of 20). MARGIN costs +424, +575 and +507 m over POINT, INTERVAL +313, +290 and +107 m. Branch T applies to this contrast.
+- **Reading of the branch, settled here and after scoring.** Section 4 of the prespecification states F (against POINT) and W (against MARGIN) as separate outcomes and T without naming a contrast. This ruling reads T as applying to the contrast whose ordering flips. A stricter reading, T for the demonstration as a whole, would withdraw the demonstration. The per-contrast reading is recorded as D-046 so that it is open to challenge.
+- **Ruling.** Branch T is applied contrast by contrast. The demonstration claimed is POINT against INTERVAL. No advantage of the calibrated interval over a matched constant margin is claimed. The primary-cell figures for MARGIN may be reported as measured, always beside the reversal at 0.925 and 0.95, as a trade and not as a finding. This supersedes the narrower sentence EXP-034 allowed for the control ("at the literature's primary threshold a calibrated interval achieves it more cheaply"). The manuscript already states the claimed contrast (VI-A, register row 5.6).
+- **Weekday window:** 3 facilities carry the event at 0.90 and 0.925 and 1 at 0.95, and theta 0.90 is a null for POINT against INTERVAL (sign holds in 1 of 20 seeds). The weekday rows are secondary under the prespecification and change nothing here.
+- **Status:** CLOSED. Branch T adjudicated. This file ships in the package, so the package rebuild and manifest re-cut owed in revision 58 cover this write.
