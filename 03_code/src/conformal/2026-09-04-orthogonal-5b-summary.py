@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# EXP-045 arm A10 (T030), 2026-11-25: reads and writes the 2026-11-25 orthogonal-5b tables, regenerated
+# with the T030 fallback fix. The 2026-09-04 tables are kept. Nothing else changed.
 """EXP-028 summary — the task-5b dose-response, per arm.
 
 Definitions are EXP-022's, unchanged and reconciled against its logged figures in EXP-027:
@@ -13,8 +15,8 @@ from pathlib import Path
 import numpy as np, pandas as pd
 
 TAB = Path(__file__).resolve().parents[3]/"05_results"/"tables"
-CELLS = TAB/"2026-09-04-orthogonal-5b-cells.csv"
-SUM = TAB/"2026-09-04-orthogonal-5b-summary.csv"
+CELLS = TAB/"2026-11-25-orthogonal-5b-cells.csv"
+SUM = TAB/"2026-11-25-orthogonal-5b-summary.csv"
 METHODS = ["split-CP", "Mondrian-split-CP", "ACI", "ToD-ACI"]
 MIN_CELL = 30
 

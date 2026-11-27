@@ -1,0 +1,473 @@
+city,family,item,threshold,quantity,n,value
+belgrade,E1,ACI vs split-CP,,observed_effect,21,0.020548909218859927
+belgrade,E1,ACI vs split-CP,primary,power_at_n,10,0.3985
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,10,0.684
+belgrade,E1,ACI vs split-CP,primary,power_at_n,15,0.65575
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,15,0.868
+belgrade,E1,ACI vs split-CP,primary,power_at_n,21,0.85975
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,21,0.95975
+belgrade,E1,ACI vs split-CP,primary,power_at_n,28,0.959
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,28,0.9905
+belgrade,E1,ACI vs split-CP,primary,power_at_n,40,0.9975
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,40,0.99975
+belgrade,E1,ACI vs split-CP,primary,power_at_n,60,0.99975
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,60,1.0
+belgrade,E1,ACI vs split-CP,primary,power_at_n,80,1.0
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,80,1.0
+belgrade,E1,ACI vs split-CP,primary,power_at_n,100,1.0
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,100,1.0
+belgrade,E1,ACI vs split-CP,primary,power_at_n,150,1.0
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,150,1.0
+belgrade,E1,ACI vs split-CP,primary,power_at_n,200,1.0
+belgrade,E1,ACI vs split-CP,secondary,power_at_n,200,1.0
+belgrade,E1,ACI vs split-CP,primary,n_for_80,21,21.0
+belgrade,E1,ACI vs split-CP,secondary,n_for_80,21,15.0
+belgrade,E1,ACI vs split-CP,primary,mde_at_paper_n,21,0.0195
+belgrade,E1,ACI vs split-CP,secondary,mde_at_paper_n,21,0.0165
+belgrade,E1,ACI vs CQR,,observed_effect,21,0.012760966455547706
+belgrade,E1,ACI vs CQR,primary,power_at_n,10,0.30775
+belgrade,E1,ACI vs CQR,secondary,power_at_n,10,0.576
+belgrade,E1,ACI vs CQR,primary,power_at_n,15,0.56375
+belgrade,E1,ACI vs CQR,secondary,power_at_n,15,0.80025
+belgrade,E1,ACI vs CQR,primary,power_at_n,21,0.78675
+belgrade,E1,ACI vs CQR,secondary,power_at_n,21,0.932
+belgrade,E1,ACI vs CQR,primary,power_at_n,28,0.9165
+belgrade,E1,ACI vs CQR,secondary,power_at_n,28,0.983
+belgrade,E1,ACI vs CQR,primary,power_at_n,40,0.99
+belgrade,E1,ACI vs CQR,secondary,power_at_n,40,0.99875
+belgrade,E1,ACI vs CQR,primary,power_at_n,60,0.99975
+belgrade,E1,ACI vs CQR,secondary,power_at_n,60,1.0
+belgrade,E1,ACI vs CQR,primary,power_at_n,80,1.0
+belgrade,E1,ACI vs CQR,secondary,power_at_n,80,1.0
+belgrade,E1,ACI vs CQR,primary,power_at_n,100,1.0
+belgrade,E1,ACI vs CQR,secondary,power_at_n,100,1.0
+belgrade,E1,ACI vs CQR,primary,power_at_n,150,1.0
+belgrade,E1,ACI vs CQR,secondary,power_at_n,150,1.0
+belgrade,E1,ACI vs CQR,primary,power_at_n,200,1.0
+belgrade,E1,ACI vs CQR,secondary,power_at_n,200,1.0
+belgrade,E1,ACI vs CQR,primary,n_for_80,21,28.0
+belgrade,E1,ACI vs CQR,secondary,n_for_80,21,15.0
+belgrade,E1,ACI vs CQR,primary,mde_at_paper_n,21,0.014
+belgrade,E1,ACI vs CQR,secondary,mde_at_paper_n,21,0.011
+belgrade,E1,ACQR vs CQR,,observed_effect,21,0.015669716162326968
+belgrade,E1,ACQR vs CQR,primary,power_at_n,10,0.35975
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,10,0.71675
+belgrade,E1,ACQR vs CQR,primary,power_at_n,15,0.714
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,15,0.8995
+belgrade,E1,ACQR vs CQR,primary,power_at_n,21,0.89375
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,21,0.9785
+belgrade,E1,ACQR vs CQR,primary,power_at_n,28,0.97925
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,28,0.9965
+belgrade,E1,ACQR vs CQR,primary,power_at_n,40,0.99825
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,40,0.99975
+belgrade,E1,ACQR vs CQR,primary,power_at_n,60,1.0
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,60,1.0
+belgrade,E1,ACQR vs CQR,primary,power_at_n,80,1.0
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,80,1.0
+belgrade,E1,ACQR vs CQR,primary,power_at_n,100,1.0
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,100,1.0
+belgrade,E1,ACQR vs CQR,primary,power_at_n,150,1.0
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,150,1.0
+belgrade,E1,ACQR vs CQR,primary,power_at_n,200,1.0
+belgrade,E1,ACQR vs CQR,secondary,power_at_n,200,1.0
+belgrade,E1,ACQR vs CQR,primary,n_for_80,21,21.0
+belgrade,E1,ACQR vs CQR,secondary,n_for_80,21,15.0
+belgrade,E1,ACQR vs CQR,primary,mde_at_paper_n,21,0.0145
+belgrade,E1,ACQR vs CQR,secondary,mde_at_paper_n,21,0.0125
+belgrade,E1,ACQR vs split-CP,,observed_effect,21,0.023457658925639186
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,10,0.4765
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,10,0.77125
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,15,0.77225
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,15,0.93325
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,21,0.934
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,21,0.989
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,28,0.989
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,28,0.99875
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,40,0.99925
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,40,1.0
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,60,1.0
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,60,1.0
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,80,1.0
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,80,1.0
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,100,1.0
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,100,1.0
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,150,1.0
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,150,1.0
+belgrade,E1,ACQR vs split-CP,primary,power_at_n,200,1.0
+belgrade,E1,ACQR vs split-CP,secondary,power_at_n,200,1.0
+belgrade,E1,ACQR vs split-CP,primary,n_for_80,21,21.0
+belgrade,E1,ACQR vs split-CP,secondary,n_for_80,21,15.0
+belgrade,E1,ACQR vs split-CP,primary,mde_at_paper_n,21,0.0205
+belgrade,E1,ACQR vs split-CP,secondary,mde_at_paper_n,21,0.018
+birmingham,E1,ACI vs split-CP,,observed_effect,28,0.014749630044037145
+birmingham,E1,ACI vs split-CP,primary,power_at_n,10,0.037
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,10,0.1555
+birmingham,E1,ACI vs split-CP,primary,power_at_n,15,0.08725
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,15,0.267
+birmingham,E1,ACI vs split-CP,primary,power_at_n,21,0.16725
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,21,0.3785
+birmingham,E1,ACI vs split-CP,primary,power_at_n,28,0.2455
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,28,0.46975
+birmingham,E1,ACI vs split-CP,primary,power_at_n,40,0.41725
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,40,0.642
+birmingham,E1,ACI vs split-CP,primary,power_at_n,60,0.64825
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,60,0.82675
+birmingham,E1,ACI vs split-CP,primary,power_at_n,80,0.796
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,80,0.91975
+birmingham,E1,ACI vs split-CP,primary,power_at_n,100,0.9075
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,100,0.96825
+birmingham,E1,ACI vs split-CP,primary,power_at_n,150,0.985
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,150,0.99725
+birmingham,E1,ACI vs split-CP,primary,power_at_n,200,0.9975
+birmingham,E1,ACI vs split-CP,secondary,power_at_n,200,0.99925
+birmingham,E1,ACI vs split-CP,primary,n_for_80,28,100.0
+birmingham,E1,ACI vs split-CP,secondary,n_for_80,28,60.0
+birmingham,E1,ACI vs split-CP,primary,mde_at_paper_n,28,0.0215
+birmingham,E1,ACI vs split-CP,secondary,mde_at_paper_n,28,0.0185
+birmingham,E1,ACI vs CQR,,observed_effect,28,0.012038781242565003
+birmingham,E1,ACI vs CQR,primary,power_at_n,10,0.02675
+birmingham,E1,ACI vs CQR,secondary,power_at_n,10,0.1415
+birmingham,E1,ACI vs CQR,primary,power_at_n,15,0.06475
+birmingham,E1,ACI vs CQR,secondary,power_at_n,15,0.21275
+birmingham,E1,ACI vs CQR,primary,power_at_n,21,0.11
+birmingham,E1,ACI vs CQR,secondary,power_at_n,21,0.28925
+birmingham,E1,ACI vs CQR,primary,power_at_n,28,0.1655
+birmingham,E1,ACI vs CQR,secondary,power_at_n,28,0.38225
+birmingham,E1,ACI vs CQR,primary,power_at_n,40,0.29525
+birmingham,E1,ACI vs CQR,secondary,power_at_n,40,0.516
+birmingham,E1,ACI vs CQR,primary,power_at_n,60,0.482
+birmingham,E1,ACI vs CQR,secondary,power_at_n,60,0.707
+birmingham,E1,ACI vs CQR,primary,power_at_n,80,0.64625
+birmingham,E1,ACI vs CQR,secondary,power_at_n,80,0.8345
+birmingham,E1,ACI vs CQR,primary,power_at_n,100,0.76325
+birmingham,E1,ACI vs CQR,secondary,power_at_n,100,0.90025
+birmingham,E1,ACI vs CQR,primary,power_at_n,150,0.932
+birmingham,E1,ACI vs CQR,secondary,power_at_n,150,0.981
+birmingham,E1,ACI vs CQR,primary,power_at_n,200,0.9845
+birmingham,E1,ACI vs CQR,secondary,power_at_n,200,0.99425
+birmingham,E1,ACI vs CQR,primary,n_for_80,28,150.0
+birmingham,E1,ACI vs CQR,secondary,n_for_80,28,80.0
+birmingham,E1,ACI vs CQR,primary,mde_at_paper_n,28,0.021
+birmingham,E1,ACI vs CQR,secondary,mde_at_paper_n,28,0.0175
+birmingham,E1,ACQR vs CQR,,observed_effect,28,0.013531921933306003
+birmingham,E1,ACQR vs CQR,primary,power_at_n,10,0.06775
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,10,0.2155
+birmingham,E1,ACQR vs CQR,primary,power_at_n,15,0.117
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,15,0.31525
+birmingham,E1,ACQR vs CQR,primary,power_at_n,21,0.223
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,21,0.445
+birmingham,E1,ACQR vs CQR,primary,power_at_n,28,0.3325
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,28,0.574
+birmingham,E1,ACQR vs CQR,primary,power_at_n,40,0.51475
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,40,0.727
+birmingham,E1,ACQR vs CQR,primary,power_at_n,60,0.73875
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,60,0.89225
+birmingham,E1,ACQR vs CQR,primary,power_at_n,80,0.8795
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,80,0.96175
+birmingham,E1,ACQR vs CQR,primary,power_at_n,100,0.94725
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,100,0.98675
+birmingham,E1,ACQR vs CQR,primary,power_at_n,150,0.99525
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,150,0.99925
+birmingham,E1,ACQR vs CQR,primary,power_at_n,200,0.99975
+birmingham,E1,ACQR vs CQR,secondary,power_at_n,200,1.0
+birmingham,E1,ACQR vs CQR,primary,n_for_80,28,80.0
+birmingham,E1,ACQR vs CQR,secondary,n_for_80,28,60.0
+birmingham,E1,ACQR vs CQR,primary,mde_at_paper_n,28,0.021
+birmingham,E1,ACQR vs CQR,secondary,mde_at_paper_n,28,0.018
+birmingham,E1,ACQR vs split-CP,,observed_effect,28,0.016242770734778145
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,10,0.05
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,10,0.19875
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,15,0.1175
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,15,0.3095
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,21,0.192
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,21,0.43175
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,28,0.32125
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,28,0.554
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,40,0.51325
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,40,0.7355
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,60,0.7435
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,60,0.89775
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,80,0.87675
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,80,0.958
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,100,0.9495
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,100,0.986
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,150,0.9935
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,150,0.99875
+birmingham,E1,ACQR vs split-CP,primary,power_at_n,200,0.99925
+birmingham,E1,ACQR vs split-CP,secondary,power_at_n,200,0.99975
+birmingham,E1,ACQR vs split-CP,primary,n_for_80,28,80.0
+birmingham,E1,ACQR vs split-CP,secondary,n_for_80,28,60.0
+birmingham,E1,ACQR vs split-CP,primary,mde_at_paper_n,28,0.0225
+birmingham,E1,ACQR vs split-CP,secondary,mde_at_paper_n,28,0.02
+belgrade,E2,split-CP,,mde_at_n,10,0.038000000000000034
+belgrade,E2,split-CP,,mde_at_n,15,0.02949999999999997
+belgrade,E2,split-CP,,mde_at_paper_n,21,0.02400000000000002
+belgrade,E2,split-CP,,mde_at_n,28,0.02100000000000002
+belgrade,E2,split-CP,,mde_at_n,40,0.017000000000000015
+belgrade,E2,split-CP,,mde_at_n,60,0.013499999999999956
+belgrade,E2,split-CP,,mde_at_n,80,0.01200000000000001
+belgrade,E2,split-CP,,mde_at_n,100,0.010499999999999954
+belgrade,E2,split-CP,,mde_at_n,150,0.008499999999999952
+belgrade,E2,split-CP,,mde_at_n,200,0.007499999999999951
+belgrade,E3,split-CP,primary,power_at_n,10,0.0165
+belgrade,E3,split-CP,secondary,power_at_n,10,0.08825
+belgrade,E3,split-CP,primary,power_at_n,15,0.033
+belgrade,E3,split-CP,secondary,power_at_n,15,0.2075
+belgrade,E3,split-CP,primary,power_at_n,21,0.09325
+belgrade,E3,split-CP,secondary,power_at_n,21,0.4545
+belgrade,E3,split-CP,primary,power_at_n,28,0.2585
+belgrade,E3,split-CP,secondary,power_at_n,28,0.66575
+belgrade,E3,split-CP,primary,power_at_n,40,0.60775
+belgrade,E3,split-CP,secondary,power_at_n,40,0.85675
+belgrade,E3,split-CP,primary,power_at_n,60,0.883
+belgrade,E3,split-CP,secondary,power_at_n,60,0.96575
+belgrade,E3,split-CP,primary,power_at_n,80,0.96475
+belgrade,E3,split-CP,secondary,power_at_n,80,0.99075
+belgrade,E3,split-CP,primary,power_at_n,100,0.991
+belgrade,E3,split-CP,secondary,power_at_n,100,0.99875
+belgrade,E3,split-CP,primary,power_at_n,150,0.99925
+belgrade,E3,split-CP,secondary,power_at_n,150,0.99975
+belgrade,E3,split-CP,primary,power_at_n,200,1.0
+belgrade,E3,split-CP,secondary,power_at_n,200,1.0
+belgrade,E3,split-CP,primary,power_at_paper_n,21,0.09325
+belgrade,E3,split-CP,primary,n_for_80,21,60.0
+belgrade,E3,split-CP,secondary,power_at_paper_n,21,0.4545
+belgrade,E3,split-CP,secondary,n_for_80,21,40.0
+belgrade,E2,CQR,,mde_at_n,10,0.026499999999999968
+belgrade,E2,CQR,,mde_at_n,15,0.020499999999999963
+belgrade,E2,CQR,,mde_at_paper_n,21,0.017000000000000015
+belgrade,E2,CQR,,mde_at_n,28,0.014499999999999957
+belgrade,E2,CQR,,mde_at_n,40,0.01200000000000001
+belgrade,E2,CQR,,mde_at_n,60,0.009499999999999953
+belgrade,E2,CQR,,mde_at_n,80,0.008499999999999952
+belgrade,E2,CQR,,mde_at_n,100,0.007499999999999951
+belgrade,E2,CQR,,mde_at_n,150,0.006000000000000005
+belgrade,E2,CQR,,mde_at_n,200,0.0050000000000000044
+belgrade,E3,CQR,primary,power_at_n,10,0.10475
+belgrade,E3,CQR,secondary,power_at_n,10,0.38775
+belgrade,E3,CQR,primary,power_at_n,15,0.28525
+belgrade,E3,CQR,secondary,power_at_n,15,0.70175
+belgrade,E3,CQR,primary,power_at_n,21,0.59875
+belgrade,E3,CQR,secondary,power_at_n,21,0.86225
+belgrade,E3,CQR,primary,power_at_n,28,0.834
+belgrade,E3,CQR,secondary,power_at_n,28,0.9585
+belgrade,E3,CQR,primary,power_at_n,40,0.9595
+belgrade,E3,CQR,secondary,power_at_n,40,0.98875
+belgrade,E3,CQR,primary,power_at_n,60,0.9975
+belgrade,E3,CQR,secondary,power_at_n,60,0.99975
+belgrade,E3,CQR,primary,power_at_n,80,0.99975
+belgrade,E3,CQR,secondary,power_at_n,80,1.0
+belgrade,E3,CQR,primary,power_at_n,100,1.0
+belgrade,E3,CQR,secondary,power_at_n,100,1.0
+belgrade,E3,CQR,primary,power_at_n,150,1.0
+belgrade,E3,CQR,secondary,power_at_n,150,1.0
+belgrade,E3,CQR,primary,power_at_n,200,1.0
+belgrade,E3,CQR,secondary,power_at_n,200,1.0
+belgrade,E3,CQR,primary,power_at_paper_n,21,0.59875
+belgrade,E3,CQR,primary,n_for_80,21,28.0
+belgrade,E3,CQR,secondary,power_at_paper_n,21,0.86225
+belgrade,E3,CQR,secondary,n_for_80,21,21.0
+belgrade,E2,ACI,,mde_at_n,10,0.007499999999999951
+belgrade,E2,ACI,,mde_at_n,15,0.006000000000000005
+belgrade,E2,ACI,,mde_at_paper_n,21,0.0050000000000000044
+belgrade,E2,ACI,,mde_at_n,28,0.0040000000000000036
+belgrade,E2,ACI,,mde_at_n,40,0.0034999999999999476
+belgrade,E2,ACI,,mde_at_n,60,0.0030000000000000027
+belgrade,E2,ACI,,mde_at_n,80,0.0024999999999999467
+belgrade,E2,ACI,,mde_at_n,100,0.0020000000000000018
+belgrade,E2,ACI,,mde_at_n,150,0.0020000000000000018
+belgrade,E2,ACI,,mde_at_n,200,0.0014999999999999458
+belgrade,E3,ACI,primary,power_at_n,10,1.0
+belgrade,E3,ACI,secondary,power_at_n,10,1.0
+belgrade,E3,ACI,primary,power_at_n,15,1.0
+belgrade,E3,ACI,secondary,power_at_n,15,1.0
+belgrade,E3,ACI,primary,power_at_n,21,1.0
+belgrade,E3,ACI,secondary,power_at_n,21,1.0
+belgrade,E3,ACI,primary,power_at_n,28,1.0
+belgrade,E3,ACI,secondary,power_at_n,28,1.0
+belgrade,E3,ACI,primary,power_at_n,40,1.0
+belgrade,E3,ACI,secondary,power_at_n,40,1.0
+belgrade,E3,ACI,primary,power_at_n,60,1.0
+belgrade,E3,ACI,secondary,power_at_n,60,1.0
+belgrade,E3,ACI,primary,power_at_n,80,1.0
+belgrade,E3,ACI,secondary,power_at_n,80,1.0
+belgrade,E3,ACI,primary,power_at_n,100,1.0
+belgrade,E3,ACI,secondary,power_at_n,100,1.0
+belgrade,E3,ACI,primary,power_at_n,150,1.0
+belgrade,E3,ACI,secondary,power_at_n,150,1.0
+belgrade,E3,ACI,primary,power_at_n,200,1.0
+belgrade,E3,ACI,secondary,power_at_n,200,1.0
+belgrade,E3,ACI,primary,power_at_paper_n,21,1.0
+belgrade,E3,ACI,primary,n_for_80,21,10.0
+belgrade,E3,ACI,secondary,power_at_paper_n,21,1.0
+belgrade,E3,ACI,secondary,n_for_80,21,10.0
+belgrade,E2,ACQR,,mde_at_n,10,0.0050000000000000044
+belgrade,E2,ACQR,,mde_at_n,15,0.0040000000000000036
+belgrade,E2,ACQR,,mde_at_paper_n,21,0.0034999999999999476
+belgrade,E2,ACQR,,mde_at_n,28,0.0030000000000000027
+belgrade,E2,ACQR,,mde_at_n,40,0.0024999999999999467
+belgrade,E2,ACQR,,mde_at_n,60,0.0020000000000000018
+belgrade,E2,ACQR,,mde_at_n,80,0.0020000000000000018
+belgrade,E2,ACQR,,mde_at_n,100,0.0014999999999999458
+belgrade,E2,ACQR,,mde_at_n,150,0.0014999999999999458
+belgrade,E2,ACQR,,mde_at_n,200,0.0010000000000000009
+belgrade,E3,ACQR,primary,power_at_n,10,1.0
+belgrade,E3,ACQR,secondary,power_at_n,10,1.0
+belgrade,E3,ACQR,primary,power_at_n,15,1.0
+belgrade,E3,ACQR,secondary,power_at_n,15,1.0
+belgrade,E3,ACQR,primary,power_at_n,21,1.0
+belgrade,E3,ACQR,secondary,power_at_n,21,1.0
+belgrade,E3,ACQR,primary,power_at_n,28,1.0
+belgrade,E3,ACQR,secondary,power_at_n,28,1.0
+belgrade,E3,ACQR,primary,power_at_n,40,1.0
+belgrade,E3,ACQR,secondary,power_at_n,40,1.0
+belgrade,E3,ACQR,primary,power_at_n,60,1.0
+belgrade,E3,ACQR,secondary,power_at_n,60,1.0
+belgrade,E3,ACQR,primary,power_at_n,80,1.0
+belgrade,E3,ACQR,secondary,power_at_n,80,1.0
+belgrade,E3,ACQR,primary,power_at_n,100,1.0
+belgrade,E3,ACQR,secondary,power_at_n,100,1.0
+belgrade,E3,ACQR,primary,power_at_n,150,1.0
+belgrade,E3,ACQR,secondary,power_at_n,150,1.0
+belgrade,E3,ACQR,primary,power_at_n,200,1.0
+belgrade,E3,ACQR,secondary,power_at_n,200,1.0
+belgrade,E3,ACQR,primary,power_at_paper_n,21,1.0
+belgrade,E3,ACQR,primary,n_for_80,21,10.0
+belgrade,E3,ACQR,secondary,power_at_paper_n,21,1.0
+belgrade,E3,ACQR,secondary,n_for_80,21,10.0
+birmingham,E2,split-CP,,mde_at_n,10,
+birmingham,E2,split-CP,,mde_at_n,15,0.03949999999999998
+birmingham,E2,split-CP,,mde_at_n,21,0.03200000000000003
+birmingham,E2,split-CP,,mde_at_paper_n,28,0.02749999999999997
+birmingham,E2,split-CP,,mde_at_n,40,0.02300000000000002
+birmingham,E2,split-CP,,mde_at_n,60,0.018000000000000016
+birmingham,E2,split-CP,,mde_at_n,80,0.016000000000000014
+birmingham,E2,split-CP,,mde_at_n,100,0.014000000000000012
+birmingham,E2,split-CP,,mde_at_n,150,0.011499999999999955
+birmingham,E2,split-CP,,mde_at_n,200,0.010000000000000009
+birmingham,E3,split-CP,primary,power_at_n,10,0.0015
+birmingham,E3,split-CP,secondary,power_at_n,10,0.0155
+birmingham,E3,split-CP,primary,power_at_n,15,0.00375
+birmingham,E3,split-CP,secondary,power_at_n,15,0.0435
+birmingham,E3,split-CP,primary,power_at_n,21,0.00775
+birmingham,E3,split-CP,secondary,power_at_n,21,0.11475
+birmingham,E3,split-CP,primary,power_at_n,28,0.02975
+birmingham,E3,split-CP,secondary,power_at_n,28,0.24525
+birmingham,E3,split-CP,primary,power_at_n,40,0.1235
+birmingham,E3,split-CP,secondary,power_at_n,40,0.49975
+birmingham,E3,split-CP,primary,power_at_n,60,0.44725
+birmingham,E3,split-CP,secondary,power_at_n,60,0.77525
+birmingham,E3,split-CP,primary,power_at_n,80,0.70125
+birmingham,E3,split-CP,secondary,power_at_n,80,0.902
+birmingham,E3,split-CP,primary,power_at_n,100,0.84025
+birmingham,E3,split-CP,secondary,power_at_n,100,0.95075
+birmingham,E3,split-CP,primary,power_at_n,150,0.97675
+birmingham,E3,split-CP,secondary,power_at_n,150,0.99475
+birmingham,E3,split-CP,primary,power_at_n,200,0.99575
+birmingham,E3,split-CP,secondary,power_at_n,200,0.999
+birmingham,E3,split-CP,primary,power_at_paper_n,28,0.02975
+birmingham,E3,split-CP,primary,n_for_80,28,100.0
+birmingham,E3,split-CP,secondary,power_at_paper_n,28,0.24525
+birmingham,E3,split-CP,secondary,n_for_80,28,80.0
+birmingham,E2,CQR,,mde_at_n,10,0.04400000000000004
+birmingham,E2,CQR,,mde_at_n,15,0.03400000000000003
+birmingham,E2,CQR,,mde_at_n,21,0.028000000000000025
+birmingham,E2,CQR,,mde_at_paper_n,28,0.024499999999999966
+birmingham,E2,CQR,,mde_at_n,40,0.019499999999999962
+birmingham,E2,CQR,,mde_at_n,60,0.01649999999999996
+birmingham,E2,CQR,,mde_at_n,80,0.014000000000000012
+birmingham,E2,CQR,,mde_at_n,100,0.012499999999999956
+birmingham,E2,CQR,,mde_at_n,150,0.010499999999999954
+birmingham,E2,CQR,,mde_at_n,200,0.009000000000000008
+birmingham,E3,CQR,primary,power_at_n,10,0.00325
+birmingham,E3,CQR,secondary,power_at_n,10,0.05075
+birmingham,E3,CQR,primary,power_at_n,15,0.0115
+birmingham,E3,CQR,secondary,power_at_n,15,0.112
+birmingham,E3,CQR,primary,power_at_n,21,0.0325
+birmingham,E3,CQR,secondary,power_at_n,21,0.20775
+birmingham,E3,CQR,primary,power_at_n,28,0.08325
+birmingham,E3,CQR,secondary,power_at_n,28,0.38725
+birmingham,E3,CQR,primary,power_at_n,40,0.277
+birmingham,E3,CQR,secondary,power_at_n,40,0.66125
+birmingham,E3,CQR,primary,power_at_n,60,0.62525
+birmingham,E3,CQR,secondary,power_at_n,60,0.86725
+birmingham,E3,CQR,primary,power_at_n,80,0.8265
+birmingham,E3,CQR,secondary,power_at_n,80,0.94625
+birmingham,E3,CQR,primary,power_at_n,100,0.9305
+birmingham,E3,CQR,secondary,power_at_n,100,0.9855
+birmingham,E3,CQR,primary,power_at_n,150,0.9945
+birmingham,E3,CQR,secondary,power_at_n,150,0.999
+birmingham,E3,CQR,primary,power_at_n,200,0.99975
+birmingham,E3,CQR,secondary,power_at_n,200,1.0
+birmingham,E3,CQR,primary,power_at_paper_n,28,0.08325
+birmingham,E3,CQR,primary,n_for_80,28,80.0
+birmingham,E3,CQR,secondary,power_at_paper_n,28,0.38725
+birmingham,E3,CQR,secondary,n_for_80,28,60.0
+birmingham,E2,ACI,,mde_at_n,10,0.020000000000000018
+birmingham,E2,ACI,,mde_at_n,15,0.015499999999999958
+birmingham,E2,ACI,,mde_at_n,21,0.013000000000000012
+birmingham,E2,ACI,,mde_at_paper_n,28,0.01100000000000001
+birmingham,E2,ACI,,mde_at_n,40,0.009000000000000008
+birmingham,E2,ACI,,mde_at_n,60,0.007499999999999951
+birmingham,E2,ACI,,mde_at_n,80,0.00649999999999995
+birmingham,E2,ACI,,mde_at_n,100,0.006000000000000005
+birmingham,E2,ACI,,mde_at_n,150,0.0050000000000000044
+birmingham,E2,ACI,,mde_at_n,200,0.0040000000000000036
+birmingham,E3,ACI,primary,power_at_n,10,0.33825
+birmingham,E3,ACI,secondary,power_at_n,10,0.64975
+birmingham,E3,ACI,primary,power_at_n,15,0.63875
+birmingham,E3,ACI,secondary,power_at_n,15,0.88925
+birmingham,E3,ACI,primary,power_at_n,21,0.868
+birmingham,E3,ACI,secondary,power_at_n,21,0.97575
+birmingham,E3,ACI,primary,power_at_n,28,0.97025
+birmingham,E3,ACI,secondary,power_at_n,28,0.99425
+birmingham,E3,ACI,primary,power_at_n,40,0.99775
+birmingham,E3,ACI,secondary,power_at_n,40,0.99975
+birmingham,E3,ACI,primary,power_at_n,60,1.0
+birmingham,E3,ACI,secondary,power_at_n,60,1.0
+birmingham,E3,ACI,primary,power_at_n,80,1.0
+birmingham,E3,ACI,secondary,power_at_n,80,1.0
+birmingham,E3,ACI,primary,power_at_n,100,1.0
+birmingham,E3,ACI,secondary,power_at_n,100,1.0
+birmingham,E3,ACI,primary,power_at_n,150,1.0
+birmingham,E3,ACI,secondary,power_at_n,150,1.0
+birmingham,E3,ACI,primary,power_at_n,200,1.0
+birmingham,E3,ACI,secondary,power_at_n,200,1.0
+birmingham,E3,ACI,primary,power_at_paper_n,28,0.97025
+birmingham,E3,ACI,primary,n_for_80,28,21.0
+birmingham,E3,ACI,secondary,power_at_paper_n,28,0.99425
+birmingham,E3,ACI,secondary,n_for_80,28,15.0
+birmingham,E2,ACQR,,mde_at_n,10,0.02200000000000002
+birmingham,E2,ACQR,,mde_at_n,15,0.018000000000000016
+birmingham,E2,ACQR,,mde_at_n,21,0.015000000000000013
+birmingham,E2,ACQR,,mde_at_paper_n,28,0.013000000000000012
+birmingham,E2,ACQR,,mde_at_n,40,0.010499999999999954
+birmingham,E2,ACQR,,mde_at_n,60,0.009000000000000008
+birmingham,E2,ACQR,,mde_at_n,80,0.007499999999999951
+birmingham,E2,ACQR,,mde_at_n,100,0.007000000000000006
+birmingham,E2,ACQR,,mde_at_n,150,0.006000000000000005
+birmingham,E2,ACQR,,mde_at_n,200,0.0050000000000000044
+birmingham,E3,ACQR,primary,power_at_n,10,0.15925
+birmingham,E3,ACQR,secondary,power_at_n,10,0.42275
+birmingham,E3,ACQR,primary,power_at_n,15,0.3315
+birmingham,E3,ACQR,secondary,power_at_n,15,0.707
+birmingham,E3,ACQR,primary,power_at_n,21,0.6455
+birmingham,E3,ACQR,secondary,power_at_n,21,0.89425
+birmingham,E3,ACQR,primary,power_at_n,28,0.848
+birmingham,E3,ACQR,secondary,power_at_n,28,0.96025
+birmingham,E3,ACQR,primary,power_at_n,40,0.97475
+birmingham,E3,ACQR,secondary,power_at_n,40,0.99525
+birmingham,E3,ACQR,primary,power_at_n,60,0.998
+birmingham,E3,ACQR,secondary,power_at_n,60,1.0
+birmingham,E3,ACQR,primary,power_at_n,80,1.0
+birmingham,E3,ACQR,secondary,power_at_n,80,1.0
+birmingham,E3,ACQR,primary,power_at_n,100,1.0
+birmingham,E3,ACQR,secondary,power_at_n,100,1.0
+birmingham,E3,ACQR,primary,power_at_n,150,1.0
+birmingham,E3,ACQR,secondary,power_at_n,150,1.0
+birmingham,E3,ACQR,primary,power_at_n,200,1.0
+birmingham,E3,ACQR,secondary,power_at_n,200,1.0
+birmingham,E3,ACQR,primary,power_at_paper_n,28,0.848
+birmingham,E3,ACQR,primary,n_for_80,28,28.0
+birmingham,E3,ACQR,secondary,power_at_paper_n,28,0.96025
+birmingham,E3,ACQR,secondary,n_for_80,28,21.0

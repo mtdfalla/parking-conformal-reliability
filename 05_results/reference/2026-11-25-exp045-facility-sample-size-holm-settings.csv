@@ -1,0 +1,21 @@
+setting,value
+experiment,"EXP-045 arm A13, successor of EXP-044"
+B,4000
+seed,20261123
+generator,numpy default_rng (PCG64)
+facility_counts_paper,"belgrade 21, birmingham 28"
+n_grid,10 15 21 28 40 60 80 100 150 200
+delta_grid_E1,0.0000 to 0.0600 step 0.0005
+mu_grid_E2,0.8800 to 0.9300 step 0.0005
+resampling,"observed facility-level values resampled with replacement, iid over facilities, location shift (plug-in, conditional on the test window, no shared time shocks)"
+E1_test,"Wilcoxon signed-rank, two-sided, normal approximation with tie correction (scipy wilcoxon method approx, zero_method wilcox)"
+E1_detection,adjusted or raw p below the threshold and replicate mean difference negative
+E1_threshold_holm,"Holm over the four D-dispersion contrasts of a city, family alpha 0.05, facilities resampled jointly, other contrasts at their observed means"
+E1_threshold_primary,"0.0125, the first Holm step (Bonferroni over four), conservative"
+E1_threshold_secondary,"0.05 unadjusted, the most favourable case"
+E2_rule,one-sided 95% facility-clustered t lower bound at or above 0.88
+E3_test,"TOST, two one-sided t tests, margin 0.02 around 0.90, mean set to 0.90"
+E3_thresholds,"primary 0.0125 (first Holm step over four methods), secondary 0.05"
+power_target,0.8
+mc_se_power_at_0.80,0.006324555320336759
+esm_settings_line,"Power was estimated by resampling the observed facility-level values with replacement (B = 4000 replicates per cell, seed 20261123, facility counts 10, 15, 21, 28, 40, 60, 80, 100, 150, 200). Paired contrasts used the two-sided Wilcoxon signed-rank test with its normal approximation, Holm-adjusted jointly over the four contrasts of a city on joint facility resamples. Effects were searched from 0 to 0.06 in steps of 0.0005 and mean coverage from 0.88 to 0.93 in steps of 0.0005. The Monte Carlo standard error of a power estimate near 0.80 is 0.0063."

@@ -9,8 +9,9 @@
 All analysis code is in `03_code/`. The processed Birmingham tables are in `01_data/processed/`,
 documented in `01_data/DATA_DICTIONARY.md`. The processed Belgrade tables are **not redistributed**
 in this repository. `DATA_AVAILABILITY.md` and `01_data/processed/BELGRADE-DATA.md` give the reason,
-the acquisition route and the SHA-256 of each withheld file. Steps that read the Belgrade tables stop
-with a missing-input error until those files are supplied. The Birmingham steps run unaided.
+the acquisition route and the SHA-256 of each withheld file. Until those files are supplied,
+`bash run_all.sh` stops with a missing-input error at its first Belgrade step, and
+`bash run_all.sh --city birmingham` runs every step that needs only the Birmingham data (section 3).
 
 The raw Birmingham source is public (Birmingham City Council, UCI Machine Learning Repository,
 dataset 482, CC BY 4.0). The raw Belgrade feed was obtained from the city parking operator, and we
@@ -21,8 +22,11 @@ resolves to the newest version.
 
 ## 2. Environment
 
-Python 3.10.12. Install from the lock file with `--require-hashes`.
-Recorded host for the reference outputs: Linux-6.8.0-136-generic-x86_64-with-glibc2.35, glibc-2.35,
+Python 3.10.12 is the recorded environment below. The tables dated 2026-11-25 were computed under
+Python 3.12.3 with the same pins. Install the 13 pins as `README.md` shows,
+so that pip resolves their dependencies. The lock below records the SHA-256 of each wheel used. Its 6
+compiled wheels are CPython 3.10 builds.
+Recorded host of that environment: Linux-6.8.0-136-generic-x86_64-with-glibc2.35, glibc-2.35,
 BLAS scipy-openblas 0.3.29, 2 CPU(s).
 
   - numpy=2.2.6
@@ -41,9 +45,52 @@ BLAS scipy-openblas 0.3.29, 2 CPU(s).
 
 ## 3. One-command replication
 
-`bash run_all.sh`. Every step is resumable and bounded: a failing step stops the run with a nonzero
-exit and its log in `07_logs/`, and no step can loop indefinitely. `bash run_all.sh --list` prints the
-step names; `--from STEP` resumes; `--only STEP` runs one.
+`bash run_all.sh` runs every step for both cities and needs the Belgrade tables in `01_data/processed/`.
+Every step is resumable and bounded: a failing step stops the run with a nonzero exit and its log in
+`07_logs/`, and no step can loop indefinitely. `bash run_all.sh --list` prints the step names, `--from STEP`
+resumes and `--only STEP` runs one. `--smoke` shortens nothing: every step runs in full, and only the final
+verification skips outputs that are absent.
+
+`bash run_all.sh --city birmingham` is the public-data path. It runs every step that needs only the
+Birmingham data, prints each step it skips, ends with `verify.py --smoke`, and fails if any of the
+16 tables it writes is missing. It regenerates no Belgrade table, and none of these 31, which
+hold Birmingham rows, alone or beside Belgrade ones, but come from steps that also read the Belgrade data:
+
+* `2026-09-04-T3prime-two-level-inference.csv`
+* `2026-09-04-T6-protocol-sensitivity.csv`
+* `2026-09-04-d05-threshold-sweep.csv`
+* `2026-09-04-phase4-contrasts.csv`
+* `2026-09-04-phase4-facility.csv`
+* `2026-09-04-phase4-gate.csv`
+* `2026-09-04-phase4-population.csv`
+* `2026-09-04-x08-before-after.csv`
+* `2026-09-04-x08-core-headline-control.csv`
+* `2026-09-04-x08-core-headline-excl.csv`
+* `2026-09-04-x08-e3-summary-control.csv`
+* `2026-09-04-x08-e3-summary-excl.csv`
+* `2026-09-06-exp037-ncal-picp-correlation.csv`
+* `2026-09-06-exp037-pooled-vs-worst.csv`
+* `2026-11-23-core-counters.csv`
+* `2026-11-23-core-headline-gcal.csv`
+* `2026-11-23-e3-summary.csv`
+* `2026-11-23-exp044-facility-sample-size.csv`
+* `2026-11-23-phase4-safe-mechanism.csv`
+* `2026-11-25-block-bootstrap-both-cities.csv`
+* `2026-11-25-exp045-facility-sample-size-first-step.csv`
+* `2026-11-25-exp045-facility-sample-size-holm-settings.csv`
+* `2026-11-25-exp045-facility-sample-size-holm.csv`
+* `2026-11-25-exp045-normalised-winkler.csv`
+* `2026-11-25-exp045-release-lag.csv`
+* `2026-11-25-exp045-retained-excluded.csv`
+* `2026-11-25-exp045-rolling-inference.csv`
+* `2026-11-25-exp045-rows-by-hour.csv`
+* `2026-11-25-exp045-tod-cells.csv`
+* `2026-11-25-orthogonal-5b-cells.csv`
+* `2026-11-25-orthogonal-5b-summary.csv`
+
+After this path, `python 03_code/verify.py --smoke` compares every table the run wrote with its reference
+and skips the rest. Without `--smoke`, each reference table the run did not write is reported as
+`B NOTRUN` and the exit status is 1.
 
 ## 4. Verification targets, generated from the result CSVs at build time
 
@@ -94,11 +141,16 @@ tables directly.
 These were fixed **before** any clean-room run, against a measured floor: on this pipeline PICP is
 bit-identical across a repeat and across thread counts, and width statistics agree to ~2e-16 relative
 (`05_results/reference/2026-09-04-determinism-probe.csv`). The tolerance covers thread-scheduling
-differences only. It cannot absorb a library-version difference, which is what the lock file is for.
+differences only. It cannot absorb a library-version difference, which is what the pins are for.
 
 ## 6. Randomness and seeds
 
-Seed 42 throughout (random forests, gradient boosting, bootstrap resampling, demand draws).
+Model fits (random forests, gradient boosting, NGBoost), bootstrap resampling and permutation tests use
+seed 42. The allocation experiments fit once at seed 42 and draw the requests with seeds 1 to 20, one per
+replicate (`--seeds 20` in `run_all.sh`). The facility sample-size simulations use seed 20261123. The 200
+balanced random partitions use `numpy.random.default_rng([20261125, facility_id])`, and the capacity
+perturbation of the allocation ladder uses seed 20261125. The unit tests draw their synthetic data with
+fixed seeds of their own.
 Bootstrap: moving-block with **B = 10,000** resamples and a **cadence-derived 3-hour block**
 (36 rows at Belgrade's 5-minute cadence, 6 at Birmingham's 30-minute). Paired contrasts use 10,000
 facility resamples with Holm correction within family within city.

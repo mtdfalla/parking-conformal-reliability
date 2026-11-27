@@ -8,7 +8,14 @@ tables; recomputes no result (revision 58b: two Fig. 2 label values that the sum
 tie are re-read at full precision from per-facility tables); writes no tracker. The frozen pre-audit maker (`finalize_corrected.py`) is untouched.
 
   F1'  05_results/figures/2026-09-06-f1-per-facility-coverage.png/.pdf   (2 cities x 3 horizons, 4 primary methods)
-  F2'  05_results/figures/2026-09-06-f2-reliability-efficiency.png/.pdf  (sd of coverage vs mean Winkler, 8 methods)
+  F2'  05_results/figures/2026-09-06-f2-reliability-efficiency.png/.pdf  (sd of coverage vs mean Winkler, 10 methods)
+
+Revision 61 (T071, g7 N3, T005 carry): both figures are drawn at their final printed width (0.98 of the 516 pt IEEEtran
+text width, 7.02 in, scale 1.0) with the previous aspect ratios, so the floats keep their height; every text element is
+8 pt at final size; label colours are darkened to a contrast of at least 4.5:1 on white; Fig. 2 adds the rolling
+recalibration arms RS-CP and RS-CQR (squares) from 2026-11-25-exp045-rolling-inference.csv, the row Table 2 prints,
+and carries method names only (the worst facilities are printed in Table 2); its labels are placed by a deterministic
+search that keeps every label inside the axes and clear of the markers and of the other labels.
 """
 from __future__ import annotations
 import sys
@@ -17,6 +24,8 @@ import numpy as np, pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.ticker  # noqa: E402
+import matplotlib.transforms  # noqa: E402  (revision 61: label placement)
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
@@ -25,11 +34,15 @@ FIG = ROOT / "05_results" / "figures"
 sys.path.insert(0, str(HERE.parent / "conformal"))
 import core  # noqa: E402
 
-plt.rcParams.update({"font.size": 9, "axes.titlesize": 9.5, "axes.labelsize": 9, "pdf.fonttype": 42,
-                     "savefig.dpi": 200, "figure.dpi": 100})
+FS = 8   # revision 61 (T071): the minimum text size at final print size; the figures are drawn at that size (W below)
+plt.rcParams.update({"font.size": FS, "axes.titlesize": FS, "axes.labelsize": FS, "xtick.labelsize": FS,
+                     "ytick.labelsize": FS, "pdf.fonttype": 42, "savefig.dpi": 300, "figure.dpi": 100})
+W = 0.98 * 516 / 72.27   # inches: \includegraphics[width=0.98\textwidth], IEEEtran journal \textwidth = 516 pt
 META = {"Software": None, "CreationDate": None, "Creator": None, "Producer": None}
-COL = {"split-CP": "#C00000", "CQR": "#2E9E5B", "ACI": "#1F4E79", "ACQR": "#7030A0",
-       "EnbPI": "#B8860B", "AgACI-style": "#5B9BD5", "NGBoost": "#7F7F7F", "NGBoost-conformal": "#404040"}
+# revision 61 (T071): CQR, EnbPI, AgACI-style and NGBoost darkened from 3.4, 3.3, 3.0 and 4.0 to at least 5.3:1 on white (same hues)
+COL = {"split-CP": "#C00000", "CQR": "#1E7A45", "ACI": "#1F4E79", "ACQR": "#7030A0",
+       "EnbPI": "#8A6508", "AgACI-style": "#2F6FA8", "NGBoost": "#666666", "NGBoost-conformal": "#404040",
+       "RS-CP": "#C00000", "RS-CQR": "#1E7A45"}   # the rolling arms share their score's colour and are drawn as squares
 PRIMARY = ["split-CP", "CQR", "ACI", "ACQR"]
 CITIES = {"belgrade": [("y_t+5min", "use_5"), ("y_t+15min", "use_15"), ("y_t+30min", "use_30")],
           "birmingham": [("y_t+30min", "use_30"), ("y_t+60min", "use_60"), ("y_t+90min", "use_90")]}
@@ -58,7 +71,7 @@ def save(fig, stem):
 
 
 def f1():
-    fig, axes = plt.subplots(2, 3, figsize=(10.5, 6.2), sharey=True)
+    fig, axes = plt.subplots(2, 3, figsize=(W, W * 6.2 / 10.5), sharey=True)   # revision 61: the old 10.5 x 6.2 in aspect
     lowest = 1.0   # the lowest facility over all six panels sets the shared lower limit (revision 57b)
     rng = np.random.default_rng(42)  # jitter only; fixed so the PNG is byte-stable
     for r, (city, hzs) in enumerate(CITIES.items()):
@@ -78,18 +91,19 @@ def f1():
                 p.set_facecolor(COL[m]); p.set_alpha(0.35); p.set_edgecolor(COL[m])
             for i, (m, v) in enumerate(zip(PRIMARY, data)):
                 x = i + 1 + rng.uniform(-0.16, 0.16, size=len(v))
-                ax.scatter(x, v, s=11, color=COL[m], alpha=0.85, zorder=3, lw=0)
-                ax.annotate(f"{v.min():.3f}", (i + 1, v.min()), xytext=(0, -9), textcoords="offset points",
-                            ha="center", fontsize=7, color=COL[m])
-            ax.set_title(f"{city.capitalize()}, {lbl(hz)}, {n} facilities")
-            ax.tick_params(axis="x", labelsize=8)
+                ax.scatter(x, v, s=6, color=COL[m], alpha=0.85, zorder=3, lw=0)
+                ax.annotate(f"{v.min():.3f}", (i + 1, v.min()), xytext=(0, -3), textcoords="offset points",
+                            ha="center", va="top", fontsize=FS, color=COL[m])
+            ax.set_title(f"{city.capitalize()}, {lbl(hz)}, {n} facilities", pad=3)
+            ax.tick_params(axis="x", length=2, pad=2)
             if c == 0:
-                ax.set_ylabel("per-facility coverage (PICP)")
+                ax.set_ylabel("per-facility coverage")   # revision 61: shorter, fits the panel height at 8 pt
     # Shared lower limit: 0.03 under the lowest facility, rounded down to 0.01, so the lowest point and its
     # label (drawn 9 pt below it) both show. A fixed limit (0.72) cut off the Birmingham t+60 split-CP
     # worst facility, 0.717, on the v3 base (D-043 item 4). The prespecified 0.55 wasted half the panel.
-    axes[0, 0].set_ylim(np.floor((lowest - 0.03) * 100) / 100, 1.02)
-    fig.tight_layout()   # no in-figure title: the caption carries it
+    axes[0, 0].set_ylim(np.floor((lowest - 0.04) * 100) / 100, 1.02)   # revision 61: 0.04, room for the 8 pt label
+    for _ in range(2):   # revision 61: a second pass, the first leaves the y label 4 px past the left edge at this size
+        fig.tight_layout(pad=0.3, h_pad=1.1, w_pad=0.4)   # revision 61 (FIX): h_pad 0.6 -> 1.1 (about 4 pt more between rows); no in-figure title: the caption carries it
     save(fig, "2026-09-06-f1-per-facility-coverage")
 
 
@@ -106,12 +120,13 @@ def f2():
               & (f.status == "ok") & ~f.facility_id.isin(exclusions(r.dataset, dict(CITIES[r.dataset])[r.horizon]))]
         assert abs(f.PICP.min() - r.worst_facility_PICP) < 5e-5; e3.loc[i, "worst_facility_PICP"] = f.PICP.min()
     t3 = pd.read_csv(TAB / "2026-09-04-T3prime-two-level-inference.csv")
-    label = {"NGBoost-conformal": "NGBoost + split-CP (M02)"}
-    # label offsets (points) chosen once so no two labels overlap; presentation only (revision 58b: Birmingham ACI moved to the lower right, it overlapped AgACI-style's label)
-    OFF = {("belgrade", "ACQR"): (6, 8), ("birmingham", "split-CP"): (-6, 8), ("birmingham", "NGBoost-conformal"): (6, -14),
-           ("birmingham", "ACI"): (6, -14), ("birmingham", "ACQR"): (6, -4)}
-    fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.4))
+    # revision 61 (T005 carry, D-054, D-057): the rolling recalibration arms, from the P-with-rolling rows Table 2 prints
+    rin = pd.read_csv(TAB / "2026-11-25-exp045-rolling-inference.csv")
+    rin = rin[rin.family == "P-with-rolling"]
+    label = {"NGBoost-conformal": "NGBoost + split-CP"}   # revision 61 (g7 N3): the internal code "(M02)" is not printed
+    fig, axes = plt.subplots(1, 2, figsize=(W, W * 4.4 / 10.5))   # revision 61: the old 10.5 x 4.4 in aspect
     n_off = 0
+    panels = []
     for ax, city in zip(axes, CITIES):
         hz = HEADLINE[city]
         pts = []
@@ -122,41 +137,79 @@ def f2():
         for m in ["EnbPI", "AgACI-style", "NGBoost", "NGBoost-conformal"]:
             e = e3[(e3.dataset == city) & (e3.method == m)].iloc[0]
             pts.append((m, float(e.mean_Winkler), float(e.sd_PICP), float(e.worst_facility_PICP)))
+        for m in ["RS-CP", "RS-CQR"]:
+            r = rin[(rin.city == city) & (rin.item == m)].iloc[0]
+            assert r.horizon == hz
+            pts.append((m, float(r.mean_Winkler), float(r.sd_PICP), float(r.worst_PICP)))
         wk = np.array([p[1] for p in pts])
-        off = []
-        for i, p in enumerate(pts):
-            others = np.delete(wk, i)
-            if p[1] > 1.5 * np.median(others):
-                off.append(i)
+        off = [i for i, p in enumerate(pts) if p[1] > 1.5 * np.median(np.delete(wk, i))]
         n_off += len(off)
         keep = [p for i, p in enumerate(pts) if i not in off]
         xmin, xmax = min(p[1] for p in keep), max(p[1] for p in keep)
-        pad = 0.12 * (xmax - xmin)
-        xlim = (xmin - pad, xmax + pad + (0.35 * (xmax - xmin) if off else 0))
-        ymax = max(p[2] for p in keep) * 1.25
-        for m, x, y, w in keep:
-            ax.scatter([x], [y], s=55, color=COL[m], edgecolor="k", lw=0.6, zorder=3)
-            dx, dy = OFF.get((city, m), (5, 4))
-            ax.annotate(f"{label.get(m, m)}\nworst {w:.3f}", (x, y), xytext=(dx, dy), textcoords="offset points",
-                        ha="right" if dx < 0 else "left", fontsize=7.2, color=COL[m])
-        for i in off:
-            m, x, y, w = pts[i]
-            xe = xlim[1] - 0.02 * (xlim[1] - xlim[0])
-            ye = min(y, ymax * 0.92)
-            ax.annotate("", xy=(xe, ye), xytext=(xe - 0.10 * (xlim[1] - xlim[0]), ye),
-                        arrowprops=dict(arrowstyle="->", color=COL[m], lw=1.2))
-            ax.annotate(f"{m} (off scale):\nWinkler {x:.1f}, sd {y:.3f}, worst {w:.3f}",
-                        (xe - 0.10 * (xlim[1] - xlim[0]), ye), xytext=(-4, 6), textcoords="offset points",
-                        ha="right", fontsize=7.2, color=COL[m])
+        pad = 0.10 * (xmax - xmin)
+        xlim = (xmin - pad, xmax + pad + (0.30 * (xmax - xmin) if off else 0))
+        ymax = max(p[2] for p in keep) * (1.45 if off else 1.25)   # headroom for the off-scale note
         ax.set_xlim(*xlim); ax.set_ylim(0, ymax)
-        ax.set_xlabel("mean Winkler score (vehicles; lower is better)")
-        ax.set_ylabel("across-facility sd of coverage (lower is better)")
+        for m, x, y, w in keep:
+            ax.scatter([x], [y], s=34, color=COL[m], edgecolor="k", lw=0.5, zorder=3,
+                       marker="s" if m.startswith("RS-") else "o")
+        ax.set_xlabel("mean Winkler score, vehicles (lower is better)")
+        ax.set_ylabel("across-facility sd of coverage\n(lower is better)")
         n = int(core_t[core_t.city == city].n.iloc[0])
-        ax.set_title(f"{city.capitalize()}, {lbl(hz)}, {n} facilities, 90% target")
-        ax.text(0.98, 0.03, "toward the origin: reliable and efficient", transform=ax.transAxes,
-                ha="right", va="bottom", fontsize=7.5, color="#555555", style="italic")
+        ax.set_title(f"{city.capitalize()}, {lbl(hz)}, {n} facilities, 90% target", pad=3)
+        ax.xaxis.set_major_locator(matplotlib.ticker.MaxNLocator(nbins=6, steps=[1, 2, 5, 10]))   # revision 61: whole-number ticks
         ax.grid(alpha=0.25, lw=0.5)
-    fig.tight_layout()
+        panels.append((ax, city, pts, keep, off, xlim, ymax))
+    for _ in range(2):
+        fig.tight_layout(pad=0.3, w_pad=1.2)   # two passes as in f1; fixed before the label search, so it sees the final axes geometry
+    fig.canvas.draw()
+    rend = fig.canvas.get_renderer()
+
+    def bb(artist):
+        return artist.get_window_extent(rend)
+
+    def clash(b, boxes):
+        return any(b.overlaps(o) for o in boxes)
+
+    for ax, city, pts, keep, off, xlim, ymax in panels:
+        frame = ax.get_window_extent(rend).padded(-2)
+        boxes = []
+        # the markers are obstacles (a 4 pt square around each centre)
+        for m, x, y, w in keep:
+            cx, cy = ax.transData.transform((x, y))
+            boxes.append(matplotlib.transforms.Bbox([[cx - 4, cy - 4], [cx + 4, cy + 4]]))
+        for i in off:   # the off-scale baseline: an arrow at the right edge and its values beside it, top right
+            m, x, y, w = pts[i]
+            xe = xlim[1] - 0.02 * (xlim[1] - xlim[0]); ye = ymax * 0.93
+            xs = xe - 0.10 * (xlim[1] - xlim[0])
+            ax.annotate("", xy=(xe, ye), xytext=(xs, ye), arrowprops=dict(arrowstyle="->", color=COL[m], lw=1.1))
+            t = ax.annotate(f"{m}, off scale:\nWinkler {x:.1f}, sd {y:.3f}", (xs, ye), xytext=(-3, 0),
+                            textcoords="offset points", ha="right", va="center", fontsize=FS, color=COL[m])
+            boxes.append(bb(t))
+        # the reading guide sits in the first corner free of markers and labels (the axes need not start at 0)
+        for (tx, ty, ha, va) in [(0.98, 0.03, "right", "bottom"), (0.02, 0.97, "left", "top"), (0.98, 0.97, "right", "top")]:
+            t = ax.text(tx, ty, "lower left: reliable and efficient", transform=ax.transAxes,
+                        ha=ha, va=va, fontsize=FS, color="#555555", style="italic")
+            if not clash(bb(t), boxes) and frame.contains(*bb(t).p0) and frame.contains(*bb(t).p1):
+                boxes.append(bb(t)); break
+            t.remove()
+        else:
+            raise SystemExit(f"[f1f2] {city}: no free corner for the reading guide")
+        # method names: the first candidate position (offsets in points) that stays inside the axes and clear of
+        # every marker and every label already placed; deterministic, so the output is byte-stable
+        cand = [(5, 2, "left", "bottom"), (5, -2, "left", "top"), (-5, 2, "right", "bottom"), (-5, -2, "right", "top"),
+                (0, 6, "center", "bottom"), (0, -6, "center", "top"), (6, 0, "left", "center"), (-6, 0, "right", "center"),
+                (9, 7, "left", "bottom"), (-9, 7, "right", "bottom"), (9, -7, "left", "top"), (-9, -7, "right", "top")]
+        for m, x, y, w in sorted(keep, key=lambda p: -p[2]):
+            for dx, dy, ha, va in cand:
+                t = ax.annotate(label.get(m, m), (x, y), xytext=(dx, dy), textcoords="offset points",
+                                ha=ha, va=va, fontsize=FS, color=COL[m])
+                b = bb(t)
+                if frame.contains(*b.p0) and frame.contains(*b.p1) and not clash(b, boxes):
+                    boxes.append(b); break
+                t.remove()
+            else:
+                raise SystemExit(f"[f1f2] {city}: no free position for the {m} label")
     save(fig, "2026-09-06-f2-reliability-efficiency")
     log(f"off-scale markers: {n_off} (prespecified: 1)")
 

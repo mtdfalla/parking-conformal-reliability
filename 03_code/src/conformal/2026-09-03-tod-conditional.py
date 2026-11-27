@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 """
+EXP-045 arm A10 (T030), 2026-11-25: the Mondrian split-CP fallback for a bucket with fewer than
+`--min-group` own scores used `concatenate([own, resid])`, and `resid` already holds the own scores,
+so they entered twice. It now uses the own scores plus the other buckets' scores (`resid[b_ca != bk]`),
+each once, as the core.py successor does for ToD-ACI. The fallback never fires on the shipped
+inputs (minimum own count 96), so the outputs are byte-identical. Nothing else changed.
+
 Time-of-day conditional coverage on the shared conformal core — Belgrade, t+15 min, 90%.
 R-Phase 3b task 2 (D-014). Closes audit issues C05 and I03. Logged as EXP-021.
 
@@ -177,7 +183,7 @@ def main():
         for bk in ORDER:
             own = cal_by_bucket[bk]
             q_bk[bk] = (core.conformal_quantile(own, ALPHA) if len(own) >= args.min_group
-                        else core.conformal_quantile(np.concatenate([own, resid]), ALPHA)
+                        else core.conformal_quantile(np.concatenate([own, resid[b_ca != bk]]), ALPHA)
                         if len(own) else q_glob)
         qm = np.array([q_bk[b] for b in b_te])
         m_lo, m_hi = np.maximum(yhat_te - qm, 0.0), yhat_te + qm

@@ -23,6 +23,9 @@ per-facility PICP of the same run exactly: a stratified number from rows that do
 headline would be a different population.
 
 Outputs: 05_results/tables/2026-11-23-birmingham-s1-s2.csv, 2026-11-23-core-counters.csv
+
+Revision 59b (2026-11-25): `--city birmingham` (the public-data path of run_all.sh) writes the S1/S2 table
+and stops before the counters table, which holds both cities. The default, `--city both`, is unchanged.
 """
 from __future__ import annotations
 
@@ -68,6 +71,8 @@ def summary(d: pd.DataFrame) -> dict:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--tab-dir", default=str(ROOT / "05_results" / "tables"))
+    ap.add_argument("--city", choices=["both", "birmingham"], default="both",
+                    help="birmingham: write the S1/S2 table only (the counters table needs both cities)")
     a = ap.parse_args()
     tab = Path(a.tab_dir)
 
@@ -117,6 +122,11 @@ def main() -> int:
                                 pooled_row_coverage=float(x.covered.mean())))
     pd.DataFrame(out).to_csv(tab / "2026-11-23-birmingham-s1-s2.csv", index=False)
     log(f"wrote 2026-11-23-birmingham-s1-s2.csv ({len(out)} rows)")
+
+    if a.city == "birmingham":
+        log("--city birmingham: 2026-11-23-core-counters.csv holds both cities and is not written")
+        log("ALL DONE")
+        return 0
 
     # ---- counters
     cnt = []

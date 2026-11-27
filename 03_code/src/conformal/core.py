@@ -471,6 +471,13 @@ def grouped_adaptive_conformal_stream(
     `min_group` own scores is initialised from its own scores UNION `global_pool`, and the fallback is
     recorded per group in the diagnostics so the counts can be reported (the audit asks for exactly this).
 
+    T030 (EXP-045 arm A10, 2026-11-25): the union is now a true union. `global_pool` contains the
+    group's own scores, and the fallback used to prepend them again, so they entered twice. The
+    fallback pool is now the own scores plus the other groups' scores, each once (one copy of each
+    own score is removed from `global_pool`; a pool that lacks them raises ValueError). Groups at or
+    above `min_group`, and groups with no own scores, are unchanged. The attribute
+    `grouped_adaptive_conformal_stream.fallback_firings` counts firings in the process (instrument).
+
     Delay handling
     --------------
     One shared release queue carries the issuing group with each payload, so feedback from a forecast
@@ -482,6 +489,7 @@ def grouped_adaptive_conformal_stream(
     cal_scores_by_group : {group: sequence of that group's calibration scores}.
     groups : per-step group label, aligned with y.
     global_pool : scores used for the sparse-group fallback; defaults to all calibration scores pooled.
+        It must contain each sparse group's own scores (T030).
     min_group : own-score count below which the fallback is applied.
     window : per-group sliding window; ``None`` uses each group's own initial pool size.
 
@@ -515,7 +523,23 @@ def grouped_adaptive_conformal_stream(
     for g in keys:
         own = list(np.asarray(cal_scores_by_group.get(g, []), dtype=float))
         fell_back = len(own) < min_group
-        init = (own + global_pool) if fell_back else own
+        if fell_back:
+            # T030 (EXP-045 A10, 2026-11-25): global_pool already holds the group's own scores, so
+            # `own + global_pool` counted them twice. Remove one copy of each own score (multiset),
+            # so the fallback pool is the own scores plus the OTHER groups' scores, each once.
+            others = list(global_pool)
+            for s in own:
+                try:
+                    others.remove(s)
+                except ValueError:
+                    raise ValueError(f"group {g!r}: global_pool must contain the group's own "
+                                     "calibration scores (as the default pool does)") from None
+            init = own + others
+            # instrument only (no effect on outputs): number of fallback firings in this process
+            _f = grouped_adaptive_conformal_stream
+            _f.fallback_firings = getattr(_f, "fallback_firings", 0) + 1
+        else:
+            init = own
         if not init:
             raise ValueError(f"group {g!r} has no calibration scores and the global pool is empty")
         pools[g] = list(init)

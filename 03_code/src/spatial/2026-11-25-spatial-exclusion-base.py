@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 """Recompute the spatial leg (§5.5) on the paper's evaluation base (D-030, revision 49, 2026-09-07).
 
+2026-11-25 successor of `2026-09-07-spatial-exclusion-base.py` (external-audit finding T006, EXP-045 arm A3).
+It re-subsets the 2026-11-25 tables of `2026-11-25-spatial-analysis.py` (canonical pipeline) instead of the
+2026-06-21 ones. The common test index and the raw-occupancy correlation are taken on the canonical row set
+(`use_15` test rows with the runner's dropna), and the run stops if the 20-facility common index differs from
+the 21-facility one, because the stored pairwise correlations are exact for the subset only when it does not.
+Output `2026-11-25-spatial-statistics-exclusion-base.csv`, same columns. The text below describes the
+2026-09-07 run and still holds for its method.
+
 Prespecification: 04_experiments/2026-09-07-spatial-exclusion-base-PRESPECIFICATION.md.
 
 WHY: the two live spatial scripts select facilities by `coords AND (train-window occupancy std >= 5)`, which
@@ -37,7 +45,7 @@ FLAG = "use_15"
 SEED = 42
 N_PERM_MORAN = 999
 N_PERM_MANTEL = 9999
-OUT = TAB / "2026-09-07-spatial-statistics-exclusion-base.csv"
+OUT = TAB / "2026-11-25-spatial-statistics-exclusion-base.csv"
 
 
 def log(m):
@@ -160,11 +168,13 @@ def stats_for(name, fids, pairs, P, te):
 
 
 def main():
-    pairs = pd.read_csv(TAB / "2026-06-21-spatial-corr-distance.csv")
-    P = pd.read_csv(TAB / "2026-06-21-spatial-facility-uncertainty.csv")
+    pairs = pd.read_csv(TAB / "2026-11-25-spatial-corr-distance.csv")
+    P = pd.read_csv(TAB / "2026-11-25-spatial-facility-uncertainty.csv")
     d = pd.read_parquet(PROC / "belgrade_features_v2.parquet")
     te = d[d.split == "test"]
     sub = te[te[FLAG]]
+    feat = [c for c in d.columns if c.startswith(("lag_", "roll_"))] + ["tod_sin", "tod_cos", "dow", "is_weekend", "is_holiday"]
+    te = sub.dropna(subset=["occupancy"] + feat + [HZ])   # the canonical row set the residuals were fitted on
     drop = set(int(f) for f in core.low_information_facilities(sub))
     evaluated = sorted(int(f) for f in sub.facility_id.unique() if int(f) not in drop)
     with_coords = sorted(int(f) for f in P.facility_id.unique())
@@ -174,6 +184,11 @@ def main():
     log(f"evaluation base (n={len(evaluated)}): {evaluated}")
     log(f"published spatial roster (n={len(published)}): {published}")
     log(f"exclusion base INTERSECT coords (n={len(excl)}): {excl}")
+    i21, i20 = common_test_index(te, published), common_test_index(te, excl)
+    if i21 != i20:
+        sys.exit(f"[spatial-excl] STOP: common test index differs between rosters ({len(i21)} vs {len(i20)}); "
+                 "the stored pairwise correlations are not exact for the subset")
+    log(f"common test index identical on both rosters: {len(i21)} timestamps")
     rows = stats_for("published_21", published, pairs, P, te) + stats_for("exclusion_base", excl, pairs, P, te)
     cols = ["population", "city", "horizon", "n_facilities", "n_pairs", "n_common_test_timestamps",
             "statistic", "value", "p_value", "n_permutations", "seed", "facility_ids", "note"]

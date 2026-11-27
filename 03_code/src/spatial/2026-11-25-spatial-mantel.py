@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """EXP-006b: add a Mantel permutation test (handles non-independence of pairwise correlations) and
-explicitly define spatial weights + per-facility uncertainty. Belgrade, delay-aware ACI residuals, t+15min."""
+explicitly define spatial weights + per-facility uncertainty. Belgrade, delay-aware ACI residuals, t+15min.
+
+2026-11-25 successor of `2026-09-05-spatial-mantel.py` (external-audit finding T006, EXP-045 arm A3). Two
+changes and no others: the residuals come from `belgrade_features_v2.parquet` with the `use_15` mask and the
+runner's dropna (the canonical row set of `2026-11-22-run-core-methods.py`) in place of the v1 table, and the
+statistics are written to `2026-11-25-spatial-statistics.csv` under this script's name."""
 # 2026-09-05 (revision 45, EXP-036, defect 7). Derived from the frozen pre-audit
 # `spatial_mantel.py` by DELETING the block that appended an `EXP-006b` entry to
 # 04_experiments/EXPERIMENTS_LOG.md. Nothing else differs: same statistics, same CSVs, same
@@ -24,7 +29,7 @@ HZ="y_t+15min"; SEED=42; DYN=5.0
 # 2026-09-06 (revision 48): the printed statistics are ALSO written to a dated CSV, because they were the only
 # numbers in the manuscript with no results-table trace (S47 record section 8). Each script rewrites only
 # its own rows, so either may be re-run alone without duplicating the other's.
-STATS_CSV = TAB/"2026-09-06-spatial-statistics.csv"
+STATS_CSV = TAB/"2026-11-25-spatial-statistics.csv"
 def write_stats(script, rows):
     cols=["script","city","horizon","n_facilities","statistic","value","p_value","n_permutations","seed","note"]
     old=[]
@@ -44,12 +49,13 @@ def mantel(A,B,perms=9999,seed=SEED):
         pm=rng.permutation(n); Bp=B[np.ix_(pm,pm)]; rb=np.corrcoef(a,Bp[iu])[0,1]
         if abs(rb)>=abs(r): cnt+=1
     return r,(cnt+1)/(perms+1)
-df=pd.read_parquet(PROC/"belgrade_features.parquet"); co=pd.read_parquet(PROC/"facility_coords.parquet")
+df=pd.read_parquet(PROC/"belgrade_features_v2.parquet"); co=pd.read_parquet(PROC/"facility_coords.parquet")
 ds=df[df.split=="train"].groupby("facility_id")["occupancy"].std(); dyn=set(ds[ds>=DYN].index)
 fids=[f for f in sorted(co.facility_id.unique()) if f in dyn]
 resid={}; 
 for fid in fids:
-    g=df[df.facility_id==fid].sort_values("timestamp"); tr,te=g[g.split=="train"],g[g.split=="test"]
+    g=df[df.facility_id==fid].sort_values("timestamp"); g=g[g["use_15"]].dropna(subset=["occupancy"]+FEAT+[HZ])
+    tr,te=g[g.split=="train"],g[g.split=="test"]
     rf=RandomForestRegressor(n_estimators=100,min_samples_leaf=2,n_jobs=-1,random_state=SEED); rf.fit(tr[FEAT].values,tr[HZ].values-tr["occupancy"].values)
     yhat=te["occupancy"].values+rf.predict(te[FEAT].values); resid[fid]=pd.Series(te[HZ].values-yhat,index=pd.to_datetime(te["timestamp"].values))
 RW=pd.DataFrame(resid).dropna(); n=len(fids)
@@ -71,7 +77,7 @@ OCC=pd.DataFrame({fid:pd.Series(df[(df.facility_id==fid)&(df.split=="test")].sor
                                 index=pd.to_datetime(df[(df.facility_id==fid)&(df.split=="test")].sort_values("timestamp")["timestamp"].values)) for fid in fids}).loc[RW.index]
 Co=OCC.corr().loc[fids,fids].values; occ_mean=float(Co[iu].mean())
 print(f"mean raw-occupancy corr (same facilities, same timestamps): {occ_mean:.3f}")
-write_stats("2026-09-05-spatial-mantel.py",[
+write_stats("2026-11-25-spatial-mantel.py",[
     dict(city="belgrade",horizon=HZ,n_facilities=n,statistic="mantel_r_distance_vs_residcorr",value=f"{r_m:.6f}",p_value=f"{p_m:.6f}",n_permutations=9999,seed=SEED,note="two-sided permutation p"),
     dict(city="belgrade",horizon=HZ,n_facilities=n,statistic="spearman_rho_residcorr_vs_distance_naive",value=f"{rho:.6f}",p_value=f"{p_naive:.6e}",n_permutations="",seed="",note="pairwise, not independence-corrected"),
     dict(city="belgrade",horizon=HZ,n_facilities=n,statistic="mean_pairwise_resid_corr",value=f"{C[iu].mean():.6f}",p_value="",n_permutations="",seed="",note=f"{len(RW)} common test timestamps"),

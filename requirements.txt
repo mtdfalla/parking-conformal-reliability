@@ -1,6 +1,6 @@
 # The 13 packages the analysis imports, at the exact versions of the article.
 # Same pins as 03_code/2026-09-04-requirements.lock.txt, without wheel hashes, so pip resolves
-# their dependencies. Tested with Python 3.10 on Linux x86-64.
+# their dependencies. Tested with Python 3.10 and 3.12 on Linux x86-64.
 numpy==2.2.6
 pandas==2.3.3
 matplotlib==3.10.9

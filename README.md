@@ -17,21 +17,26 @@ with a two-level evaluation standard that separates population-level from per-fa
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt   # the 13 analysis packages at the exact versions of the article
 bash run_all.sh --list            # the step list
-bash run_all.sh --smoke           # bounded end-to-end check of the runner
-python 03_code/verify.py          # exits nonzero on any mismatch
+bash run_all.sh --city birmingham # the public-data path, end to end, then verify.py --smoke
 ```
 
 `requirements.txt` pins the 13 packages the analysis imports, at the versions every reported number
-was computed under, and lets pip resolve their own dependencies. Tested with Python 3.10 on Linux
-x86-64. `03_code/2026-09-04-requirements.lock.txt` records the same pins with the SHA-256 of each wheel
-used, for an audit of the exact build.
+was computed under, and lets pip resolve their own dependencies. Tested on Linux x86-64 with Python 3.10
+and 3.12. `03_code/2026-09-04-requirements.lock.txt` records the same pins with the SHA-256 of each wheel
+used. Its compiled wheels are CPython 3.10 builds and it lists no dependencies, so it is an audit record
+of the exact build, not an install file.
 
-**Steps that need the Belgrade files will stop with a missing-input error** until you supply them;
-the Birmingham steps run unaided. `run_all.sh --only STEP` and `--from STEP` let you run a subset.
+**`bash run_all.sh` without `--city` runs both cities** and stops with a missing-input error at the first
+Belgrade step until you supply the Belgrade files. `--city birmingham` runs every step that needs only the
+Birmingham data and prints each step it skips. It does not regenerate the tables whose steps also read the
+Belgrade data, including every table that pools both cities. `REPLICATION.md` section 3 lists them. The
+path ends with `python 03_code/verify.py --smoke`, which compares every table the run wrote with its
+reference and skips the rest. Without `--smoke`, verify.py reports each table the run did not write as
+`B NOTRUN` and exits nonzero. `--smoke` shortens no step. `--only STEP` and `--from STEP` run a subset.
 
-**Pin the versions.** The lock file is not advisory. Re-running one baseline under a different MAPIE
+**Pin the versions.** The pins are not advisory. Re-running one baseline under a different MAPIE
 release already moved a published coverage figure in this project by 1–2 coverage indicators. The
-lock file is what prevents that.
+pins are what prevent that.
 
 ## Layout
 

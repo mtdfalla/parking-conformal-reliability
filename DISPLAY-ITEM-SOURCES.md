@@ -6,7 +6,7 @@ the table typesetter (`06_manuscript/CTR/2026-09-06-typeset-tables.py`, shipped 
 figure scripts (`03_code/src/viz/`) are read for the files each item is built from. Paths are relative to
 `05_results/tables/` in a run of this package, and to `05_results/reference/` for the copies we obtained.
 
-**This mapping is not the guarantee.** The guarantee is reproduction: `bash run_all.sh` regenerates every
+**This mapping is not the guarantee.** The guarantee is reproduction: `bash run_all.sh` regenerates, from both cities' data, every
 table below and `python 03_code/verify.py` checks each one against the shipped reference copy (coverage
 exact, widths to 1e-12 relative). `python 06_manuscript/CTR/2026-09-06-typeset-tables.py` then reads
 those tables and writes every number of every table body to `06_manuscript/CTR/_build/typeset.json`.
@@ -16,51 +16,48 @@ those tables and writes every number of every table body to `06_manuscript/CTR/_
 | display item | built from |
 |---|---|
 | Table 1 | descriptive; no results table (counts are stated with the data) |
-| Table 2 | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Table 3 | `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv` |
+| Table 2 | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-core-belgrade-v3-rolling0-per-facility.csv`, `2026-11-25-core-birmingham-v3-rolling0-per-facility.csv`, `2026-11-25-exp045-rolling-inference.csv` |
+| Table 3 | `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-core-belgrade-v3-rolling0-per-facility.csv`, `2026-11-25-core-birmingham-v3-rolling0-per-facility.csv`, `2026-11-25-exp045-rolling-inference.csv`, `2026-11-25-exp045-tod-cells.csv` |
 | Fig. 1 (plotted) | `2026-11-22-core-belgrade-v3-gcal-per-facility.csv`, `2026-11-22-core-birmingham-v3-gcal-per-facility.csv`, `belgrade_features_v2.parquet`, `birmingham_features_v3.parquet` |
 | Fig. 1 (numbers in the caption) | `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Fig. 2 (plotted) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `belgrade_features_v2.parquet`, `birmingham_features_v3.parquet` |
+| Fig. 2 (plotted) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-11-25-exp045-rolling-inference.csv`, `belgrade_features_v2.parquet`, `birmingham_features_v3.parquet` |
 | Fig. 2 (numbers in the caption) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Table 4 | `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-x08-orthogonal-summary-excl.csv`, `2026-09-04-x08-tod-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
+| Table 4 | `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-x08-orthogonal-summary-excl.csv`, `2026-09-04-x08-tod-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-exp045-partition-random200-summary.csv` |
 | Table 5 | `2026-09-04-T6-protocol-sensitivity.csv`, `2026-09-04-c01-attribution.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-22-core-belgrade-v3-gcal-per-facility.csv` |
-| Table 6 | `2026-09-05-rel-alloc-summary.csv` |
+| Table 6 | `2026-09-05-rel-alloc-summary.csv`, `2026-11-25-exp045-allocation-ladder-wide.csv` |
 
 ## Numbers quoted in the prose, by section
 
 | section | built from |
 |---|---|
-| A prespecified allocation demonstration (generated) | `2026-09-05-rel-alloc-summary.csv` |
-| Average coverage passes almost everyone (generated) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
+| Adaptive conformal inference, delay-aware | `2026-09-04-phase4-population.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-core-birmingham-v3-rolling0-rows-L90.csv`, `2026-11-25-exp045-release-lag.csv`, `2026-11-25-exp045-retained-excluded.csv`, `belgrade_features_v2.parquet`, `birmingham_long.parquet` |
+| An allocation demonstration (generated) | `2026-09-05-rel-alloc-summary.csv`, `2026-11-25-exp045-allocation-capacity.csv`, `2026-11-25-exp045-allocation-ladder-wide.csv`, `2026-11-25-exp045-allocation-ladder.csv`, `2026-11-25-exp045-rel-alloc-section0.csv` |
 | Base-model quality (generated) | `2026-11-22-core-belgrade-v3-gcal-basemodel.csv`, `2026-11-22-core-birmingham-v3-gcal-basemodel.csv` |
-| Calibration size and the shrinkage remedy (generated) | `2026-09-06-exp037-ncal-picp-correlation.csv` |
-| Conclusion (generated) | `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-05-rel-alloc-summary.csv` |
-| Conditional coverage across the day (generated) | `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-x08-orthogonal-summary-excl.csv`, `2026-09-04-x08-tod-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Data | `2026-09-02-v2-representativeness.csv`, `2026-11-22-v3-representativeness.csv` |
-| Introduction | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-05-rel-alloc-summary.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
+| Calibration size and the shrinkage remedy (generated) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-ncal-picp-correlation.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-22-core-belgrade-v3-gcal-per-facility.csv` |
+| Conclusion (generated) | `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-05-rel-alloc-summary.csv`, `2026-11-25-exp045-allocation-ladder-wide.csv`, `2026-11-25-exp045-allocation-ladder.csv`, `2026-11-25-exp045-rolling-inference.csv`, `2026-11-25-orthogonal-5b-summary.csv` |
+| Conditional coverage across the day (generated) | `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-x08-orthogonal-summary-excl.csv`, `2026-09-04-x08-tod-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-exp045-partition-random200-summary.csv`, `2026-11-25-orthogonal-5b-cells.csv`, `2026-11-25-orthogonal-5b-summary.csv` |
+| Data | `2026-09-02-v2-representativeness.csv`, `2026-09-04-phase4-population.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-22-v3-representativeness.csv`, `2026-11-25-core-birmingham-v3-rolling0-rows-L90.csv`, `2026-11-25-exp045-release-lag.csv`, `2026-11-25-exp045-retained-excluded.csv`, `belgrade_features_v2.parquet`, `birmingham_long.parquet` |
+| Facility-level coverage (generated) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-contrasts.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-22-core-belgrade-v3-gcal-per-facility.csv`, `2026-11-22-core-birmingham-v3-gcal-per-facility.csv`, `2026-11-23-exp044-facility-sample-size.csv`, `2026-11-25-exp045-facility-sample-size-holm.csv`, `2026-11-25-exp045-rolling-inference.csv`, `2026-11-25-exp045-tod-cells.csv` |
+| Introduction | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-05-rel-alloc-summary.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-exp045-allocation-ladder.csv`, `2026-11-25-exp045-rolling-inference.csv`, `2026-11-25-orthogonal-5b-summary.csv` |
 | Limitations (generated) | `2026-11-22-block-bootstrap-belgrade.csv` |
-| Robustness: windows, cities, base learners, delay, and spatial structure (generated) | `2026-09-02-delay-sensitivity-belgrade.csv`, `2026-09-03-base-learner-robustness-per-facility.csv`, `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-03-rolling-origin-belgrade.csv`, `2026-09-03-rolling-origin-foldsummary.csv`, `2026-09-03-rolling-origin-inference.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-window-confound.csv`, `2026-09-04-x08-base-learner-excl.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-09-07-spatial-statistics-exclusion-base.csv`, `2026-11-22-core-belgrade-v3-gcal-per-facility.csv`, `2026-11-22-core-birmingham-v3-gcal-per-facility.csv`, `2026-11-23-birmingham-s1-s2.csv` |
-| Selective prediction (generated) | `2026-09-03-trust-abstain-per-facility.csv`, `2026-09-04-x08-trust-abstain-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| The facility level: what the average conceals (generated) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-contrasts.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-23-exp044-facility-sample-size.csv` |
+| Population-level coverage (generated) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-exp045-rolling-inference.csv` |
+| Robustness: windows, cities, base learners, delay, and spatial structure (generated) | `2026-09-02-delay-sensitivity-belgrade.csv`, `2026-09-03-base-learner-robustness-per-facility.csv`, `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-03-rolling-origin-belgrade.csv`, `2026-09-03-rolling-origin-foldsummary.csv`, `2026-09-03-rolling-origin-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-window-confound.csv`, `2026-09-04-x08-base-learner-excl.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-22-core-belgrade-v3-gcal-per-facility.csv`, `2026-11-22-core-birmingham-v3-gcal-per-facility.csv`, `2026-11-23-birmingham-s1-s2.csv`, `2026-11-25-spatial-statistics-exclusion-base.csv` |
+| Selective prediction (generated) | `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-trust-abstain-per-facility.csv`, `2026-11-25-x08-trust-abstain-excl.csv` |
+| Sensitivity to the evaluation protocol (generated) | `2026-09-04-T6-protocol-sensitivity.csv`, `2026-09-04-c01-attribution.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-22-core-belgrade-v3-gcal-per-facility.csv` |
 | The reliability--efficiency trade, stated per city (generated) | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-04-phase4-contrasts.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Title and abstract | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-04-x08-orthogonal-summary-excl.csv`, `2026-09-04-x08-tod-summary-excl.csv`, `2026-09-05-rel-alloc-summary.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| What the evaluation protocol costs (generated) | `2026-09-04-T6-protocol-sensitivity.csv` |
+| Title and abstract | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-04-x08-orthogonal-summary-excl.csv`, `2026-09-04-x08-tod-summary-excl.csv`, `2026-09-05-rel-alloc-summary.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-25-exp045-allocation-ladder.csv`, `2026-11-25-exp045-rolling-inference.csv`, `2026-11-25-orthogonal-5b-summary.csv` |
+| Which method, when (generated) | `2026-11-25-exp045-allocation-ladder.csv` |
 
 ## Electronic Supplementary Material
 
 | display item | built from |
 |---|---|
-| Table S1 | no results table; the table is descriptive (settings, nomenclature or facility description) |
-| Table S2 | no results table; the table is descriptive (settings, nomenclature or facility description) |
-| Table S3 | `2026-09-02-v2-representativeness.csv`, `2026-11-22-v3-representativeness.csv`, `2026-11-23-core-counters.csv` |
-| Table S4 | `2026-11-22-core-belgrade-v3-gcal-basemodel.csv`, `2026-11-22-core-birmingham-v3-gcal-basemodel.csv` |
-| Table S5 | `2026-09-03-rolling-origin-belgrade.csv`, `2026-09-03-rolling-origin-foldsummary.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Table S6 | `2026-09-03-trust-abstain-per-facility.csv`, `2026-09-04-x08-trust-abstain-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Table S7 | `2026-09-03-base-learner-robustness-per-facility.csv`, `2026-09-04-x08-base-learner-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Table S8 | `2026-09-04-phase4-population.csv`, `2026-11-22-block-bootstrap-belgrade.csv`, `2026-11-23-birmingham-s1-s2.csv` |
-| Table S9 | `2026-09-03-e3-belgrade-per-facility.csv`, `2026-09-03-e3-birmingham-per-facility.csv`, `2026-09-03-tod-facility-bucket.csv`, `2026-09-04-T3prime-two-level-inference.csv`, `2026-09-04-T6-protocol-sensitivity.csv`, `2026-09-04-phase4-population.csv`, `2026-09-04-x08-core-headline-excl.csv`, `2026-09-04-x08-e3-summary-excl.csv`, `2026-09-04-x08-orthogonal-summary-excl.csv`, `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-22-block-bootstrap-belgrade.csv`, `2026-11-23-birmingham-s1-s2.csv`, `2026-11-23-exp044-facility-sample-size.csv` |
-| Figure S1 (plotted) | `2026-09-06-exp037-pooled-vs-worst.csv` |
-| Figure S2 (plotted) | `2026-06-21-spatial-corr-distance.csv`, `2026-09-07-spatial-statistics-exclusion-base.csv` |
+| (ESM, located at run time) | `2026-09-06-exp037-pooled-vs-worst.csv`, `2026-11-22-core-belgrade-v3-gcal-per-facility.csv`, `2026-11-22-core-birmingham-v3-gcal-per-facility.csv`, `2026-11-23-core-counters.csv`, `2026-11-25-exp045-allocation-seeds.csv`, `2026-11-25-exp045-facility-sample-size-holm-settings.csv`, `2026-11-25-exp045-release-lag.csv` |
+
+## Read only to check a value
+
+The typesetter also reads these files, only inside assertions that check a value it prints against an
+independent copy: `2026-09-04-x08-core-headline-control.csv`, `belgrade_long.parquet`, `birmingham_features_v3.parquet`.
 
 ## How this file was made
 

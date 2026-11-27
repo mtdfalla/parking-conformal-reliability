@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """
+EXP-045 arm A10 (T030), 2026-11-25: the second P16 check asserted n_init = own 5 + global 405 = 410,
+which counted the own scores twice (the global pool of 405 already holds them). It now asserts
+own 5 + other groups 400 = 405. Nothing else changed.
+
 R-Phase 2 gate — property tests for `03_code/src/conformal/core.py` (D-014, EXP-017).
 
 Each test names the audit issue it defends. The suite must exit 0 before any experiment script is
@@ -205,8 +209,8 @@ check("P16 sparse group falls back and dense groups do not",
       gi["c"]["fell_back"] and not gi["a"]["fell_back"] and not gi["b"]["fell_back"],
       f"c: n_own={gi['c']['n_own']} -> n_init={gi['c']['n_init']}; a/b keep their own pools")
 check("P16 fallback is a UNION, not a replacement (own scores are retained)",
-      gi["c"]["n_init"] == gi["c"]["n_own"] + 405,
-      "own 5 + global 405 = 410 — the group's own evidence is not discarded")
+      gi["c"]["n_init"] == gi["c"]["n_own"] + 400,
+      "own 5 + other groups 400 = 405, each score once (T030) — the group's own evidence is not discarded")
 
 # P17 each group really does carry its own pool: identical groups but different pools must differ.
 # Exact property, no tuned threshold: at each group's FIRST appearance no feedback has matured, so its

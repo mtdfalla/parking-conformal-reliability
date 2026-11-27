@@ -15,8 +15,9 @@ arrives, these files will be added in a new release of this repository and a new
 and the citation DOI resolves to the newest version automatically.** If permission is refused, that
 outcome will be stated here.
 
-The **Birmingham** data are public and are included in full, so the pipeline can be reproduced
-end to end by a third party on that city without any request to anyone.
+The **Birmingham** data are public and are included in full, so every step that needs only the Birmingham
+data can be reproduced end to end by a third party, with `bash run_all.sh --city birmingham`, without any
+request to anyone.
 
 ## What you can still verify without the Belgrade files
 
@@ -28,7 +29,9 @@ end to end by a third party on that city without any request to anyone.
 
 ## What you cannot do without them
 
-Re-fit the Belgrade models from processed data. Third-party end-to-end reproduction is therefore
+Re-fit the Belgrade models from processed data, or regenerate the tables whose steps also read the
+Belgrade data, including every table that pools both cities (`REPLICATION.md` section 3 lists them).
+Third-party end-to-end reproduction is therefore
 demonstrable **on Birmingham only**. We state this plainly rather than leave it to be discovered.
 
 ## How to obtain the data, and how to confirm you have OUR file
